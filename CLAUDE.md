@@ -21,21 +21,22 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 6 routes build clean |
-| Homepage | 🟡 IN PROGRESS | Hero, trust indicators, services preview, CTA band built. Needs service cards + imagery |
-| About page | ✅ COMPLETE | Company history, vision, John Hafer bio, acquisitions, industry positions, affiliations, CTA band |
-| Services page | ✅ COMPLETE | 6 service cards, chauffeur standards, CTA band |
-| Fleet page | ✅ COMPLETE | 6 vehicle cards (Sedans, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
-| Reservations page | 🟡 STUB | Header + DIA pickup instructions |
-| Contact page | ✅ COMPLETE | Contact info column + 9-field inquiry form (frontend only, backend TODO) |
-| Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA |
-| Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations |
-| Contact/inquiry form | 🟡 FRONTEND DONE | InquiryForm component built, needs backend (Formspree/Resend/FASTTRAK) |
+| Homepage | 🟡 IN PROGRESS | Hero image, trust indicators, CTA band built. Needs service preview cards + fleet highlight |
+| About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions, industry positions, affiliations, CTA band |
+| Services page | ✅ COMPLETE | Hero, 6 service cards with photos, chauffeur standards, CTA band |
+| Fleet page | ✅ COMPLETE | Hero, 6 vehicle cards with photos (Sedans, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
+| Reservations page | ✅ COMPLETE | Booking form, FASTTRAK callout (URL TBD), DIA pickup instructions, sidebar cards |
+| Contact page | ✅ COMPLETE | Hero image, contact info column + 9-field inquiry form (frontend only, backend TODO) |
+| Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow |
+| Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations, top shadow |
+| Contact/inquiry form | 🟡 FRONTEND DONE | InquiryForm + ReservationForm components built, needs backend (Formspree/Resend/FASTTRAK) |
 | FASTTRAK integration | ❌ NOT STARTED | Need portal URL from client |
 | Domain transfer | ❌ BLOCKED | Waiting on client — Mom questionnaire sent |
 | Vercel deployment | ❌ NOT STARTED | Deploy after homepage is presentable |
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
-| SEO / schema markup | ❌ NOT STARTED | |
-| Image assets | ❌ BLOCKED | No photos. Wayback Machine not fully scraped |
+| SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD, OG tags all pages, sitemap.xml, robots.txt, canonical URLs |
+| Image assets | ✅ PLACEHOLDER | Colorado-specific Unsplash stock photography across all pages. Replace with real fleet/team photos when available |
+| Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
@@ -194,11 +195,14 @@ src/
 - ✅ Next.js repo initialized with proper structure
 - ✅ Design system implemented (Tailwind v4 tokens)
 - ✅ Header and Footer components built
-- ✅ Homepage structured (hero, trust indicators, services preview, CTA)
-- 🟡 Build out remaining page bodies (Fleet ✅, Services ✅, About ✅, Contact ✅, Reservations ⬜)
-- ⬜ Write/refine copy from recovered content
-- ⬜ Integrate FASTTRAK booking or build reservation form
-- ⬜ SEO foundation (meta, schema, OG, sitemap)
+- ✅ Homepage structured (hero image, trust indicators, services preview, CTA)
+- ✅ Build out page bodies (Fleet ✅, Services ✅, About ✅, Contact ✅, Reservations ✅)
+- ✅ Write/refine copy from recovered content
+- ✅ Reservation form built (FASTTRAK portal URL still needed from client)
+- ✅ SEO foundation (LocalBusiness JSON-LD, OG tags, sitemap.xml, robots.txt, canonical URLs)
+- ✅ Design polish pass (shadows, gold glow, depth, form focus rings)
+- ✅ Stock photography added (Colorado-specific Unsplash — replace with real photos later)
+- 🟡 Homepage needs service preview cards + fleet highlight section
 - ⬜ Deploy to Vercel, connect domain
 
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
