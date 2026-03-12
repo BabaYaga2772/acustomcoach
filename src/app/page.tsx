@@ -21,7 +21,7 @@ export default function Home() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1546156929-a4c0ac411f47?auto=format&fit=crop&w=1920&q=80"
+            src="https://images.unsplash.com/photo-1618456724458-ddf08ea5d2a7?auto=format&fit=crop&w=1920&q=80"
             alt="Denver skyline at night with city lights"
             fill
             priority
@@ -198,8 +198,8 @@ export default function Home() {
               </div>
               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1636664306443-07b671e1bed0?auto=format&fit=crop&w=800&q=80"
-                  alt="Modern black Lincoln sedan"
+                  src="https://images.unsplash.com/photo-1660605236131-f66be4a364d6?auto=format&fit=crop&w=800&q=80"
+                  alt="Modern black Lincoln Continental sedan"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
