@@ -14,6 +14,18 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 
 ---
 
+## Project Resources
+
+- **Live site:** https://acustomcoach.vercel.app
+- **GitHub repo:** https://github.com/BabaYaga2772/acustomcoach
+- **Competitive analysis:** https://son-client-docs.vercel.app/acc/competitive-analysis.html
+- **Old site reference:** https://son-client-docs.vercel.app/acc/old-site-reference.html
+- **Project summary:** https://son-client-docs.vercel.app/acc/project-summary.html
+- **Mom questionnaire:** `deliverables/What_Bobby_Needs_From_John.docx`
+- **Service scope & pricing:** `_context/service-scope-pricing.md`
+
+---
+
 ## Current Status
 
 | Item | Status | Notes |
