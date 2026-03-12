@@ -83,8 +83,8 @@ export default function Home() {
         <section className="bg-foundation py-24">
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
-            <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
-              Whatever the Destination,<br />We&apos;ll Get You There.
+            <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12 inline-block">
+              Whatever the Destination,<br /><span className="block text-right">We&apos;ll Get You There.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
