@@ -36,7 +36,7 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
 | SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD, OG tags all pages, sitemap.xml, robots.txt, canonical URLs |
 | Image assets | ✅ PLACEHOLDER | Colorado-specific Unsplash stock photography across all pages. Replace with real fleet/team photos when available |
-| Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity |
+| Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity, design feedback pass (warmer gold, brighter text, title case, overlay fix) |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
@@ -89,7 +89,7 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | cream-muted | `#CCC5B9` | `text-cream-muted` | Secondary text |
 | white | `#FAFAF8` | `text-white` | Headlines, emphasis |
 | border-gold | `rgba(212,175,55,0.35)` | `border-border-gold` | Accent borders |
-| border-subtle | `rgba(255,255,255,0.06)` | `border-border-subtle` | Structural dividers |
+| border-subtle | `rgba(255,255,255,0.08)` | `border-border-subtle` | Structural dividers |
 
 ### Typography
 
@@ -151,11 +151,14 @@ src/
 │   ├── about/page.tsx
 │   ├── services/page.tsx
 │   ├── fleet/page.tsx
-│   ├── reservations/page.tsx ← Includes DIA pickup instructions
+│   ├── reservations/
+│   │   ├── page.tsx          ← Includes DIA pickup instructions
+│   │   └── ReservationForm.tsx ← Booking form (client component)
 │   └── contact/page.tsx      ← Structured layout, form placeholder
 ├── components/
 │   ├── Header.tsx            ← Responsive nav, sticky, mobile menu
-│   └── Footer.tsx            ← 3-column, contact + links + affiliations
+│   ├── Footer.tsx            ← 3-column, contact + links + affiliations
+│   └── InquiryForm.tsx       ← 9-field contact form (client component)
 ├── lib/                      ← Utilities (empty, add as needed)
 └── styles/                   ← (empty — globals.css handles everything)
 ```
