@@ -21,7 +21,7 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 6 routes build clean |
-| Homepage | 🟡 IN PROGRESS | Hero image, trust indicators, CTA band built. Needs service preview cards + fleet highlight |
+| Homepage | ✅ COMPLETE | Hero image, trust indicators, 3-card services preview, fleet highlight, CTA band |
 | About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions, industry positions, affiliations, CTA band |
 | Services page | ✅ COMPLETE | Hero, 6 service cards with photos, chauffeur standards, CTA band |
 | Fleet page | ✅ COMPLETE | Hero, 6 vehicle cards with photos (Sedans, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
@@ -205,7 +205,7 @@ src/
 - ✅ SEO foundation (LocalBusiness JSON-LD, OG tags, sitemap.xml, robots.txt, canonical URLs)
 - ✅ Design polish pass (shadows, gold glow, depth, form focus rings)
 - ✅ Stock photography added (Colorado-specific Unsplash — replace with real photos later)
-- 🟡 Homepage needs service preview cards + fleet highlight section
+- ✅ Homepage complete (services preview + fleet highlight added)
 - ⬜ Deploy to Vercel, connect domain
 
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
