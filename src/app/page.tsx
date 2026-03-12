@@ -1,5 +1,16 @@
+import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+
+export const metadata: Metadata = {
+  openGraph: {
+    title: "A Custom Coach | Denver & Boulder Luxury Transportation Since 1988",
+    description:
+      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. A+ BBB rated. Established 1988.",
+    url: "/",
+  },
+  alternates: { canonical: "/" },
+};
 
 export default function Home() {
   return (

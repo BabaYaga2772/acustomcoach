@@ -4,9 +4,16 @@ import { Footer } from "@/components/Footer";
 import { ReservationForm } from "./ReservationForm";
 
 export const metadata: Metadata = {
-  title: "Reservations | A Custom Coach",
+  title: "Reservations",
   description:
     "Book your Denver luxury transportation online 24/7. Airport transfers, corporate travel, and special events. Your reservation is confirmed once you receive confirmation.",
+  openGraph: {
+    title: "Book Denver Luxury Transportation — A Custom Coach Reservations",
+    description:
+      "Submit a reservation request 24/7. DIA airport transfers, corporate travel, weddings, and special events. A live voice answers every call.",
+    url: "/reservations",
+  },
+  alternates: { canonical: "/reservations" },
 };
 
 const vehicleOptions = [

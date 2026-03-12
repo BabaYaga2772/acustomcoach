@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "A Custom Coach has been Denver and Boulder's trusted luxury transportation provider since 1988. Learn about owner John Hafer and our 37+ year legacy.",
+  openGraph: {
+    title: "About A Custom Coach — 37+ Years of Colorado Luxury Transportation",
+    description:
+      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ BBB rated. NLA and CLA member.",
+    url: "/about",
+  },
+  alternates: { canonical: "/about" },
 };
 
 const acquisitions = [

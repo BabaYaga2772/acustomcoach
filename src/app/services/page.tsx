@@ -6,6 +6,13 @@ export const metadata: Metadata = {
   title: "Services",
   description:
     "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado.",
+  openGraph: {
+    title: "Denver Limousine & Transportation Services — A Custom Coach",
+    description:
+      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado.",
+    url: "/services",
+  },
+  alternates: { canonical: "/services" },
 };
 
 const services = [

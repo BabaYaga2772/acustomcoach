@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Contact A Custom Coach for luxury transportation in Denver and Boulder. Call (303) 759-1376 or 1-800-671-5466. We answer live, 24 hours a day.",
+  openGraph: {
+    title: "Contact A Custom Coach — Denver & Boulder Transportation",
+    description:
+      "Call (303) 759-1376 or toll free 1-800-671-5466. We answer live, 24 hours a day. No auto-attendant. Denver, Colorado.",
+    url: "/contact",
+  },
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

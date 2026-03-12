@@ -3,9 +3,16 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Our Fleet | A Custom Coach",
+  title: "Our Fleet",
   description:
     "Sedans, SUVs, stretch limousines, passenger vans, and luxury executive vans. Through national affiliates, we accommodate groups of 26 to 55 passengers.",
+  openGraph: {
+    title: "Our Fleet — Luxury Sedans, Limousines & Executive Vans",
+    description:
+      "From luxury sedans to stretch limousines and executive vans. Through national affiliates, we accommodate groups of 2 to 55 passengers. No hidden fees.",
+    url: "/fleet",
+  },
+  alternates: { canonical: "/fleet" },
 };
 
 const vehicles = [
