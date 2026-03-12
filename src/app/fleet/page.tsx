@@ -140,7 +140,7 @@ export default function FleetPage() {
               {vehicles.map((vehicle) => (
                 <article
                   key={vehicle.name}
-                  className="group bg-surface border border-border-subtle rounded-xl p-8 hover:border-border-gold transition-all duration-300"
+                  className="group bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
                   {/* Icon */}
                   <div className="mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
@@ -192,7 +192,7 @@ export default function FleetPage() {
         </section>
 
         {/* CTA Band */}
-        <section className="bg-elevated border-y border-border-gold py-16">
+        <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
               Ready to reserve your vehicle?
@@ -204,13 +204,13 @@ export default function FleetPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:shadow-[0_4px_20px_rgba(201,168,76,0.3)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
               <a
                 href="tel:3037591376"
-                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
+                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(201,168,76,0.12)] transition-all duration-300"
               >
                 Call 303-759-1376
               </a>

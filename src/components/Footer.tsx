@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="bg-surface border-t border-border-subtle">
+    <footer className="bg-surface border-t border-border-subtle shadow-[0_-2px_16px_rgba(0,0,0,0.4)]">
       <div className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}

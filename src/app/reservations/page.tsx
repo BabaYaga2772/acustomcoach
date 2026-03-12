@@ -57,7 +57,7 @@ export default function ReservationsPage() {
         {/* FASTTRAK Online Booking Callout */}
         <section className="py-16 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <div className="bg-gold-muted border border-border-gold rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10">
+            <div className="bg-gold-muted border border-border-gold rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 shadow-[var(--shadow-card-hover)]">
               <div className="flex-1">
                 <p className="text-gold text-xs tracking-[0.2em] uppercase mb-2">
                   Online Booking
@@ -75,7 +75,7 @@ export default function ReservationsPage() {
               <a
                 href="#"
                 aria-disabled="true"
-                className="shrink-0 bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:shadow-[0_4px_20px_rgba(201,168,76,0.3)] transition-all duration-300"
+                className="shrink-0 bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Online
               </a>
@@ -105,7 +105,7 @@ export default function ReservationsPage() {
               {/* Sidebar */}
               <aside className="lg:col-span-2 space-y-8">
                 {/* Confirmation Notice */}
-                <div className="bg-surface border border-border-subtle rounded-xl p-6">
+                <div className="bg-surface border border-border-subtle rounded-xl p-6 shadow-[var(--shadow-card)]">
                   <h3 className="font-display text-lg font-medium text-white mb-3">
                     Important
                   </h3>
@@ -119,7 +119,7 @@ export default function ReservationsPage() {
                 </div>
 
                 {/* DIA Pickup Instructions */}
-                <div className="bg-surface border border-border-gold rounded-xl p-6">
+                <div className="bg-surface border border-border-gold rounded-xl p-6 shadow-[var(--shadow-card-hover)]">
                   <p className="text-gold text-xs tracking-[0.15em] uppercase mb-3">
                     Denver International Airport
                   </p>
@@ -152,7 +152,7 @@ export default function ReservationsPage() {
                 </div>
 
                 {/* Quick Contact */}
-                <div className="bg-surface border border-border-subtle rounded-xl p-6">
+                <div className="bg-surface border border-border-subtle rounded-xl p-6 shadow-[var(--shadow-card)]">
                   <h3 className="font-display text-lg font-medium text-white mb-3">
                     Prefer to call?
                   </h3>
@@ -180,7 +180,7 @@ export default function ReservationsPage() {
         </section>
 
         {/* Pricing Transparency */}
-        <section className="bg-elevated border-y border-border-gold py-16">
+        <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
               No hidden fees. No surprises.

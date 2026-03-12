@@ -23,7 +23,7 @@ export function InquiryForm() {
 
   if (submitted) {
     return (
-      <div className="bg-surface border border-border-gold rounded-xl p-10 text-center">
+      <div className="bg-surface border border-border-gold rounded-xl p-10 text-center shadow-[var(--shadow-card-hover)]">
         <p className="font-display text-2xl text-white mb-3">Thank you.</p>
         <p className="text-cream-muted text-sm leading-relaxed">
           We&apos;ve received your inquiry and will respond within 48 hours.
@@ -69,7 +69,7 @@ export function InquiryForm() {
         <select
           id="vehicle"
           name="vehicle"
-          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] focus:outline-none focus:border-border-gold transition-colors appearance-none"
+          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all appearance-none"
           defaultValue=""
         >
           <option value="" disabled className="text-cream-muted">
@@ -92,7 +92,7 @@ export function InquiryForm() {
           id="message"
           name="message"
           rows={4}
-          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] leading-relaxed focus:outline-none focus:border-border-gold transition-colors resize-none"
+          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] leading-relaxed focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all resize-none"
           placeholder="Tell us about your transportation needs..."
         />
       </div>
@@ -100,7 +100,7 @@ export function InquiryForm() {
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:shadow-[0_4px_20px_rgba(201,168,76,0.3)] transition-all duration-300 cursor-pointer"
+        className="w-full bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
       >
         Submit Inquiry
       </button>
@@ -141,7 +141,7 @@ function Field({
         required={required}
         min={min}
         max={max}
-        className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] placeholder:text-cream-muted/50 focus:outline-none focus:border-border-gold transition-colors"
+        className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] placeholder:text-cream-muted/50 focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all"
       />
     </div>
   );

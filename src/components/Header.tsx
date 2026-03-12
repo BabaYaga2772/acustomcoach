@@ -14,7 +14,7 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-foundation/95 backdrop-blur-md border-b border-border-subtle">
+    <header className="sticky top-0 z-50 bg-foundation/95 backdrop-blur-md border-b border-border-subtle shadow-[0_1px_12px_rgba(0,0,0,0.5)]">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
@@ -39,7 +39,7 @@ export function Header() {
           ))}
           <Link
             href="/reservations"
-            className="bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-5 py-2.5 rounded text-xs font-semibold tracking-[0.08em] uppercase hover:shadow-[0_4px_20px_rgba(201,168,76,0.3)] transition-all duration-300"
+            className="bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-5 py-2.5 rounded text-xs font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow)] transition-all duration-300"
           >
             Book Now
           </Link>
