@@ -30,11 +30,11 @@ export default function ContactPage() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/85" />
+          <div className="absolute inset-0 bg-foundation/70" />
           <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
-              Let&apos;s talk.
+              Let&apos;s Talk.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               Need a ride, have a question, or want to discuss corporate accounts?
@@ -48,7 +48,7 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div>
               <h2 className="font-display text-2xl font-medium text-white mb-8">
-                Reach us directly
+                Reach Us Directly
               </h2>
               <div className="flex flex-col gap-6">
                 <div>
@@ -89,7 +89,7 @@ export default function ContactPage() {
             {/* Contact Form */}
             <div>
               <h2 className="font-display text-2xl font-medium text-white mb-8">
-                Send an inquiry
+                Send an Inquiry
               </h2>
               <p className="text-cream-muted text-sm mb-6">
                 Allow up to 48 hours for a response. For immediate assistance, please call.

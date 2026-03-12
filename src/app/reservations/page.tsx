@@ -38,7 +38,7 @@ export default function ReservationsPage() {
               Reservations
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
-              Book your ride.
+              Book Your Ride.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               Submit a reservation request online 24 hours a day. For immediate
@@ -70,7 +70,7 @@ export default function ReservationsPage() {
                   Online Booking
                 </p>
                 <h2 className="font-display text-xl md:text-2xl font-medium text-white mb-2">
-                  Book instantly through our portal
+                  Book Instantly Through Our Portal
                 </h2>
                 <p className="text-cream-muted text-sm leading-relaxed">
                   Use our FASTTRAK online booking system for real-time
@@ -82,7 +82,7 @@ export default function ReservationsPage() {
               <a
                 href="#"
                 aria-disabled="true"
-                className="shrink-0 bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="shrink-0 bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Online
               </a>
@@ -100,7 +100,7 @@ export default function ReservationsPage() {
                   Request a Reservation
                 </p>
                 <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-3">
-                  Tell us where you&apos;re headed.
+                  Tell Us Where You&apos;re Headed.
                 </h2>
                 <p className="text-cream-muted text-sm mb-8">
                   Fill out the form below and we&apos;ll get back to you with
@@ -190,7 +190,7 @@ export default function ReservationsPage() {
         <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
-              No hidden fees. No surprises.
+              No Hidden Fees. No Surprises.
             </h2>
             <p className="text-cream-muted leading-relaxed">
               Whatever your needs, prices for all services will be disclosed in

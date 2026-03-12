@@ -69,7 +69,7 @@ export function InquiryForm() {
         <select
           id="vehicle"
           name="vehicle"
-          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all appearance-none"
+          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] transition-all appearance-none"
           defaultValue=""
         >
           <option value="" disabled className="text-cream-muted">
@@ -92,7 +92,7 @@ export function InquiryForm() {
           id="message"
           name="message"
           rows={4}
-          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] leading-relaxed focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all resize-none"
+          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] leading-relaxed focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] transition-all resize-none"
           placeholder="Tell us about your transportation needs..."
         />
       </div>
@@ -100,7 +100,7 @@ export function InquiryForm() {
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
+        className="w-full bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
       >
         Submit Inquiry
       </button>
@@ -141,7 +141,7 @@ function Field({
         required={required}
         min={min}
         max={max}
-        className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] placeholder:text-cream-muted/50 focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(201,168,76,0.1)] transition-all"
+        className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] placeholder:text-cream-muted/50 focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] transition-all"
       />
     </div>
   );

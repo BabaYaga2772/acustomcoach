@@ -82,13 +82,13 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | foundation | `#0F0F0F` | `bg-foundation` | Page background |
 | surface | `#1A1917` | `bg-surface` | Card/section backgrounds |
 | elevated | `#242220` | `bg-elevated` | Elevated surfaces, hover states |
-| gold | `#C9A84C` | `text-gold`, `bg-gold` | Primary accent, CTAs, labels |
-| gold-light | `#E2C97E` | `text-gold-light` | Hover states, highlights |
-| gold-muted | `rgba(201,168,76,0.15)` | `bg-gold-muted` | Subtle backgrounds |
+| gold | `#D4AF37` | `text-gold`, `bg-gold` | Primary accent, CTAs, labels |
+| gold-light | `#E8C95A` | `text-gold-light` | Hover states, highlights |
+| gold-muted | `rgba(212,175,55,0.22)` | `bg-gold-muted` | Subtle backgrounds |
 | cream | `#F5F0E8` | `text-cream` | Primary text |
-| cream-muted | `#B8B0A2` | `text-cream-muted` | Secondary text |
+| cream-muted | `#CCC5B9` | `text-cream-muted` | Secondary text |
 | white | `#FAFAF8` | `text-white` | Headlines, emphasis |
-| border-gold | `rgba(201,168,76,0.2)` | `border-border-gold` | Accent borders |
+| border-gold | `rgba(212,175,55,0.35)` | `border-border-gold` | Accent borders |
 | border-subtle | `rgba(255,255,255,0.06)` | `border-border-subtle` | Structural dividers |
 
 ### Typography
@@ -114,7 +114,7 @@ Loaded via Google Fonts `<link>` tags in `layout.tsx` (not `next/font` — build
 
 ### Component Patterns
 
-- **Primary button:** Gold gradient (`from-gold to-[#B8942F]`), dark text, uppercase, 0.08em tracking, 6px radius
+- **Primary button:** Gold gradient (`from-gold to-[#B8962E]`), dark text, uppercase, 0.08em tracking, 6px radius
 - **Secondary button:** Transparent, gold border, cream text, uppercase
 - **Text link button:** Gold text, underline on hover
 - **Cards:** `surface` or `elevated` bg, `border-subtle` or `border-gold` border, 10-12px radius

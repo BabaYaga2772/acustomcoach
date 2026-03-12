@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const services = [
   {
     label: "Airport Transfers",
-    title: "Door-to-door airport service",
+    title: "Door-to-Door Airport Service",
     description:
       "We arrange pickup and drop-off at any airport location in the state of Colorado — from Denver International Airport to any private jet terminal. Flight tracking, on-time arrivals, and a professional chauffeur waiting when you land.",
     features: [
@@ -33,7 +33,7 @@ const services = [
   },
   {
     label: "Meet & Greet",
-    title: "First impressions, handled",
+    title: "First Impressions, Handled",
     description:
       "We meet your clients at a designated location, assist with luggage, and escort them to their vehicle. For larger groups, our greeters gather everyone and direct them to the appropriate vehicle or destination.",
     features: [
@@ -47,7 +47,7 @@ const services = [
   },
   {
     label: "Mountain Attractions",
-    title: "Colorado's peaks, without the stress",
+    title: "Colorado's Peaks, Without the Stress",
     description:
       "We arrange vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats, scenic tours — sit back and let us navigate the passes.",
     features: [
@@ -61,7 +61,7 @@ const services = [
   },
   {
     label: "Corporate & Business",
-    title: "Executive travel, elevated",
+    title: "Executive Travel, Elevated",
     description:
       "Reliable ground transportation for executives, clients, and teams. Whether it's a single sedan to a board meeting or a fleet for a company event, we deliver punctual, professional service that reflects your brand.",
     features: [
@@ -75,7 +75,7 @@ const services = [
   },
   {
     label: "Weddings",
-    title: "Your day, your way there",
+    title: "Your Day, Your Way There",
     description:
       "From the bridal party's arrival to the grand exit, we handle every transportation detail so you can focus on the celebration. Stretch limousines, luxury sedans, and passenger vans for the full wedding party.",
     features: [
@@ -89,7 +89,7 @@ const services = [
   },
   {
     label: "Special Events",
-    title: "Any occasion, any size",
+    title: "Any Occasion, Any Size",
     description:
       "Concerts, galas, family reunions, sporting events, nights out — whatever the occasion, we provide safe, comfortable, and punctual transportation. Through national affiliates, we accommodate groups from 2 to 55 passengers.",
     features: [
@@ -113,7 +113,7 @@ export default function ServicesPage() {
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Services</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
-              Every ride, handled with care.
+              Every Ride, Handled with Care.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               With a combined experience of over 60 years, we have the personnel and
@@ -173,7 +173,7 @@ export default function ServicesPage() {
           <div className="max-w-3xl mx-auto px-6 text-center">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Standard</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
-              Professional to the last detail.
+              Professional to the Last Detail.
             </h2>
             <p className="text-cream-muted text-[15px] leading-relaxed mb-10 max-w-xl mx-auto">
               Our chauffeurs wear the traditional black suit, white shirt, black shoes,
@@ -204,7 +204,7 @@ export default function ServicesPage() {
         <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
-              Ready to book?
+              Ready to Book?
             </h2>
             <p className="text-cream-muted mb-8 leading-relaxed">
               Whatever your transportation needs, a live voice is always just a phone call away.
@@ -212,13 +212,13 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
               <a
                 href="tel:3037591376"
-                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(201,168,76,0.12)] transition-all duration-300"
+                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.12)] transition-all duration-300"
               >
                 Call 303-759-1376
               </a>

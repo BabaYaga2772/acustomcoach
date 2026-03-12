@@ -32,14 +32,14 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-cream-muted text-xs tracking-[0.08em] uppercase hover:text-gold transition-colors duration-200"
+              className="text-cream text-xs tracking-[0.08em] uppercase hover:text-gold transition-colors duration-200"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/reservations"
-            className="bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-5 py-2.5 rounded text-xs font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow)] transition-all duration-300"
+            className="bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-5 py-2.5 rounded text-xs font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow)] transition-all duration-300"
           >
             Book Now
           </Link>
@@ -86,7 +86,7 @@ export function Header() {
             <Link
               href="/reservations"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-6 py-3 rounded text-sm font-semibold tracking-[0.08em] uppercase text-center"
+              className="mt-2 bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-6 py-3 rounded text-sm font-semibold tracking-[0.08em] uppercase text-center"
             >
               Book Now
             </Link>

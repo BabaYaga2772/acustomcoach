@@ -85,7 +85,7 @@ export default function FleetPage() {
               Our Fleet
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
-              The right vehicle for every occasion.
+              The Right Vehicle for Every Occasion.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               From luxury sedans to stretch limousines and executive vans, our
@@ -166,7 +166,7 @@ export default function FleetPage() {
         <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
-              Ready to reserve your vehicle?
+              Ready to Reserve Your Vehicle?
             </h2>
             <p className="text-cream-muted mb-8 leading-relaxed">
               Call us to discuss your transportation needs, or submit an online
@@ -175,13 +175,13 @@ export default function FleetPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
               <a
                 href="tel:3037591376"
-                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(201,168,76,0.12)] transition-all duration-300"
+                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.12)] transition-all duration-300"
               >
                 Call 303-759-1376
               </a>

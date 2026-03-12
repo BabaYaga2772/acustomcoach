@@ -73,7 +73,7 @@ export default function AboutPage() {
           <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">About Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
-              A legacy built on service.
+              A Legacy Built on Service.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               Established in 1988, A Custom Coach/Boulder Transportation has become a
@@ -90,7 +90,7 @@ export default function AboutPage() {
             <div className="max-w-3xl">
               <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Vision</p>
               <blockquote className="font-display text-2xl md:text-3xl font-medium text-white leading-snug mb-6">
-                Present a solution to every customer, no matter the circumstances.
+                Present a Solution to Every Customer, No Matter the Circumstances.
               </blockquote>
               <p className="text-cream-muted text-[15px] leading-relaxed">
                 We are backed by an ambitious staff with the same drive to bring you the
@@ -155,7 +155,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Growth</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
-              Three companies, one standard.
+              Three Companies, One Standard.
             </h2>
             <p className="text-cream-muted text-[15px] leading-relaxed mb-12 max-w-2xl">
               Over the years, John has expanded A Custom Coach by acquiring three established
@@ -186,7 +186,7 @@ export default function AboutPage() {
               Industry Leadership
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
-              Decades at the table.
+              Decades at the Table.
             </h2>
             <div className="flex flex-col gap-8">
               {industryPositions.map((pos) => (
@@ -210,7 +210,7 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Affiliations</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-8">
-              Proud members of
+              Proud Members of
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {affiliations.map((name) => (
@@ -231,7 +231,7 @@ export default function AboutPage() {
         <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
-              37 years of trust. One phone call away.
+              37 Years of Trust. One Phone Call Away.
             </h2>
             <p className="text-cream-muted mb-8 leading-relaxed">
               Experience the service that&apos;s made A Custom Coach a Colorado institution
@@ -240,13 +240,13 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
               <a
                 href="tel:3037591376"
-                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(201,168,76,0.12)] transition-all duration-300"
+                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.12)] transition-all duration-300"
               >
                 Call 303-759-1376
               </a>

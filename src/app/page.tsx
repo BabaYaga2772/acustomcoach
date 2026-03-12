@@ -44,13 +44,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8942F] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
               <a
                 href="tel:3037591376"
-                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(201,168,76,0.12)] transition-all duration-300"
+                className="inline-block border border-gold/40 bg-gold/5 text-cream px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:bg-gold/10 hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.15)] transition-all duration-300"
               >
                 Call 303-759-1376
               </a>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
-              Whatever the destination,<br />we&apos;ll get you there.
+              Whatever the Destination,<br />We&apos;ll Get You There.
             </h2>
             {/* TODO: Service cards */}
           </div>
@@ -94,7 +94,7 @@ export default function Home() {
         <section className="bg-elevated border-y border-border-gold py-16 shadow-[var(--shadow-cta-band)]">
           <div className="max-w-3xl mx-auto px-6 text-center">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-4">
-              A live voice, every time you call.
+              A Live Voice, Every Time You Call.
             </h2>
             <p className="text-cream-muted mb-8 leading-relaxed">
               No auto-attendant. No phone tree. Our team personally answers every call,
