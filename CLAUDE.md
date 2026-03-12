@@ -23,8 +23,8 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 6 routes build clean |
 | Homepage | 🟡 IN PROGRESS | Hero, trust indicators, services preview, CTA band built. Needs service cards + imagery |
 | About page | 🟡 STUB | Header section only |
-| Services page | 🟡 STUB | Header section only |
-| Fleet page | 🟡 STUB | Header section only |
+| Services page | ✅ COMPLETE | 6 service cards, chauffeur standards, CTA band |
+| Fleet page | ✅ COMPLETE | 6 vehicle cards (Sedans, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
 | Reservations page | 🟡 STUB | Header + DIA pickup instructions |
 | Contact page | 🟡 STRUCTURED | Contact info layout done, form placeholder |
 | Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA |
@@ -195,7 +195,7 @@ src/
 - ✅ Design system implemented (Tailwind v4 tokens)
 - ✅ Header and Footer components built
 - ✅ Homepage structured (hero, trust indicators, services preview, CTA)
-- ⬜ Build out remaining 5 page bodies
+- 🟡 Build out remaining page bodies (Fleet ✅, Services ✅, About/Reservations/Contact ⬜)
 - ⬜ Write/refine copy from recovered content
 - ⬜ Integrate FASTTRAK booking or build reservation form
 - ⬜ SEO foundation (meta, schema, OG, sitemap)
