@@ -63,8 +63,8 @@ export default function AboutPage() {
         {/* Page Header */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1677051949386-d999c9076424?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver skyline with Rocky Mountains"
+            src="https://images.unsplash.com/photo-1599140643827-04e62670b3e4?auto=format&fit=crop&w=1920&q=80"
+            alt="Colorado Front Range mountains and Denver skyline"
             fill
             priority
             className="object-cover"

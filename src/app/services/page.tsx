@@ -28,8 +28,8 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation booth",
     ],
-    image: "https://images.unsplash.com/photo-1470086215110-7012d5b9ed60?auto=format&fit=crop&w=800&q=80",
-    alt: "Denver International Airport terminal with iconic tent roof",
+    image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal interior with white tent roof",
   },
   {
     label: "Meet & Greet",
@@ -42,8 +42,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
-    image: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?auto=format&fit=crop&w=800&q=80",
-    alt: "Hotel concierge greeting guests",
+    image: "https://images.unsplash.com/photo-1596032457104-baa1f5f9372a?auto=format&fit=crop&w=800&q=80",
+    alt: "Professional chauffeur in suit driving luxury vehicle",
   },
   {
     label: "Mountain Attractions",
@@ -56,8 +56,8 @@ const services = [
       "Scenic tour transportation",
       "Year-round availability",
     ],
-    image: "https://images.unsplash.com/photo-1542242476-5a3565835a38?auto=format&fit=crop&w=800&q=80",
-    alt: "Colorado mountain highway through the Rockies",
+    image: "https://images.unsplash.com/photo-1653688107875-38c6dfe0e59b?auto=format&fit=crop&w=800&q=80",
+    alt: "Scenic Colorado mountain highway through the Rockies",
   },
   {
     label: "Corporate & Business",
@@ -70,8 +70,8 @@ const services = [
       "Multi-vehicle coordination",
       "Corporate account billing",
     ],
-    image: "https://images.unsplash.com/photo-1579762593155-42faee39d0b4?auto=format&fit=crop&w=800&q=80",
-    alt: "Downtown Denver business district",
+    image: "https://images.unsplash.com/photo-1586740070162-41777c99457f?auto=format&fit=crop&w=800&q=80",
+    alt: "Downtown Denver skyscrapers and business district",
   },
   {
     label: "Weddings",
@@ -84,8 +84,8 @@ const services = [
       "Guest shuttle service",
       "Stretch limousine availability",
     ],
-    image: "https://images.unsplash.com/photo-1509047629538-3762c0b404e5?auto=format&fit=crop&w=800&q=80",
-    alt: "Mountain wedding ceremony with scenic backdrop",
+    image: "https://images.unsplash.com/photo-1763560836989-d3636e2f82d8?auto=format&fit=crop&w=800&q=80",
+    alt: "Mountain wedding ceremony with floral arch and mountain backdrop",
   },
   {
     label: "Special Events",
@@ -98,8 +98,8 @@ const services = [
       "Family reunions",
       "Groups up to 55 via affiliates",
     ],
-    image: "https://images.unsplash.com/photo-1507732072485-a08706fa1ccb?auto=format&fit=crop&w=800&q=80",
-    alt: "Red Rocks Amphitheatre in Morrison, Colorado",
+    image: "https://images.unsplash.com/photo-1701919747996-1e9531dde0a9?auto=format&fit=crop&w=800&q=80",
+    alt: "Red Rocks Amphitheatre seating and stage in Morrison, Colorado",
   },
 ];
 

@@ -21,8 +21,8 @@ export default function Home() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1619743078220-a8d3cebe49e9?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver skyline at night"
+            src="https://images.unsplash.com/photo-1554325474-bc42c4c4850a?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver cityscape at night"
             fill
             priority
             className="object-cover"
