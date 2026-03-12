@@ -32,22 +32,24 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 |------|--------|-------|
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
-| Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 6 routes build clean |
+| Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 8 routes build clean |
 | Homepage | ✅ COMPLETE | Hero image, trust indicators, 3-card services preview, fleet highlight, CTA band |
 | About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions, industry positions, affiliations, CTA band |
 | Services page | ✅ COMPLETE | Hero, 6 service cards with photos, chauffeur standards, CTA band |
-| Fleet page | ✅ COMPLETE | Hero, 6 vehicle cards with photos (Sedans, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
+| Airport page | ✅ COMPLETE | DIA hero, trust bar, how-it-works steps, DIA pickup instructions, meet & greet, rate table (TODO: rates from John), 6 Colorado airports grid, 24/7 callout, CTA band |
+| Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar, 5 resort cards (Vail/Breck/Aspen/Beaver Creek/Keystone) with drive times, "and more" card, group transport with fleet link, seasonal availability, CTA band |
+| Fleet page | ✅ COMPLETE | Hero, 6 vehicle cards with Pexels photos (Lincoln Continental, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
 | Reservations page | ✅ COMPLETE | Booking form, FASTTRAK callout (URL TBD), DIA pickup instructions, sidebar cards |
 | Contact page | ✅ COMPLETE | Hero image, contact info column + 9-field inquiry form (frontend only, backend TODO) |
-| Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow |
+| Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow. Nav: Services / Airport / Mountains / Fleet / About / Contact |
 | Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations, top shadow |
 | Contact/inquiry form | 🟡 FRONTEND DONE | InquiryForm + ReservationForm components built, needs backend (Formspree/Resend/FASTTRAK) |
 | FASTTRAK integration | ❌ NOT STARTED | Need portal URL from client |
 | Domain transfer | ❌ BLOCKED | Waiting on client — Mom questionnaire sent |
-| Vercel deployment | ❌ NOT STARTED | Deploy after homepage is presentable |
+| Vercel deployment | ✅ LIVE | https://acustomcoach.vercel.app — domain transfer pending for acustomcoach.com |
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
 | SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD, OG tags all pages, sitemap.xml, robots.txt, canonical URLs |
-| Image assets | ✅ PLACEHOLDER | Colorado-specific Unsplash stock photography across all pages. Replace with real fleet/team photos when available |
+| Image assets | ✅ PLACEHOLDER | Fleet page uses Pexels photos, other pages use Unsplash. Replace with real fleet/team photos when available |
 | Mobile CTA bar | ✅ COMPLETE | Sticky bottom bar on mobile (<md), Call + Book Now buttons, in layout.tsx |
 | Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity, design feedback pass (warmer gold, brighter text, title case, overlay fix) |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
@@ -160,8 +162,10 @@ src/
 ├── app/
 │   ├── globals.css           ← Tailwind v4 @theme with all design tokens
 │   ├── layout.tsx            ← Root layout, fonts, SEO metadata
-│   ├── page.tsx              ← Homepage (most built-out)
+│   ├── page.tsx              ← Homepage
 │   ├── about/page.tsx
+│   ├── airport/page.tsx      ← DIA & Colorado airport transfers
+│   ├── mountains/page.tsx    ← Ski resort & mountain transportation
 │   ├── services/page.tsx
 │   ├── fleet/page.tsx
 │   ├── reservations/
@@ -208,7 +212,7 @@ src/
 - ⬜ Collect fleet photos from John
 - ⬜ Get verbal/written agreement on scope
 
-### Phase 1 — Build the Site (Weeks 2–3) ← IN PROGRESS
+### Phase 1 — Build the Site (Weeks 2–3) ← COMPLETE
 - ✅ Next.js repo initialized with proper structure
 - ✅ Design system implemented (Tailwind v4 tokens)
 - ✅ Header and Footer components built
@@ -218,9 +222,11 @@ src/
 - ✅ Reservation form built (FASTTRAK portal URL still needed from client)
 - ✅ SEO foundation (LocalBusiness JSON-LD, OG tags, sitemap.xml, robots.txt, canonical URLs)
 - ✅ Design polish pass (shadows, gold glow, depth, form focus rings)
-- ✅ Stock photography added (Colorado-specific Unsplash — replace with real photos later)
+- ✅ Stock photography added (Pexels for fleet, Unsplash elsewhere — replace with real photos later)
 - ✅ Homepage complete (services preview + fleet highlight added)
-- ⬜ Deploy to Vercel, connect domain
+- ✅ Dedicated Airport page (DIA pickup, meet & greet, rate table placeholder, Colorado airports)
+- ✅ Dedicated Mountains page (5 resort cards with drive times, group transport, seasonal availability)
+- ✅ Deployed to Vercel (https://acustomcoach.vercel.app) — custom domain pending transfer
 
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
 - ⬜ Set up Google Workspace ($7/user/mo)
