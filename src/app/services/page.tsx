@@ -42,8 +42,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
-    image: "https://images.unsplash.com/photo-1596032457104-baa1f5f9372a?auto=format&fit=crop&w=800&q=80",
-    alt: "Professional chauffeur in suit driving luxury vehicle",
+    image: "https://images.unsplash.com/photo-1730800328198-f9efbf9db53f?auto=format&fit=crop&w=800&q=80",
+    alt: "Chauffeur assisting passenger at luxury vehicle outside hotel entrance",
   },
   {
     label: "Mountain Attractions",
@@ -84,8 +84,8 @@ const services = [
       "Guest shuttle service",
       "Stretch limousine availability",
     ],
-    image: "https://images.unsplash.com/photo-1763560836989-d3636e2f82d8?auto=format&fit=crop&w=800&q=80",
-    alt: "Mountain wedding ceremony with floral arch and mountain backdrop",
+    image: "https://images.unsplash.com/photo-1731515672817-0491d19c9f19?auto=format&fit=crop&w=800&q=80",
+    alt: "Outdoor wedding ceremony with guests and mountain backdrop",
   },
   {
     label: "Special Events",

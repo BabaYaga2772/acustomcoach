@@ -23,8 +23,8 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    image: "https://images.unsplash.com/photo-1660605235662-8e86044030ba?auto=format&fit=crop&w=800&q=80",
-    alt: "Black Lincoln sedan parked on city street",
+    image: "https://images.unsplash.com/photo-1717978967762-27e5e1e5ea1b?auto=format&fit=crop&w=800&q=80",
+    alt: "Black Lincoln Continental luxury sedan, recent model",
   },
   {
     name: "SUVs",
@@ -32,8 +32,8 @@ const vehicles = [
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    image: "https://images.unsplash.com/photo-1684208551873-64416367be50?auto=format&fit=crop&w=800&q=80",
-    alt: "Black Cadillac Escalade full-size SUV",
+    image: "https://images.unsplash.com/photo-1670069248043-db9433895793?auto=format&fit=crop&w=800&q=80",
+    alt: "Black full-size luxury SUV",
   },
   {
     name: "Stretch Limousines",
@@ -41,8 +41,8 @@ const vehicles = [
     description:
       "With our fleet of stretch limousines, we can accommodate any and all of your special events. Weddings, proms, anniversaries, nights out — arrive in unforgettable style.",
     features: ["Premium bar setup", "Mood lighting", "Premium sound system", "Privacy partition"],
-    image: "https://images.unsplash.com/photo-1559302995-ab792ee16ce8?auto=format&fit=crop&w=800&q=80",
-    alt: "Black stretch limousine exterior",
+    image: "https://images.unsplash.com/photo-1653298034181-03118b1a86d0?auto=format&fit=crop&w=800&q=80",
+    alt: "Black stretch limousine parked at event venue",
   },
   {
     name: "Passenger Vans",
@@ -50,8 +50,8 @@ const vehicles = [
     description:
       "For larger groups of up to 14 people without luggage and up to 10 with luggage. These vans are perfect for running shuttles, group transfers, and cargo transport.",
     features: ["High capacity", "Luggage accommodation", "Shuttle-ready", "Group-friendly layout"],
-    image: "https://images.unsplash.com/photo-1557223562-6c77ef16210f?auto=format&fit=crop&w=800&q=80",
-    alt: "White passenger shuttle van",
+    image: "https://images.unsplash.com/photo-1632953022523-5374474b665a?auto=format&fit=crop&w=800&q=80",
+    alt: "Passenger shuttle van for group transportation",
   },
   {
     name: "Luxury Executive Vans",
@@ -59,8 +59,8 @@ const vehicles = [
     description:
       "For groups of up to 9 people, our luxury executive vans offer comfortable high-back seats and premium amenities. The ideal choice for corporate groups and VIP transfers.",
     features: ["High-back leather seats", "Executive appointments", "USB charging", "Overhead storage"],
-    image: "https://images.unsplash.com/photo-1676107648535-931375db52e2?auto=format&fit=crop&w=800&q=80",
-    alt: "White luxury executive van exterior",
+    image: "https://images.unsplash.com/photo-1631730666263-37c41034d5ea?auto=format&fit=crop&w=800&q=80",
+    alt: "Black executive Sprinter-style van, luxury transport",
   },
   {
     name: "Affiliate Vehicles",
@@ -68,8 +68,8 @@ const vehicles = [
     description:
       "Through our national affiliate network, we can accommodate larger groups of 26 to 55 passengers with mini-coaches and full-size motor coaches. Perfect for conventions, corporate events, and group tours.",
     features: ["Mini-coaches available", "Full motor coaches", "National network", "Event coordination"],
-    image: "https://images.unsplash.com/photo-1727128367693-1c972c22a259?auto=format&fit=crop&w=800&q=80",
-    alt: "Luxury vehicle parked at building entrance",
+    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
+    alt: "Full-size touring motor coach at dusk",
   },
 ];
 
