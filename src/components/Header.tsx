@@ -21,7 +21,7 @@ export function Header() {
           <span className="font-display text-lg md:text-xl font-semibold text-white">
             A Custom Coach
           </span>
-          <span className="hidden sm:inline text-gold text-[9px] tracking-[0.1em] uppercase opacity-80">
+          <span className="text-gold text-[8px] sm:text-[9px] tracking-[0.1em] uppercase opacity-80">
             Est. 1988
           </span>
         </Link>
