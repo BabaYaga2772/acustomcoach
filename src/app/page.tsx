@@ -32,7 +32,7 @@ export default function Home() {
             <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988 · Denver &amp; Boulder, Colorado
             </p>
-            <h1 className="font-display text-6xl md:text-8xl font-medium text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
               Denver&apos;s Premier
               <br />
               <span className="text-gold">Transportation</span>
