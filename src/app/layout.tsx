@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MobileCTABar } from "@/components/MobileCTABar";
 import "./globals.css";
 
 // TODO: Update to final domain once confirmed with client
@@ -165,7 +166,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <MobileCTABar />
+      </body>
     </html>
   );
 }
