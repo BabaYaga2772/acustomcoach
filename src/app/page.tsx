@@ -199,8 +199,8 @@ export default function Home() {
               </div>
               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1660605236131-f66be4a364d6?auto=format&fit=crop&w=800&q=80"
-                  alt="Modern black Lincoln Continental sedan"
+                  src="https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Black luxury sedan on road"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
