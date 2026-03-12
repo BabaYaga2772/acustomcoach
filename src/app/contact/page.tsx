@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { InquiryForm } from "@/components/InquiryForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -77,10 +78,7 @@ export default function ContactPage() {
               <p className="text-cream-muted text-sm mb-6">
                 Allow up to 48 hours for a response. For immediate assistance, please call.
               </p>
-              {/* TODO: Build contact form component */}
-              <div className="bg-surface border border-border-subtle rounded-lg p-8 text-center">
-                <p className="text-cream-muted text-sm">Contact form — coming soon</p>
-              </div>
+              <InquiryForm />
             </div>
           </div>
         </section>
