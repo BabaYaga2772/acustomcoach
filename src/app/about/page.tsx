@@ -16,18 +16,39 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
 };
 
-const acquisitions = [
+const milestones = [
   {
-    name: "Boulder Transportation",
-    description: "Expanding service coverage across Boulder County and the Front Range.",
+    year: "1988",
+    title: "A Custom Coach Founded",
+    description:
+      "John Hafer launches A Custom Coach as a one-car operation in Denver, Colorado — built on a simple promise: on-time service and personal attention, every ride.",
   },
   {
-    name: "Centennial Sedans",
-    description: "Adding executive sedan capacity for corporate and airport clients.",
+    year: "1995",
+    title: "DIA Ground Transportation Board",
+    description:
+      "Appointed to the Ground Transportation Board at Denver International Airport, where John would go on to serve as both Chairman and Vice Chairman.",
   },
   {
-    name: "Diamond Limousine",
-    description: "Strengthening the luxury fleet with stretch limousine inventory.",
+    year: "",
+    title: "Acquired Boulder Transportation",
+    description:
+      "Expanding service coverage across Boulder County and the Front Range, bringing A Custom Coach to a wider Colorado audience.",
+    label: "Acquisition",
+  },
+  {
+    year: "",
+    title: "Acquired Centennial Sedans",
+    description:
+      "Adding executive sedan capacity for corporate and airport clients, strengthening the company's position in business travel.",
+    label: "Acquisition",
+  },
+  {
+    year: "",
+    title: "Acquired Diamond Limousine",
+    description:
+      "Strengthening the luxury fleet with stretch limousine inventory for weddings, proms, and special events across Colorado.",
+    label: "Acquisition",
   },
 ];
 
@@ -150,31 +171,66 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Acquisitions */}
+        {/* Timeline */}
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Growth</p>
+            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Journey</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
-              Three Companies, One Standard.
+              From One Car to an Industry Leader.
             </h2>
-            <p className="text-cream-muted text-[15px] leading-relaxed mb-12 max-w-2xl">
-              Over the years, John has expanded A Custom Coach by acquiring three established
-              Colorado transportation companies — each adding capacity, coverage, and expertise.
+            <p className="text-cream-muted text-[15px] leading-relaxed mb-16 max-w-2xl">
+              Nearly four decades of strategic growth — building Colorado&apos;s most trusted
+              ground transportation company one milestone at a time.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {acquisitions.map((acq) => (
-                <div
-                  key={acq.name}
-                  className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
-                >
-                  <h3 className="font-display text-xl font-medium text-white mb-3">
-                    {acq.name}
-                  </h3>
-                  <p className="text-cream-muted text-sm leading-relaxed">
-                    {acq.description}
-                  </p>
-                </div>
-              ))}
+
+            {/* Vertical timeline */}
+            <div className="relative">
+              {/* Vertical line */}
+              <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-gold/60 via-gold/30 to-gold/10 md:-translate-x-px" />
+
+              <div className="flex flex-col gap-12">
+                {milestones.map((milestone, i) => (
+                  <div
+                    key={milestone.title}
+                    className={`relative flex items-start gap-8 md:gap-12 ${
+                      i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
+                  >
+                    {/* Node */}
+                    <div className="absolute left-6 md:left-1/2 -translate-x-1/2 z-10 flex flex-col items-center">
+                      <div className="w-3 h-3 rounded-full bg-gold shadow-[0_0_12px_rgba(212,175,55,0.5)]" />
+                    </div>
+
+                    {/* Spacer for mobile (pushes content right of the line) */}
+                    <div className="w-12 shrink-0 md:hidden" />
+
+                    {/* Content card */}
+                    <div className={`flex-1 md:w-[calc(50%-3rem)] ${
+                      i % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
+                    }`}>
+                      {milestone.year && (
+                        <span className="font-display text-3xl md:text-4xl font-semibold text-gold leading-none">
+                          {milestone.year}
+                        </span>
+                      )}
+                      {milestone.label && (
+                        <span className="inline-block text-[10px] tracking-[0.15em] uppercase text-gold border border-border-gold rounded-full px-3 py-1">
+                          {milestone.label}
+                        </span>
+                      )}
+                      <h3 className="font-display text-xl font-medium text-white mt-2 mb-3">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-cream-muted text-[15px] leading-relaxed">
+                        {milestone.description}
+                      </p>
+                    </div>
+
+                    {/* Empty column for alternating layout on desktop */}
+                    <div className="hidden md:block flex-1" />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
