@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -22,14 +23,8 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    icon: (
-      <svg viewBox="0 0 64 32" fill="none" className="w-16 h-8 text-gold" aria-hidden="true">
-        <path d="M8 24h4a4 4 0 0 0 8 0h24a4 4 0 0 0 8 0h4V18L50 10H18L8 18v6z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="16" cy="24" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="48" cy="24" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M18 10l4-6h20l6 6" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=800&q=80",
+    alt: "Black luxury sedan",
   },
   {
     name: "SUVs",
@@ -37,15 +32,8 @@ const vehicles = [
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    icon: (
-      <svg viewBox="0 0 64 36" fill="none" className="w-16 h-9 text-gold" aria-hidden="true">
-        <path d="M6 28h4a4 4 0 0 0 8 0h28a4 4 0 0 0 8 0h4V16L52 8H16L6 16v12z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="14" cy="28" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="50" cy="28" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M16 8l2-4h28l4 4" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <line x1="32" y1="4" x2="32" y2="8" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1683778547049-8d969766b441?auto=format&fit=crop&w=800&q=80",
+    alt: "Black luxury SUV at night",
   },
   {
     name: "Stretch Limousines",
@@ -53,16 +41,8 @@ const vehicles = [
     description:
       "With our fleet of stretch limousines, we can accommodate any and all of your special events. Weddings, proms, anniversaries, nights out — arrive in unforgettable style.",
     features: ["Premium bar setup", "Mood lighting", "Premium sound system", "Privacy partition"],
-    icon: (
-      <svg viewBox="0 0 80 32" fill="none" className="w-20 h-8 text-gold" aria-hidden="true">
-        <path d="M6 24h4a4 4 0 0 0 8 0h44a4 4 0 0 0 8 0h4V18L66 10H18L6 18v6z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="14" cy="24" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="66" cy="24" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M18 10l4-6h38l6 6" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <line x1="34" y1="4" x2="34" y2="10" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="44" y1="4" x2="44" y2="10" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1767023025057-9f4033342df2?auto=format&fit=crop&w=800&q=80",
+    alt: "Luxury limousine interior",
   },
   {
     name: "Passenger Vans",
@@ -70,16 +50,8 @@ const vehicles = [
     description:
       "For larger groups of up to 14 people without luggage and up to 10 with luggage. These vans are perfect for running shuttles, group transfers, and cargo transport.",
     features: ["High capacity", "Luggage accommodation", "Shuttle-ready", "Group-friendly layout"],
-    icon: (
-      <svg viewBox="0 0 64 40" fill="none" className="w-16 h-10 text-gold" aria-hidden="true">
-        <path d="M6 32h4a4 4 0 0 0 8 0h28a4 4 0 0 0 8 0h4V14L52 6H16L6 14v18z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="14" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="50" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M16 6v8h40V6" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <line x1="28" y1="6" x2="28" y2="14" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="40" y1="6" x2="40" y2="14" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1724479839764-65981526641d?auto=format&fit=crop&w=800&q=80",
+    alt: "Black passenger van",
   },
   {
     name: "Luxury Executive Vans",
@@ -87,15 +59,8 @@ const vehicles = [
     description:
       "For groups of up to 9 people, our luxury executive vans offer comfortable high-back seats and premium amenities. The ideal choice for corporate groups and VIP transfers.",
     features: ["High-back leather seats", "Executive appointments", "USB charging", "Overhead storage"],
-    icon: (
-      <svg viewBox="0 0 64 40" fill="none" className="w-16 h-10 text-gold" aria-hidden="true">
-        <path d="M6 32h4a4 4 0 0 0 8 0h28a4 4 0 0 0 8 0h4V12L52 4H16L6 12v20z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="14" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="50" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M16 4v8h40V4" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M22 16h20v4H22z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1535655685871-dc8158ff167e?auto=format&fit=crop&w=800&q=80",
+    alt: "Mercedes Sprinter luxury executive van",
   },
   {
     name: "Affiliate Vehicles",
@@ -103,18 +68,8 @@ const vehicles = [
     description:
       "Through our national affiliate network, we can accommodate larger groups of 26 to 55 passengers with mini-coaches and full-size motor coaches. Perfect for conventions, corporate events, and group tours.",
     features: ["Mini-coaches available", "Full motor coaches", "National network", "Event coordination"],
-    icon: (
-      <svg viewBox="0 0 80 40" fill="none" className="w-20 h-10 text-gold" aria-hidden="true">
-        <path d="M6 32h4a4 4 0 0 0 8 0h44a4 4 0 0 0 8 0h4V10L68 4H16L6 10v22z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <circle cx="14" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <circle cx="66" cy="32" r="3" stroke="currentColor" strokeWidth="1.5" />
-        <path d="M16 4v6h52V4" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-        <line x1="24" y1="4" x2="24" y2="10" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="34" y1="4" x2="34" y2="10" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="44" y1="4" x2="44" y2="10" stroke="currentColor" strokeWidth="1.5" />
-        <line x1="54" y1="4" x2="54" y2="10" stroke="currentColor" strokeWidth="1.5" />
-      </svg>
-    ),
+    image: "https://images.unsplash.com/photo-1562000372-fba2929fe39a?auto=format&fit=crop&w=800&q=80",
+    alt: "Motor coach on highway",
   },
 ];
 
@@ -147,38 +102,47 @@ export default function FleetPage() {
               {vehicles.map((vehicle) => (
                 <article
                   key={vehicle.name}
-                  className="group bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
+                  className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
-                  {/* Icon */}
-                  <div className="mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-                    {vehicle.icon}
+                  {/* Photo */}
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={vehicle.image}
+                      alt={vehicle.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
                   </div>
 
-                  {/* Header */}
-                  <h2 className="font-display text-2xl font-medium text-white mb-2">
-                    {vehicle.name}
-                  </h2>
-                  <p className="text-gold text-xs tracking-[0.15em] uppercase mb-4">
-                    {vehicle.passengers} passengers
-                  </p>
+                  <div className="p-8 pt-4">
+                    {/* Header */}
+                    <h2 className="font-display text-2xl font-medium text-white mb-2">
+                      {vehicle.name}
+                    </h2>
+                    <p className="text-gold text-xs tracking-[0.15em] uppercase mb-4">
+                      {vehicle.passengers} passengers
+                    </p>
 
-                  {/* Description */}
-                  <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
-                    {vehicle.description}
-                  </p>
+                    {/* Description */}
+                    <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                      {vehicle.description}
+                    </p>
 
-                  {/* Features */}
-                  <ul className="space-y-2">
-                    {vehicle.features.map((feature) => (
-                      <li
-                        key={feature}
-                        className="flex items-center gap-2 text-cream-muted text-sm"
-                      >
-                        <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+                    {/* Features */}
+                    <ul className="space-y-2">
+                      {vehicle.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="flex items-center gap-2 text-cream-muted text-sm"
+                        >
+                          <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </article>
               ))}
             </div>

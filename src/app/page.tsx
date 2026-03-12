@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -18,8 +19,16 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation">
-          <div className="max-w-5xl mx-auto px-6 text-center">
+        <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1619743078220-a8d3cebe49e9?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver skyline at night"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-foundation/75" />
+          <div className="relative max-w-5xl mx-auto px-6 text-center">
             <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988 · Denver &amp; Boulder, Colorado
             </p>

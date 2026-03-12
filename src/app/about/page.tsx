@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -60,8 +61,16 @@ export default function AboutPage() {
       <Header />
       <main className="bg-foundation">
         {/* Page Header */}
-        <section className="py-24 border-b border-border-subtle">
-          <div className="max-w-4xl mx-auto px-6">
+        <section className="relative py-24 border-b border-border-subtle overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1677051949386-d999c9076424?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver skyline with Rocky Mountains"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-foundation/80" />
+          <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">About Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               A legacy built on service.

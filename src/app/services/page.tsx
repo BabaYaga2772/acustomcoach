@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -27,6 +28,8 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation booth",
     ],
+    image: "https://images.unsplash.com/photo-1470086215110-7012d5b9ed60?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal with iconic tent roof",
   },
   {
     label: "Meet & Greet",
@@ -39,6 +42,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
+    image: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc?auto=format&fit=crop&w=800&q=80",
+    alt: "Hotel concierge greeting guests",
   },
   {
     label: "Mountain Attractions",
@@ -51,6 +56,8 @@ const services = [
       "Scenic tour transportation",
       "Year-round availability",
     ],
+    image: "https://images.unsplash.com/photo-1542242476-5a3565835a38?auto=format&fit=crop&w=800&q=80",
+    alt: "Colorado mountain highway through the Rockies",
   },
   {
     label: "Corporate & Business",
@@ -63,6 +70,8 @@ const services = [
       "Multi-vehicle coordination",
       "Corporate account billing",
     ],
+    image: "https://images.unsplash.com/photo-1579762593155-42faee39d0b4?auto=format&fit=crop&w=800&q=80",
+    alt: "Downtown Denver business district",
   },
   {
     label: "Weddings",
@@ -75,6 +84,8 @@ const services = [
       "Guest shuttle service",
       "Stretch limousine availability",
     ],
+    image: "https://images.unsplash.com/photo-1509047629538-3762c0b404e5?auto=format&fit=crop&w=800&q=80",
+    alt: "Mountain wedding ceremony with scenic backdrop",
   },
   {
     label: "Special Events",
@@ -87,6 +98,8 @@ const services = [
       "Family reunions",
       "Groups up to 55 via affiliates",
     ],
+    image: "https://images.unsplash.com/photo-1507732072485-a08706fa1ccb?auto=format&fit=crop&w=800&q=80",
+    alt: "Red Rocks Amphitheatre in Morrison, Colorado",
   },
 ];
 
@@ -116,28 +129,40 @@ export default function ServicesPage() {
             {services.map((service) => (
               <div
                 key={service.label}
-                className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
+                className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
               >
-                <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
-                  {service.label}
-                </p>
-                <h2 className="font-display text-2xl font-medium text-white mb-4">
-                  {service.title}
-                </h2>
-                <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
-                  {service.description}
-                </p>
-                <ul className="flex flex-col gap-2">
-                  {service.features.map((feature) => (
-                    <li
-                      key={feature}
-                      className="text-cream-muted text-sm flex items-start gap-2"
-                    >
-                      <span className="text-gold mt-1 text-xs">&#9670;</span>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <div className="relative h-44 overflow-hidden">
+                  <Image
+                    src={service.image}
+                    alt={service.alt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                </div>
+                <div className="p-8 pt-4">
+                  <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
+                    {service.label}
+                  </p>
+                  <h2 className="font-display text-2xl font-medium text-white mb-4">
+                    {service.title}
+                  </h2>
+                  <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                    {service.description}
+                  </p>
+                  <ul className="flex flex-col gap-2">
+                    {service.features.map((feature) => (
+                      <li
+                        key={feature}
+                        className="text-cream-muted text-sm flex items-start gap-2"
+                      >
+                        <span className="text-gold mt-1 text-xs">&#9670;</span>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>

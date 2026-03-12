@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { InquiryForm } from "@/components/InquiryForm";
@@ -21,8 +22,16 @@ export default function ContactPage() {
     <>
       <Header />
       <main className="bg-foundation">
-        <section className="py-24 border-b border-border-subtle">
-          <div className="max-w-4xl mx-auto px-6">
+        <section className="relative py-24 border-b border-border-subtle overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1744871867083-82667ed80856?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver skyline at golden hour"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-foundation/85" />
+          <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Let&apos;s talk.
