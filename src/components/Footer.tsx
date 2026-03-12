@@ -11,7 +11,7 @@ export function Footer() {
               A Custom Coach
             </div>
             <div className="text-xs text-gold tracking-[0.1em] uppercase mb-4">
-              World Wide Transportation
+              Luxury Transportation Since 1988
             </div>
             <p className="text-cream-muted text-sm leading-relaxed">
               Denver &amp; Boulder&apos;s premier luxury transportation provider since 1988.

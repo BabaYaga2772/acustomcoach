@@ -109,8 +109,16 @@ export default function ServicesPage() {
       <Header />
       <main className="bg-foundation">
         {/* Page Header */}
-        <section className="py-24 border-b border-border-subtle">
-          <div className="max-w-4xl mx-auto px-6">
+        <section className="relative py-24 border-b border-border-subtle overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver city lights at dusk"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-foundation/80" />
+          <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Services</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Every Ride, Handled with Care.

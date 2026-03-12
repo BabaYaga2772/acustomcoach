@@ -32,7 +32,7 @@ export default function Home() {
             <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988 · Denver &amp; Boulder, Colorado
             </p>
-            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="font-display text-6xl md:text-8xl font-medium text-white leading-[1.05] tracking-tight mb-6">
               Denver&apos;s Premier
               <br />
               <span className="text-gold">Transportation</span>
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
-              Whatever the Destination,<br />We&apos;ll Get You There.
+              Whatever the Destination,<br /><span className="block text-right">We&apos;ll Get You There.</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
@@ -108,7 +108,7 @@ export default function Home() {
                 },
                 {
                   label: "Mountain Attractions",
-                  title: "Colorado&apos;s Peaks, Without the Stress",
+                  title: "Colorado\u2019s Peaks, Without the Stress",
                   description:
                     "Vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats, scenic tours — sit back and let us navigate.",
                   features: ["Ski resort transfers", "Mountain retreat access", "Year-round availability"],

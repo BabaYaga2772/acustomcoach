@@ -79,8 +79,16 @@ export default function FleetPage() {
       <Header />
       <main className="bg-foundation">
         {/* Hero */}
-        <section className="py-24 border-b border-border-subtle">
-          <div className="max-w-4xl mx-auto px-6">
+        <section className="relative py-24 border-b border-border-subtle overflow-hidden">
+          <Image
+            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1920&q=80"
+            alt="Luxury black car on open road"
+            fill
+            priority
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-foundation/80" />
+          <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
               Our Fleet
             </p>
@@ -157,7 +165,7 @@ export default function FleetPage() {
             </p>
             <p className="text-cream-muted text-lg leading-relaxed mb-2">
               Whatever your needs, prices for all services will be disclosed in
-              advance and in writing. No hidden fees — ever.
+              advance and in writing. No hidden fees — EVER.
             </p>
           </div>
         </section>
