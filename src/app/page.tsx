@@ -21,8 +21,8 @@ export default function Home() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1749967964927-7a8bfed33df1?auto=format&fit=crop&w=1920&q=80"
-            alt="Black luxury sedan parked at night in front of upscale building"
+            src="https://images.unsplash.com/photo-1546156929-a4c0ac411f47?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver skyline at night with city lights"
             fill
             priority
             className="object-cover"
@@ -84,7 +84,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
-              Whatever the Destination,<br /><span className="block text-right">We&apos;ll Get You There.</span>
+              Whatever the Destination,<br />We&apos;ll Get You There.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
               {[
@@ -198,8 +198,8 @@ export default function Home() {
               </div>
               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
                 <Image
-                  src="https://images.unsplash.com/photo-1624381131975-3ebdf4da0a88?auto=format&fit=crop&w=800&q=80"
-                  alt="Black Lincoln Continental luxury sedan"
+                  src="https://images.unsplash.com/photo-1636664306443-07b671e1bed0?auto=format&fit=crop&w=800&q=80"
+                  alt="Modern black Lincoln sedan"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"

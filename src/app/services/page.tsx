@@ -111,8 +111,8 @@ export default function ServicesPage() {
         {/* Page Header */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver city lights at dusk"
+            src="https://images.unsplash.com/photo-1711828039306-dd0615c53597?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver International Airport exterior with white tent roof"
             fill
             priority
             className="object-cover"

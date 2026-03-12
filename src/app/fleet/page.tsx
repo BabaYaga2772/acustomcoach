@@ -23,8 +23,8 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    image: "https://images.unsplash.com/photo-1717978967762-27e5e1e5ea1b?auto=format&fit=crop&w=800&q=80",
-    alt: "Black Lincoln Continental luxury sedan, recent model",
+    image: "https://images.unsplash.com/photo-1660605231328-3693fef9305a?auto=format&fit=crop&w=800&q=80",
+    alt: "Modern black Lincoln sedan, professional chauffeur vehicle",
   },
   {
     name: "SUVs",
@@ -32,8 +32,8 @@ const vehicles = [
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    image: "https://images.unsplash.com/photo-1670069248043-db9433895793?auto=format&fit=crop&w=800&q=80",
-    alt: "Black full-size luxury SUV",
+    image: "https://images.unsplash.com/photo-1607970461177-efa3ae2ba986?auto=format&fit=crop&w=800&q=80",
+    alt: "Black Ford Expedition full-size SUV",
   },
   {
     name: "Stretch Limousines",
@@ -41,8 +41,8 @@ const vehicles = [
     description:
       "With our fleet of stretch limousines, we can accommodate any and all of your special events. Weddings, proms, anniversaries, nights out — arrive in unforgettable style.",
     features: ["Premium bar setup", "Mood lighting", "Premium sound system", "Privacy partition"],
-    image: "https://images.unsplash.com/photo-1653298034181-03118b1a86d0?auto=format&fit=crop&w=800&q=80",
-    alt: "Black stretch limousine parked at event venue",
+    image: "https://images.unsplash.com/photo-1610641018556-030e920d6999?auto=format&fit=crop&w=800&q=80",
+    alt: "Black stretch limousine exterior at night",
   },
   {
     name: "Passenger Vans",
@@ -50,8 +50,8 @@ const vehicles = [
     description:
       "For larger groups of up to 14 people without luggage and up to 10 with luggage. These vans are perfect for running shuttles, group transfers, and cargo transport.",
     features: ["High capacity", "Luggage accommodation", "Shuttle-ready", "Group-friendly layout"],
-    image: "https://images.unsplash.com/photo-1632953022523-5374474b665a?auto=format&fit=crop&w=800&q=80",
-    alt: "Passenger shuttle van for group transportation",
+    image: "https://images.unsplash.com/photo-1629430163411-e718ffc375a6?auto=format&fit=crop&w=800&q=80",
+    alt: "Ford Transit passenger van, tall roof shuttle configuration",
   },
   {
     name: "Luxury Executive Vans",
@@ -59,8 +59,8 @@ const vehicles = [
     description:
       "For groups of up to 9 people, our luxury executive vans offer comfortable high-back seats and premium amenities. The ideal choice for corporate groups and VIP transfers.",
     features: ["High-back leather seats", "Executive appointments", "USB charging", "Overhead storage"],
-    image: "https://images.unsplash.com/photo-1631730666263-37c41034d5ea?auto=format&fit=crop&w=800&q=80",
-    alt: "Black executive Sprinter-style van, luxury transport",
+    image: "https://images.unsplash.com/photo-1569520884908-682f382556e1?auto=format&fit=crop&w=800&q=80",
+    alt: "Black Mercedes Sprinter luxury executive van",
   },
   {
     name: "Affiliate Vehicles",
@@ -81,8 +81,8 @@ export default function FleetPage() {
         {/* Hero */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=1920&q=80"
-            alt="Luxury black car on open road"
+            src="https://images.unsplash.com/photo-1577578677533-f370bbd3f1e4?auto=format&fit=crop&w=1920&q=80"
+            alt="Fleet of black luxury vehicles lined up"
             fill
             priority
             className="object-cover"
