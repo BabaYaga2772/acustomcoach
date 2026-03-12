@@ -79,14 +79,134 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Services Preview - TODO: Build out */}
+        {/* Services Preview */}
         <section className="bg-foundation py-24">
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
               Whatever the Destination,<br />We&apos;ll Get You There.
             </h2>
-            {/* TODO: Service cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              {[
+                {
+                  label: "Airport Transfers",
+                  title: "Door-to-Door Airport Service",
+                  description:
+                    "Pickup and drop-off at any airport in Colorado — from DIA to private jet terminals. Flight tracking, on-time arrivals, and a professional chauffeur waiting when you land.",
+                  features: ["Denver International Airport (DIA)", "Private jet & FBO terminals", "Flight tracking & delay monitoring"],
+                  image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+                  alt: "Denver International Airport terminal interior with white tent roof",
+                },
+                {
+                  label: "Corporate & Business",
+                  title: "Executive Travel, Elevated",
+                  description:
+                    "Reliable ground transportation for executives, clients, and teams. Punctual, professional service that reflects your brand — from a single sedan to a full fleet.",
+                  features: ["Executive sedan & SUV service", "Multi-vehicle coordination", "Corporate account billing"],
+                  image: "https://images.unsplash.com/photo-1586740070162-41777c99457f?auto=format&fit=crop&w=800&q=80",
+                  alt: "Downtown Denver skyscrapers and business district",
+                },
+                {
+                  label: "Mountain Attractions",
+                  title: "Colorado&apos;s Peaks, Without the Stress",
+                  description:
+                    "Vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats, scenic tours — sit back and let us navigate.",
+                  features: ["Ski resort transfers", "Mountain retreat access", "Year-round availability"],
+                  image: "https://images.unsplash.com/photo-1653688107875-38c6dfe0e59b?auto=format&fit=crop&w=800&q=80",
+                  alt: "Scenic Colorado mountain highway through the Rockies",
+                },
+              ].map((service) => (
+                <a
+                  key={service.label}
+                  href="/services"
+                  className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
+                >
+                  <div className="relative h-44 overflow-hidden">
+                    <Image
+                      src={service.image}
+                      alt={service.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                  </div>
+                  <div className="p-8 pt-4">
+                    <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
+                      {service.label}
+                    </p>
+                    <h3 className="font-display text-2xl font-medium text-white mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+                    <ul className="flex flex-col gap-2">
+                      {service.features.map((feature) => (
+                        <li
+                          key={feature}
+                          className="text-cream-muted text-sm flex items-start gap-2"
+                        >
+                          <span className="text-gold mt-1 text-xs">&#9670;</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </a>
+              ))}
+            </div>
+            <div className="text-center">
+              <a
+                href="/services"
+                className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.12)] transition-all duration-300"
+              >
+                View All Services
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Fleet Highlight */}
+        <section className="bg-surface border-y border-border-subtle py-24">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Fleet</p>
+                <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
+                  The Right Vehicle for Every Occasion.
+                </h2>
+                <p className="text-cream-muted text-[15px] leading-relaxed mb-4">
+                  From luxury sedans to stretch limousines and executive vans, our
+                  diverse fleet is maintained to the highest standards. Through national
+                  affiliates, we accommodate groups from 2 to 55 passengers.
+                </p>
+                <ul className="flex flex-col gap-2 mb-8">
+                  {["Luxury Sedans & SUVs", "Stretch Limousines", "Passenger & Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
+                    <li key={item} className="text-cream-muted text-sm flex items-center gap-2">
+                      <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="/fleet"
+                  className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                >
+                  View Our Fleet
+                </a>
+              </div>
+              <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
+                <Image
+                  src="https://images.unsplash.com/photo-1660605235662-8e86044030ba?auto=format&fit=crop&w=800&q=80"
+                  alt="Black Lincoln sedan parked on city street"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-surface/60 to-transparent" />
+              </div>
+            </div>
           </div>
         </section>
 
