@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 
 const vehicles = [
   {
-    name: "Luxury Sedans",
-    passengers: "Up to 3",
+    name: "Lincoln Continental",
+    passengers: "Up to 3 passengers · 3 bags",
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
@@ -27,8 +27,8 @@ const vehicles = [
     alt: "Luxury black sedan in elegant setting",
   },
   {
-    name: "SUVs",
-    passengers: "Up to 6",
+    name: "Ford Expedition",
+    passengers: "Up to 6 passengers · 6 bags",
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
@@ -36,8 +36,8 @@ const vehicles = [
     alt: "Sleek black SUV in urban street setting",
   },
   {
-    name: "Stretch Limousines",
-    passengers: "Up to 10",
+    name: "Stretch Lincoln Limousines",
+    passengers: "Up to 10 passengers · Limited luggage",
     description:
       "With our fleet of stretch limousines, we can accommodate any and all of your special events. Weddings, proms, anniversaries, nights out — arrive in unforgettable style.",
     features: ["Premium bar setup", "Mood lighting", "Premium sound system", "Privacy partition"],
@@ -45,8 +45,8 @@ const vehicles = [
     alt: "Stretch limousine exterior",
   },
   {
-    name: "Passenger Vans",
-    passengers: "Up to 14",
+    name: "Ford Transit Passenger Vans",
+    passengers: "Up to 14 passengers (10 with luggage)",
     description:
       "For larger groups of up to 14 people without luggage and up to 10 with luggage. These vans are perfect for running shuttles, group transfers, and cargo transport.",
     features: ["High capacity", "Luggage accommodation", "Shuttle-ready", "Group-friendly layout"],
@@ -54,8 +54,8 @@ const vehicles = [
     alt: "Ford Transit passenger van",
   },
   {
-    name: "Luxury Executive Vans",
-    passengers: "Up to 9",
+    name: "Executive Sprinter Vans",
+    passengers: "Up to 9 passengers · 9 bags",
     description:
       "For groups of up to 9 people, our luxury executive vans offer comfortable high-back seats and premium amenities. The ideal choice for corporate groups and VIP transfers.",
     features: ["High-back leather seats", "Executive appointments", "USB charging", "Overhead storage"],
@@ -64,7 +64,7 @@ const vehicles = [
   },
   {
     name: "Affiliate Vehicles",
-    passengers: "26–55",
+    passengers: "26–55 passengers",
     description:
       "Through our national affiliate network, we can accommodate larger groups of 26 to 55 passengers with mini-coaches and full-size motor coaches. Perfect for conventions, corporate events, and group tours.",
     features: ["Mini-coaches available", "Full motor coaches", "National network", "Event coordination"],
@@ -130,7 +130,7 @@ export default function FleetPage() {
                       {vehicle.name}
                     </h2>
                     <p className="text-gold text-xs tracking-[0.15em] uppercase mb-4">
-                      {vehicle.passengers} passengers
+                      {vehicle.passengers}
                     </p>
 
                     {/* Description */}

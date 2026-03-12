@@ -160,9 +160,14 @@ export default function ReservationsPage() {
 
                 {/* Quick Contact */}
                 <div className="bg-surface border border-border-subtle rounded-xl p-6 shadow-[var(--shadow-card)]">
-                  <h3 className="font-display text-lg font-medium text-white mb-3">
-                    Prefer to call?
-                  </h3>
+                  <div className="flex items-center justify-between mb-3">
+                    <h3 className="font-display text-lg font-medium text-white">
+                      Prefer to Call?
+                    </h3>
+                    <span className="text-[10px] tracking-[0.1em] uppercase text-gold border border-border-gold rounded-full px-2.5 py-0.5 bg-gold-muted">
+                      Live Voice
+                    </span>
+                  </div>
                   <p className="text-cream-muted text-sm leading-relaxed mb-4">
                     We answer live, every time — no auto-attendant.
                   </p>
