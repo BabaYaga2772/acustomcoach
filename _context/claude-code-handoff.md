@@ -1,6 +1,6 @@
 # A Custom Coach — Complete Project Handoff Document
 
-> **Generated:** March 17, 2026
+> **Generated:** March 17, 2026 (updated end-of-session after Round 1 feedback)
 > **Author:** Claude Code (Opus 4.6) for Bobby Long / Speed of Now Productions
 > **Purpose:** Full project state transfer. Written for an AI that has never seen this project before.
 > **Usage:** Feed this document to claude.ai to bootstrap the Speed of Now automation pipeline.
@@ -33,6 +33,15 @@
 
 **Repository:** `github.com/BabaYaga2772/acustomcoach`
 
+### Branch State (Critical)
+
+| Branch | Purpose | State |
+|--------|---------|-------|
+| `main` | Production (live site) | Stable — Phase 1 build. PR #3 merged round 1 changes prematurely, PR #4 reverted them. Live site is pre-feedback. |
+| `claude/repo-assessment-lzcl6` | Dev/preview | Contains all 16 round 1 client feedback changes. NOT merged to main. Vercel preview URL available for client review. |
+
+**Important for future merges:** Because main has a revert commit (PR #4), re-merging the dev branch requires either (a) reverting the revert on main first, or (b) cherry-picking commits. A straight merge will no-op.
+
 ---
 
 ## 2. Complete File Inventory
@@ -56,16 +65,16 @@
 | `src/app/globals.css` | Tailwind v4 theme definition and base styles. Contains the entire design system as CSS custom properties inside a `@theme {}` block: 11 color tokens (foundation, surface, elevated, gold, gold-light, gold-muted, cream, cream-muted, white, border-gold, border-subtle), 5 shadow tokens (card, card-hover, gold-glow, gold-glow-lg, cta-band), and 2 font families (display: Playfair Display, body: DM Sans). Also sets base body styles, smooth scrolling, and gold selection highlight. This is the only CSS file in the project. |
 | `src/app/layout.tsx` | Root layout. Loads Google Fonts (Playfair Display + DM Sans) via `<link>` tags in `<head>` — NOT via `next/font` because the build environment can't fetch at compile time. Contains comprehensive `<Metadata>` export with title template, description, keywords (10 Denver/Boulder/Colorado transportation keywords), OpenGraph, Twitter card, canonical URL, and robots directives. Injects a `LimousineBusService` JSON-LD structured data schema with full business details: name, address (5105 E Missouri Ave, Denver 80246), geo coordinates, phone numbers (local + toll-free), founding date (1988-09-01), founder (John Hafer), opening hours, area served (Denver + Boulder), 6 service types, A+ BBB rating, 3 organizational memberships (NLA, CLA, Denver Metro Convention & Visitors Bureau), and 2 contact points. Renders `{children}` + `<MobileCTABar />` in `<body>`. Multiple TODO comments flag unverified business data. |
 | `src/app/loading.tsx` | Global loading state. Renders a centered gold spinning circle animation with "Loading" text on the foundation background. Used by Next.js App Router during page transitions. |
-| `src/app/page.tsx` | **Homepage.** Four sections: (1) Hero — full-viewport background image (Denver skyline at night from Unsplash), "Denver's Premier Transportation" headline with gold accent, Book Now + Call CTAs. (2) Trust indicators bar — 4 stats in gold Playfair numerals: "37+ Years in Service", "A+ BBB Rating", "24/7 Live Dispatch", "3 Companies Acquired". (3) Services preview — 3 linked cards (Airport Transfers, Corporate & Business, Mountain Attractions) each with Unsplash photo, description, and feature bullets, plus "View All Services" button. (4) Fleet highlight — 2-column layout with fleet summary + sedan photo + "View Our Fleet" CTA. (5) CTA band — "A Live Voice, Every Time You Call" with both phone numbers. |
-| `src/app/about/page.tsx` | **About page.** Six sections: (1) Hero with Colorado mountains Unsplash image and company introduction paragraph. (2) Vision statement — blockquote: "Present a Solution to Every Customer, No Matter the Circumstances." (3) John Hafer bio — 2-column grid with monogram placeholder (JH) and 3-paragraph biography covering founding, acquisitions, and industry leadership. (4) Vertical timeline — 5 milestones: 1988 founding, 1995 DIA board appointment, and 3 acquisitions (Boulder Transportation, Centennial Sedans, Diamond Limousine) with alternating left/right layout on desktop. (5) Industry leadership — 3 positions with gold left-border accent: DIA Ground Transportation Board, Colorado Limousine Association VP, Colorado Convention Bureau Transportation Forum. (6) Affiliations — 3-card grid (NLA, CLA, DMCVB). CTA band at bottom. |
+| `src/app/page.tsx` | **Homepage.** Five sections: (1) Hero — full-viewport background image (DIA tent roof from Unsplash — swapped from Denver skyline in round 1), "Denver's Premier Transportation" headline with gold accent, "Serving Colorado & Wyoming" label, Book Now + Call CTAs. (2) Trust indicators bar — 4 stats in gold Playfair numerals: "37+ Years in Service", "A+ Rating" (BBB removed in round 1), "24/7 Live Dispatch", "3 Companies Acquired". (3) Services preview — 3 linked cards (Airport Transfers, Corporate & Business, Mountain Attractions) each with Unsplash photo, description, and feature bullets, plus "View All Services" button. (4) Fleet highlight — 2-column layout with fleet summary + sedan photo + "View Our Fleet" CTA. (5) CTA band — "A Live Voice, Every Time You Call" with both phone numbers. |
+| `src/app/about/page.tsx` | **About page.** Six sections: (1) Hero with Colorado mountains Unsplash image and company introduction paragraph. "Serving Colorado & Wyoming" (Wyoming added in round 1). (2) Vision statement — blockquote: "Present a Solution to Every Customer, No Matter the Circumstances." (3) John Hafer bio — 2-column grid with monogram placeholder (JH) and 3-paragraph biography covering founding, acquisitions, and industry leadership. (4) Vertical timeline — 5 milestones: 1988 founding, DIA board appointment (genericized to "over 30 years" in round 1), and 3 acquisitions (Boulder Transportation, Centennial Sedans, Diamond Limousine) with alternating left/right layout on desktop. (5) Industry leadership — 3 positions with gold left-border accent: DIA Ground Transportation Board, Colorado Limousine Association VP, Colorado Convention Bureau Transportation Forum. (6) Affiliations — 3-card grid (NLA, CLA, DMCVB). CTA band at bottom. |
 | `src/app/services/page.tsx` | **Services page.** 6 service cards in a 2-column grid, each with Unsplash/Pexels photo, label, title, description, and 4 feature bullets: Airport Transfers, Meet & Greet, Mountain Attractions, Corporate & Business, Weddings, Special Events. Below cards: chauffeur standards section with dress code description and 4 trust stats (24hr Dispatch, 37+ Years, A+ BBB, 0 Hidden Fees). CTA band at bottom. |
-| `src/app/airport/page.tsx` | **Airport page.** Dedicated DIA and Colorado airports page. Sections: (1) DIA hero image. (2) Trust bar — 4 stats: 24/7 Live Dispatch, 100% Flight Tracked, A+ BBB, $0 Hidden Fees. (3) How It Works — 3 numbered step cards (Book, We Track, Meet Chauffeur). (4) DIA Pickup Instructions — detailed 3-step process for Ground Transportation booth on Level 5, plus flight delay auto-adjustment note. (5) Meet & Greet premium service card with 5 features. (6) Rate table — 6-row table with routes (DIA→Downtown, DIA→Boulder, DIA→DTC, DIA→Vail, DIA→COS, Custom) — all currently show "Call for quote" as placeholder awaiting real rates from John. (7) Colorado airports grid — 6 cards: DEN, BJC, APA, COS, EGE, FBO terminals. (8) 24/7 availability callout. CTA band. |
-| `src/app/mountains/page.tsx` | **Mountains page.** Sections: (1) Mountain highway hero. (2) Trust bar — 37+ Years on These Roads, AWD Winter-Ready Fleet, 24/7 Live Dispatch, 55 Max Group Size. (3) 5 resort cards (Vail, Breckenridge, Aspen, Beaver Creek, Keystone) each with drive times from Denver and DIA, base elevation, description, and 4 highlights. Plus an "And Every Mountain In Between" card listing 7 additional resorts. (4) Group transportation — vehicle capacity table (Sedans→3, SUVs→6, Vans→14, Executive→9, Coaches→26-55) with "View Our Fleet" link. (5) Seasonal availability — 4 seasons with service types. CTA band. |
-| `src/app/fleet/page.tsx` | **Fleet page.** 6 vehicle cards in a 3-column responsive grid: Lincoln Continental (3 pax), Ford Expedition SUV (6 pax), Stretch Lincoln Limousines (10 pax), Ford Transit Passenger Vans (14 pax), Executive Sprinter Vans (9 pax), Affiliate Vehicles (26-55 pax). Each card has a Pexels/Unsplash photo, passenger/luggage capacity, description, and 4 feature bullets. Transparent pricing note below: "prices for all services will be disclosed in advance and in writing. No hidden fees — EVER." CTA band. All vehicle photos are stock — real fleet photos needed from client. |
-| `src/app/reservations/page.tsx` | **Reservations page.** Server component wrapper. Sections: (1) Hero with phone numbers (linked). (2) FASTTRAK online booking callout — gold-bordered card with "Book Online" button that currently links to `#` (placeholder — FASTTRAK portal URL needed from client, flagged with TODO). (3) 5-column grid: ReservationForm component (3 cols) + sidebar (2 cols) with 3 cards: confirmation notice ("not complete until you receive confirmation"), DIA pickup instructions (3-step process), and quick contact card with both phone numbers and "Live Voice" badge. (4) Pricing transparency CTA band. |
-| `src/app/reservations/ReservationForm.tsx` | **Reservation form (client component).** "use client" component accepting `vehicleOptions` string array as prop. 10 fields: Full Name*, Email*, Phone*, Passengers* (1-55), Date*, Pickup Time*, Pickup Location* (with placeholder text), Drop-off Location* (with placeholder text), Vehicle Preference (select dropdown with 7 options including "Not sure — help me decide"), Special Requests (textarea). On submit: calls `e.preventDefault()`, sets `submitted` state to `true`, shows confirmation message. **CRITICAL: The form does NOT actually send data anywhere.** The `handleSubmit` function has a TODO comment: "Wire to email service (Formspree, Resend, or FASTTRAK API)". Contains a reusable `InputField` sub-component for consistent form field styling. |
+| `src/app/airport/page.tsx` | **Airport page.** Dedicated DIA and Colorado airports page. Sections: (1) DIA hero image. (2) Trust bar — 4 stats: 24/7 Live Dispatch, 100% Flight Tracked, A+ Rating (BBB removed), $0 Hidden Fees. (3) How It Works — 3 numbered step cards (Book with phone number, We Track your flight, Meet Your Chauffeur at curb — updated in round 1). (4) DIA Pickup Instructions — rewritten in round 1: chauffeur texts/calls on landing, Level 5 Ground Transportation, East or West door, 2nd island from curb. (5) Meet & Greet — rewritten in round 1: greeter at top of escalators after train, name sign, assist to baggage claim, escort to vehicle. (6) Distances table — 5 routes with miles (DIA→Denver ~35mi, Boulder ~50mi, DTC ~30mi, Vail ~120mi, COS ~115mi) + Custom route. Replaced old "Call for quote" rate table in round 1. (7) Colorado airports grid — 6 cards: DEN, BJC, APA, COS, EGE, FBO terminals. (8) 24/7 availability callout. CTA band. |
+| `src/app/mountains/page.tsx` | **Mountains page.** Sections: (1) Mountain highway hero. (2) Trust bar — 37+ Years on These Roads, AWD Winter-Ready Fleet, 24/7 Live Dispatch, 55 Max Group Size. (3) 5 resort cards (Vail ~100mi, Breckenridge ~80mi, Aspen ~200mi, Beaver Creek ~110mi, Keystone ~75mi) each with distances in miles (replaced drive times in round 1), base elevation, description, and 4 highlights. Plus an "And Every Mountain In Between" card listing 7 additional resorts. (4) Group transportation — updated vehicle capacity table (SUVs 6-7 pax, Luxury Executive Vans up to 14 pax, Affiliate Coaches 26-55 pax) with "View Our Fleet" link. (5) Seasonal availability — 4 seasons with service types. CTA band. |
+| `src/app/fleet/page.tsx` | **Fleet page.** 4 vehicle cards (restructured from 6 in round 1) in a responsive grid: Luxury Sedans (up to 3 pax, 3 bags), Luxury SUVs (6-7 pax, 6 bags), Luxury Executive Vans (high-top walk-in, up to 14 pax), Affiliate Vehicles (26-55 pax via national network). Removed: Stretch Limousines, old Passenger Vans, Executive Sprinter Vans. Each card has a Pexels/Unsplash photo with `// PHOTO: Bobby to verify` comments, passenger/luggage capacity, description, and 4 feature bullets. Transparent pricing note below. CTA band. All vehicle photos are stock — real fleet photos needed from client. |
+| `src/app/reservations/page.tsx` | **Reservations page.** Server component wrapper. Sections: (1) Hero with phone numbers (linked). (2) FASTTRAK online booking callout — gold-bordered card with "Book Online" button that currently links to `#` (placeholder — FASTTRAK portal URL needed from client, flagged with TODO). (3) 5-column grid: ReservationForm component (3 cols) + sidebar (2 cols) with 3 cards: confirmation notice ("not complete until you receive confirmation"), DIA pickup instructions (updated in round 1 to match airport page — Level 5, East/West door, 2nd island), and quick contact card with both phone numbers and "Live Voice" badge. (4) Pricing transparency CTA band. |
+| `src/app/reservations/ReservationForm.tsx` | **Reservation form (client component).** "use client" component accepting `vehicleOptions` string array as prop. 9 fields (Special Requests removed in round 1): Full Name*, Email*, Phone*, Passengers* (1-55), Date*, Pickup Time*, Pickup Location* (with placeholder text), Drop-off Location* (with placeholder text), Vehicle Preference (select dropdown with 7 options including "Not sure — help me decide"). On submit: calls `e.preventDefault()`, sets `submitted` state to `true`, shows confirmation message. **CRITICAL: The form does NOT actually send data anywhere.** The `handleSubmit` function has a TODO comment: "Wire to email service (Formspree, Resend, or FASTTRAK API)". Contains a reusable `InputField` sub-component for consistent form field styling. |
 | `src/app/contact/page.tsx` | **Contact page.** 2-column layout: Left column has contact info (phone with "Live Voice — Every Call" badge, toll-free, email, location "Denver, Colorado", hours Mon-Sat 6AM-11PM / Sun 9AM-10PM, fax). Right column renders the `InquiryForm` component. Hero image: Denver skyline at golden hour from Unsplash. Address and hours have TODO comments — unverified with client. |
-| `src/app/sitemap.ts` | Dynamic sitemap generator. Returns `MetadataRoute.Sitemap` array with 6 routes: / (priority 1.0, weekly), /services (0.9, monthly), /fleet (0.8, monthly), /about (0.7, monthly), /reservations (0.9, monthly), /contact (0.8, monthly). **Note:** Missing /airport and /mountains routes — these should be added. Base URL hardcoded to `https://www.acustomcoach.com` with TODO to update when domain is confirmed. |
+| `src/app/sitemap.ts` | Dynamic sitemap generator. Returns `MetadataRoute.Sitemap` array with 8 routes: / (priority 1.0, weekly), /services (0.9, monthly), /airport (0.9, monthly), /mountains (0.8, monthly), /fleet (0.8, monthly), /about (0.7, monthly), /reservations (0.9, monthly), /contact (0.8, monthly). /airport and /mountains added in round 1. Base URL hardcoded to `https://www.acustomcoach.com` with TODO to update when domain is confirmed. |
 | `src/app/robots.ts` | Dynamic robots.txt generator. Allows all user agents on all paths. Points sitemap to `https://www.acustomcoach.com/sitemap.xml`. Same domain TODO as sitemap.ts. |
 
 ### Source Code — `src/components/`
@@ -85,6 +94,7 @@
 | `_context/client-answers.md` | **Client Q&A tracker.** Status: questionnaire sent via Bobby's mom (the go-between), waiting on responses from John Hafer. Tracks 10 categories of unconfirmed information: domain ownership (CRITICAL), contact info (phones, address, hours — all UNCONFIRMED but used on site), email setup (UNKNOWN), fleet details (UNCONFIRMED), FASTTRAK status (active but portal URL unknown), staff, photos (likely need a shoot), Google Business Profile (UNKNOWN), and services (all ASSUMED ACTIVE). |
 | `_context/fasttrak-notes.md` | **FASTTRAK Cloud booking system research.** Documents what we know: cloud-hosted on Azure, products (InVision web/mobile, Ultimate desktop), features (booking, dispatch, billing, driver apps, flight tracking, QuickBooks/Stripe integration), pricing (up to $229/mo), login portal (invision.ifasttrak.com). Integration strategy: path of least resistance is linking to FASTTRAK's existing customer portal. Decision tree: if portal URL exists → link to it; if embeddable → embed on reservations page; if neither → inquiry form that emails office (current state). |
 | `_context/service-scope-pricing.md` | **Full service scope and pricing document.** 5 tiers: Tier 1 Website Rebuild ($1,500 family / $5,500-$11,500 market), Tier 2 Booking System (Options A/B/C from simple form to full platform), Tier 3 Email Infrastructure ($350 family / $900-$2,000 market for Google Workspace), Tier 4 Monthly Maintenance ($75/mo family / $150-$350/mo market), Tier 5 SEO & Marketing ($450 one-time family / $350/mo ongoing family). Recommended "Get John Back Online" package: $2,300 total. Also contains the productization strategy for non-family clients: Starter $3K-$5K, Professional $5K-$8K, Premium $8K-$15K. |
+| `_context/client-feedback-round-1.md` | **Client feedback round 1 decision log.** 16 changes organized by execution order (global → page-specific). Documents rules (don't touch wedding card, don't touch affiliate card, no CSS color changes, all photos BLACK exterior/interior, leave `// PHOTO: Bobby to verify` comments). Each change numbered with implementation details. Status: all implemented on dev branch, awaiting client review. |
 | `_context/claude-code-handoff.md` | **This file.** The document you are currently reading. |
 
 ### Business Planning — `_business/`
@@ -348,18 +358,14 @@ There are **14 TODO comments** across 7 files:
 #### Feature Integration TODOs (4)
 | File | Line | TODO |
 |------|------|------|
-| `src/app/airport/page.tsx` | 247 | `{/* TODO: Get actual rates from John — remove placeholder when real rates arrive */}` — Rate table currently shows "Call for quote" for all 6 routes. |
+| `src/app/airport/page.tsx` | — | Rate table replaced with distances table in round 1. "Call for quote" placeholders removed. Rates may still be needed if client wants pricing displayed. |
 | `src/app/reservations/page.tsx` | 81 | `{/* TODO: Replace # with FASTTRAK portal URL once client provides it */}` — "Book Online" button links to `#`. |
 | `src/app/reservations/ReservationForm.tsx` | 14 | `// TODO: Wire to email service (Formspree, Resend, or FASTTRAK API)` — Form submits to nothing. |
 | `src/components/InquiryForm.tsx` | 20 | `// TODO: Wire to email service (Formspree, Resend, or FASTTRAK)` — Form submits to nothing. |
 
-### Sitemap Gap
+### Sitemap Gap — RESOLVED
 
-`src/app/sitemap.ts` only lists 6 routes but the site has 8. Missing from sitemap:
-- `/airport`
-- `/mountains`
-
-These pages exist, are linked in navigation, and are crawlable — they're just not in the sitemap XML.
+~~`src/app/sitemap.ts` only lists 6 routes but the site has 8.~~ Fixed in round 1 — all 8 routes now in sitemap.
 
 ### Incomplete Features
 
@@ -368,7 +374,7 @@ These pages exist, are linked in navigation, and are crawlable — they're just 
 | **Contact form backend** | Frontend only | InquiryForm.tsx — form renders and validates, but `handleSubmit` just sets a state flag. No data is sent anywhere. Need to wire to Formspree, Resend, SendGrid, or similar. |
 | **Reservation form backend** | Frontend only | ReservationForm.tsx — same issue. Form captures 10 fields but doesn't submit them. |
 | **FASTTRAK integration** | Not started | Need portal URL from John. Current "Book Online" button on /reservations links to `#`. |
-| **Airport rate table** | Placeholder | All 6 routes show "Call for quote". Need actual pricing from John. |
+| **Airport rate table** | Replaced with distances | Round 1 replaced "Call for quote" rate table with a distances-in-miles table. Rates may be added later if client provides pricing. |
 | **Analytics** | Not configured | No GA4 or Plausible tracking code installed. No way to measure traffic. |
 | **Real photography** | Stock photos only | All images are from Unsplash (editorial) and Pexels (fleet). Need real fleet photos, driver/team photos, and possibly a professional photo shoot. |
 | **Domain transfer** | Blocked on client | Site runs on `acustomcoach.vercel.app`. Need John's registrar credentials to point `acustomcoach.com` to Vercel. |
@@ -414,9 +420,18 @@ All tracked in `_context/client-answers.md`. Full list:
 This document captures the complete state of the A Custom Coach project as of March 17, 2026. Every file, every URL, every score, every TODO, and every open question has been documented.
 
 To continue this project, the critical path is:
-1. Get client responses to the questionnaire (domain, phones, address, fleet, FASTTRAK URL)
-2. Wire form backends (Formspree or Resend — ~30 minutes of work)
-3. Add analytics (GA4 or Plausible — ~15 minutes)
-4. Add /airport and /mountains to sitemap.ts (~2 minutes)
+1. **Get client review of round 1 changes** — dev branch `claude/repo-assessment-lzcl6` has a Vercel preview URL. Client compares preview vs live site. Once approved, revert the revert on main and merge.
+2. Get client responses to the questionnaire (domain, phones, address, fleet, FASTTRAK URL)
+3. Wire form backends (Formspree or Resend — ~30 minutes of work)
+4. Add analytics (GA4 or Plausible — ~15 minutes)
 5. Connect custom domain once transfer is complete
 6. Replace stock photos with real fleet photos when available
+
+### Git Operations for Merging Round 1
+When client approves round 1 changes:
+```bash
+git checkout main
+git revert <PR-4-revert-commit-hash>  # Undo the revert
+git push origin main
+```
+Or alternatively, cherry-pick all commits from `7bfc761..fe9d3a8` onto a fresh branch off main.
