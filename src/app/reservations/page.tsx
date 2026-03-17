@@ -18,10 +18,8 @@ export const metadata: Metadata = {
 
 const vehicleOptions = [
   "Luxury Sedan",
-  "SUV",
-  "Stretch Limousine",
-  "Passenger Van (up to 14)",
-  "Luxury Executive Van (up to 9)",
+  "Luxury SUV",
+  "Luxury Executive Van (up to 14)",
   "Motor Coach (26–55 via affiliate)",
   "Not sure — help me decide",
 ];

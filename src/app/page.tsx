@@ -179,12 +179,12 @@ export default function Home() {
                   The Right Vehicle for Every Occasion.
                 </h2>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-4">
-                  From luxury sedans to stretch limousines and executive vans, our
+                  From luxury sedans and SUVs to high-top executive vans, our
                   diverse fleet is maintained to the highest standards. Through national
                   affiliates, we accommodate groups from 2 to 55 passengers.
                 </p>
                 <ul className="flex flex-col gap-2 mb-8">
-                  {["Luxury Sedans & SUVs", "Stretch Limousines", "Passenger & Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
+                  {["Luxury Sedans & SUVs", "Luxury Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
                     <li key={item} className="text-cream-muted text-sm flex items-center gap-2">
                       <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
                       {item}
