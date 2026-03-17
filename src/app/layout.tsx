@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | A Custom Coach",
   },
   description:
-    "Premier limousine and transportation services in Denver and Boulder, Colorado. Airport transfers, corporate travel, mountain destinations, and special events. A+ BBB rated. 24/7 live dispatch. Established 1988.",
+    "Premier limousine and transportation services in Denver and Boulder, Colorado. Airport transfers, corporate travel, mountain destinations, and special events. A+ rated. 24/7 live dispatch. Established 1988.",
   keywords: [
     "Denver limousine service",
     "Boulder transportation",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "A Custom Coach | Denver & Boulder Luxury Transportation",
     description:
-      "37+ years of premier limousine and transportation services in Colorado. A+ BBB rated. 24/7 live dispatch.",
+      "37+ years of premier limousine and transportation services in Colorado. A+ rated. 24/7 live dispatch.",
   },
   alternates: {
     canonical: SITE_URL,
@@ -122,7 +122,7 @@ const localBusinessSchema = {
     ratingCount: "1",
     reviewCount: "1",
   },
-  award: "A+ BBB Rating",
+  award: "A+ Rating",
   memberOf: [
     { "@type": "Organization", name: "National Limousine Association" },
     { "@type": "Organization", name: "Colorado Limousine Association" },

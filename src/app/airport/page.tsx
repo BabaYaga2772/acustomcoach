@@ -91,7 +91,7 @@ export default function AirportPage() {
             {[
               { number: "24/7", label: "Live Dispatch" },
               { number: "100%", label: "Flight Tracked" },
-              { number: "A+", label: "BBB Rating" },
+              { number: "A+", label: "Rated" },
               { number: "$0", label: "Hidden Fees" },
             ].map((stat) => (
               <div key={stat.label}>

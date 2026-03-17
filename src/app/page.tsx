@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A Custom Coach | Denver & Boulder Luxury Transportation Since 1988",
     description:
-      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. A+ BBB rated. Established 1988.",
+      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. A+ rated. Established 1988.",
     url: "/",
   },
   alternates: { canonical: "/" },
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "37+", label: "Years in Service" },
-              { number: "A+", label: "BBB Rating" },
+              { number: "A+", label: "Rated" },
               { number: "24/7", label: "Live Dispatch" },
               { number: "3", label: "Companies Acquired" },
             ].map((stat) => (

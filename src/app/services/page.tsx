@@ -192,7 +192,7 @@ export default function ServicesPage() {
               {[
                 { number: "24hr", label: "Dispatch" },
                 { number: "37+", label: "Years of Service" },
-                { number: "A+", label: "BBB Rating" },
+                { number: "A+", label: "Rated" },
                 { number: "0", label: "Hidden Fees" },
               ].map((stat) => (
                 <div key={stat.label}>
