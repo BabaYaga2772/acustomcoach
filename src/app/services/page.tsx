@@ -28,8 +28,9 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation booth",
     ],
-    image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
-    alt: "Denver International Airport terminal interior with white tent roof",
+    // PHOTO: Bobby to verify — airport services card (brighter DIA photo)
+    image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal with bright natural light through white tent roof",
   },
   {
     label: "Meet & Greet",
