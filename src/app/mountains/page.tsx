@@ -19,8 +19,7 @@ export const metadata: Metadata = {
 const resorts = [
   {
     name: "Vail",
-    driveFromDenver: "~1 hr 45 min",
-    driveFromDIA: "~2 hr 15 min",
+    distanceFromDenver: "~100 miles",
     elevation: "8,150 ft base",
     description:
       "Colorado's flagship ski resort and year-round mountain destination. World-class skiing, Vail Village shopping, and summer hiking draw visitors from around the globe.",
@@ -28,8 +27,7 @@ const resorts = [
   },
   {
     name: "Breckenridge",
-    driveFromDenver: "~1 hr 30 min",
-    driveFromDIA: "~2 hr",
+    distanceFromDenver: "~80 miles",
     elevation: "9,600 ft base",
     description:
       "A historic mining town turned world-class resort. Five peaks of skiing in winter, a vibrant Main Street year-round, and some of the best high-altitude terrain in North America.",
@@ -37,8 +35,7 @@ const resorts = [
   },
   {
     name: "Aspen",
-    driveFromDenver: "~3 hr 30 min",
-    driveFromDIA: "~4 hr",
+    distanceFromDenver: "~200 miles",
     elevation: "7,945 ft base",
     description:
       "The iconic Colorado mountain town — synonymous with luxury, culture, and world-class skiing across four mountains. A destination that needs no introduction.",
@@ -46,8 +43,7 @@ const resorts = [
   },
   {
     name: "Beaver Creek",
-    driveFromDenver: "~2 hr",
-    driveFromDIA: "~2 hr 30 min",
+    distanceFromDenver: "~110 miles",
     elevation: "8,100 ft base",
     description:
       "Vail's exclusive neighbor — known for impeccable grooming, luxury lodging, and a more intimate resort experience. Famous for fresh-baked cookies at the base.",
@@ -55,8 +51,7 @@ const resorts = [
   },
   {
     name: "Keystone",
-    driveFromDenver: "~1 hr 30 min",
-    driveFromDIA: "~2 hr",
+    distanceFromDenver: "~75 miles",
     elevation: "9,280 ft base",
     description:
       "A family-friendly resort with night skiing, three mountains of terrain, and a charming lakeside village. One of the closest major resorts to Denver.",
@@ -139,16 +134,11 @@ export default function MountainsPage() {
                     </span>
                   </div>
 
-                  {/* Drive Times */}
-                  <div className="flex gap-4 mb-4">
+                  {/* Distance */}
+                  <div className="mb-4">
                     <span className="text-cream-muted text-xs">
                       From Denver:{" "}
-                      <span className="text-cream">{resort.driveFromDenver}</span>
-                    </span>
-                    <span className="text-border-gold">|</span>
-                    <span className="text-cream-muted text-xs">
-                      From DIA:{" "}
-                      <span className="text-cream">{resort.driveFromDIA}</span>
+                      <span className="text-cream">{resort.distanceFromDenver}</span>
                     </span>
                   </div>
 
@@ -208,9 +198,8 @@ export default function MountainsPage() {
                 <ul className="flex flex-col gap-3 mb-8">
                   {[
                     { vehicle: "Luxury Sedans", capacity: "Up to 3 passengers" },
-                    { vehicle: "SUVs", capacity: "Up to 6 passengers" },
-                    { vehicle: "Passenger Vans", capacity: "Up to 14 passengers" },
-                    { vehicle: "Executive Vans", capacity: "Up to 9 passengers" },
+                    { vehicle: "Luxury SUVs", capacity: "6–7 passengers" },
+                    { vehicle: "Luxury Executive Vans", capacity: "Up to 14 passengers" },
                     { vehicle: "Motor Coaches", capacity: "26–55 via affiliates" },
                   ].map((item) => (
                     <li

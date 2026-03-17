@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A Custom Coach | Denver & Boulder Luxury Transportation Since 1988",
     description:
-      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. A+ BBB rated. Established 1988.",
+      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. Serving Colorado and Wyoming. A+ rated. Established 1988.",
     url: "/",
   },
   alternates: { canonical: "/" },
@@ -20,9 +20,10 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
+          {/* PHOTO: Bobby to verify — DIA tent roof hero image */}
           <Image
-            src="https://images.unsplash.com/photo-1618456724458-ddf08ea5d2a7?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver skyline at night with city lights"
+            src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver International Airport iconic white tent roof exterior"
             fill
             priority
             className="object-cover"
@@ -31,7 +32,7 @@ export default function Home() {
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988<br className="sm:hidden" />{" "}
-              <span className="hidden sm:inline">· </span>Denver &amp; Boulder, Colorado
+              <span className="hidden sm:inline">· </span>Serving Colorado &amp; Wyoming
             </p>
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
               Denver&apos;s Premier
@@ -64,7 +65,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "37+", label: "Years in Service" },
-              { number: "A+", label: "BBB Rating" },
+              { number: "A+", label: "Rated" },
               { number: "24/7", label: "Live Dispatch" },
               { number: "3", label: "Companies Acquired" },
             ].map((stat) => (
@@ -178,12 +179,12 @@ export default function Home() {
                   The Right Vehicle for Every Occasion.
                 </h2>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-4">
-                  From luxury sedans to stretch limousines and executive vans, our
+                  From luxury sedans and SUVs to high-top executive vans, our
                   diverse fleet is maintained to the highest standards. Through national
                   affiliates, we accommodate groups from 2 to 55 passengers.
                 </p>
                 <ul className="flex flex-col gap-2 mb-8">
-                  {["Luxury Sedans & SUVs", "Stretch Limousines", "Passenger & Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
+                  {["Luxury Sedans & SUVs", "Luxury Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
                     <li key={item} className="text-cream-muted text-sm flex items-center gap-2">
                       <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
                       {item}

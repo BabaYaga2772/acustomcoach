@@ -18,10 +18,8 @@ export const metadata: Metadata = {
 
 const vehicleOptions = [
   "Luxury Sedan",
-  "SUV",
-  "Stretch Limousine",
-  "Passenger Van (up to 14)",
-  "Luxury Executive Van (up to 9)",
+  "Luxury SUV",
+  "Luxury Executive Van (up to 14)",
   "Motor Coach (26–55 via affiliate)",
   "Not sure — help me decide",
 ];
@@ -133,28 +131,19 @@ export default function ReservationsPage() {
                   <h3 className="font-display text-lg font-medium text-white mb-3">
                     DIA Pickup Instructions
                   </h3>
-                  <ol className="text-cream-muted text-sm leading-relaxed space-y-3 list-decimal list-inside">
-                    <li>
-                      After collecting your luggage, proceed to the{" "}
-                      <span className="text-cream">
-                        Ground Transportation Booth
-                      </span>{" "}
-                      on Level 5 of the terminal.
-                    </li>
-                    <li>
-                      Inform the attendant that your transportation company is{" "}
-                      <span className="text-cream">
-                        &ldquo;A Custom Coach.&rdquo;
-                      </span>
-                    </li>
-                    <li>
-                      Within minutes, your chauffeur will arrive and assist you
-                      with your luggage.
-                    </li>
-                  </ol>
+                  <p className="text-cream-muted text-sm leading-relaxed">
+                    Your chauffeur will either text or call you. Head to{" "}
+                    <span className="text-cream font-medium">
+                      Ground Transportation on Level 5
+                    </span>{" "}
+                    — the same level as baggage claim. Go to the door number on
+                    the East side or West side as directed, and meet your
+                    chauffeur on the 2nd island.
+                  </p>
                   <p className="text-cream-muted text-xs mt-4 leading-relaxed">
-                    Our 24-hour dispatch monitors all flight arrivals. If your
-                    flight is delayed, we adjust automatically — no need to call.
+                    <span className="text-gold font-medium">Flight delayed?</span>{" "}
+                    No need to call. Our chauffeurs monitor all arrivals in real
+                    time and will adjust your pickup automatically.
                   </p>
                 </div>
 
