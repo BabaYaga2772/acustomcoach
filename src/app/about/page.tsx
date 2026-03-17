@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About A Custom Coach — 37+ Years of Colorado Luxury Transportation",
     description:
-      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ rated. NLA and CLA member.",
+      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ BBB rated. NLA and CLA member.",
     url: "/about",
   },
   alternates: { canonical: "/about" },
@@ -56,12 +56,12 @@ const industryPositions = [
   {
     role: "Ground Transportation Board Member",
     org: "Denver International Airport",
-    detail: "Over 30 years — held positions of Chairman and Vice Chairman",
+    detail: "Since 1995 — held positions of Chairman and Vice Chairman",
   },
   {
     role: "Vice President & Member",
     org: "Colorado Limousine Association",
-    detail: "Over 30 years of leadership",
+    detail: "Over 20 years of leadership",
   },
   {
     role: "Transportation Forum Member",
@@ -160,8 +160,8 @@ export default function AboutPage() {
                   <p>
                     His commitment to the industry extends well beyond his own fleet. John has
                     served on the Ground Transportation Board at Denver International Airport
-                    for over 30 years, holding positions of both Chairman and Vice Chairman. He served
-                    as Vice President of the Colorado Limousine Association for over 30 years
+                    since 1995, holding positions of both Chairman and Vice Chairman. He served
+                    as Vice President of the Colorado Limousine Association for over 20 years
                     and participated in the Transportation Forum at the Colorado Convention
                     Bureau for over 12 years.
                   </p>
