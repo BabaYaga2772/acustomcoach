@@ -116,41 +116,31 @@ export default function AirportPage() {
               Simple, Professional, On Time.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "01",
-                  title: "Book Your Transfer",
-                  description:
-                    "Call us or submit a reservation online. We'll confirm your vehicle, pricing, and pickup details in writing — no surprises.",
-                },
-                {
-                  step: "02",
-                  title: "We Track Your Flight",
-                  description:
-                    "Our 24-hour dispatch monitors your flight in real time. If your arrival changes, we adjust automatically — no need to call.",
-                },
-                {
-                  step: "03",
-                  title: "Meet Your Chauffeur",
-                  description:
-                    "At DIA, head to the Ground Transportation booth on Level 5. Tell the attendant \"A Custom Coach\" — your chauffeur arrives within minutes.",
-                },
-              ].map((item) => (
-                <div
-                  key={item.step}
-                  className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]"
-                >
-                  <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">
-                    {item.step}
-                  </div>
-                  <h3 className="font-display text-xl font-medium text-white mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-cream-muted text-[15px] leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              ))}
+              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
+                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">01</div>
+                <h3 className="font-display text-xl font-medium text-white mb-3">Book Your Transfer</h3>
+                <p className="text-cream-muted text-[15px] leading-relaxed">
+                  Call us at{" "}
+                  <a href="tel:3037591376" className="text-gold hover:text-gold-light transition-colors">
+                    (303) 759-1376
+                  </a>{" "}
+                  or submit a reservation online. We&apos;ll confirm your vehicle, pricing, and pickup details in writing — no surprises.
+                </p>
+              </div>
+              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
+                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">02</div>
+                <h3 className="font-display text-xl font-medium text-white mb-3">We Track Your Flight</h3>
+                <p className="text-cream-muted text-[15px] leading-relaxed">
+                  Our dispatch and chauffeur monitor your flight in real time.
+                </p>
+              </div>
+              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
+                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">03</div>
+                <h3 className="font-display text-xl font-medium text-white mb-3">Meet Your Chauffeur</h3>
+                <p className="text-cream-muted text-[15px] leading-relaxed">
+                  Head to Ground Transportation on Level 5. Your chauffeur will meet you at the curb at the directed door number.
+                </p>
+              </div>
             </div>
           </div>
         </section>
