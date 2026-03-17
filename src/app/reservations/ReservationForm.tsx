@@ -104,6 +104,23 @@ export function ReservationForm({
         </select>
       </div>
 
+      {/* Special Requests */}
+      <div>
+        <label
+          htmlFor="requests"
+          className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+        >
+          Special Requests
+        </label>
+        <textarea
+          id="requests"
+          name="requests"
+          rows={3}
+          className="w-full bg-elevated border border-border-subtle rounded-lg px-4 py-3 text-cream text-[15px] leading-relaxed focus:outline-none focus:border-border-gold focus:shadow-[0_0_0_3px_rgba(212,175,55,0.1)] transition-all resize-none"
+          placeholder="Child seats, meet & greet, flight number, luggage count, etc."
+        />
+      </div>
+
       {/* Submit */}
       <button
         type="submit"

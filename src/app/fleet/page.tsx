@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Our Fleet",
   description:
-    "Luxury sedans, SUVs, and executive vans. Through national affiliates, we accommodate groups of 2 to 55 passengers.",
+    "Sedans, SUVs, stretch limousines, passenger vans, and luxury executive vans. Through national affiliates, we accommodate groups of 26 to 55 passengers.",
   openGraph: {
-    title: "Our Fleet — Luxury Sedans, SUVs & Executive Vans",
+    title: "Our Fleet — Luxury Sedans, Limousines & Executive Vans",
     description:
-      "From luxury sedans to SUVs and executive vans. Through national affiliates, we accommodate groups of 2 to 55 passengers. No hidden fees.",
+      "From luxury sedans to stretch limousines and executive vans. Through national affiliates, we accommodate groups of 2 to 55 passengers. No hidden fees.",
     url: "/fleet",
   },
   alternates: { canonical: "/fleet" },
@@ -18,34 +18,49 @@ export const metadata: Metadata = {
 
 const vehicles = [
   {
-    name: "Luxury Sedans",
+    name: "Lincoln Continental",
     passengers: "Up to 3 passengers · 3 bags",
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    // PHOTO: Bobby to verify — black luxury sedan (2024-2026 Ford Explorer or similar)
-    image: "https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black luxury sedan on road",
+    image: "https://images.pexels.com/photos/29566862/pexels-photo-29566862.jpeg?auto=compress&cs=tinysrgb&w=800",
+    alt: "Luxury black sedan in elegant setting",
   },
   {
-    name: "Luxury SUVs",
-    passengers: "6–7 passengers · 6 bags",
+    name: "Ford Expedition",
+    passengers: "Up to 6 passengers · 6 bags",
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    // PHOTO: Bobby to verify — black 2024-2026 Ford Expedition
     image: "https://images.pexels.com/photos/34561429/pexels-photo-34561429.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black luxury SUV in urban setting",
+    alt: "Sleek black SUV in urban street setting",
   },
   {
-    name: "Luxury Executive Vans",
-    passengers: "High Top walk-in · Up to 14 passengers + luggage",
+    name: "Stretch Lincoln Limousines",
+    passengers: "Up to 10 passengers · Limited luggage",
     description:
-      "Our high-top executive vans offer walk-in convenience and spacious seating for larger groups. Perfect for shuttles, group transfers, corporate events, and airport transportation.",
-    features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
-    // PHOTO: Bobby to verify — black Ford Transit high-top van
+      "With our fleet of stretch limousines, we can accommodate any and all of your special events. Weddings, proms, anniversaries, nights out — arrive in unforgettable style.",
+    features: ["Premium bar setup", "Mood lighting", "Premium sound system", "Privacy partition"],
+    image: "https://images.pexels.com/photos/3821424/pexels-photo-3821424.jpeg?auto=compress&cs=tinysrgb&w=800",
+    alt: "Stretch limousine exterior",
+  },
+  {
+    name: "Ford Transit Passenger Vans",
+    passengers: "Up to 14 passengers (10 with luggage)",
+    description:
+      "For larger groups of up to 14 people without luggage and up to 10 with luggage. These vans are perfect for running shuttles, group transfers, and cargo transport.",
+    features: ["High capacity", "Luggage accommodation", "Shuttle-ready", "Group-friendly layout"],
     image: "https://images.pexels.com/photos/1187677/pexels-photo-1187677.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black Ford Transit high-top executive van",
+    alt: "Ford Transit passenger van",
+  },
+  {
+    name: "Executive Sprinter Vans",
+    passengers: "Up to 9 passengers · 9 bags",
+    description:
+      "For groups of up to 9 people, our luxury executive vans offer comfortable high-back seats and premium amenities. The ideal choice for corporate groups and VIP transfers.",
+    features: ["High-back leather seats", "Executive appointments", "USB charging", "Overhead storage"],
+    image: "https://images.pexels.com/photos/17455633/pexels-photo-17455633.jpeg?auto=compress&cs=tinysrgb&w=800",
+    alt: "Black Mercedes V-Class executive van",
   },
   {
     name: "Affiliate Vehicles",
@@ -53,7 +68,6 @@ const vehicles = [
     description:
       "Through our national affiliate network, we can accommodate larger groups of 26 to 55 passengers with mini-coaches and full-size motor coaches. Perfect for conventions, corporate events, and group tours.",
     features: ["Mini-coaches available", "Full motor coaches", "National network", "Event coordination"],
-    // PHOTO: Bobby to verify — motor coach
     image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=800&q=80",
     alt: "Full-size touring motor coach at dusk",
   },
@@ -82,7 +96,7 @@ export default function FleetPage() {
               The Right Vehicle for Every Occasion.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
-              From luxury sedans and SUVs to high-top executive vans, our
+              From luxury sedans to stretch limousines and executive vans, our
               diverse fleet is maintained to the highest standards. Through
               national affiliates, we can accommodate groups of any size.
             </p>
@@ -92,7 +106,7 @@ export default function FleetPage() {
         {/* Vehicle Cards */}
         <section className="py-24">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {vehicles.map((vehicle) => (
                 <article
                   key={vehicle.name}

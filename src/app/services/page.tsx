@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado and Wyoming.",
+    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado.",
   openGraph: {
     title: "Denver Limousine & Transportation Services — A Custom Coach",
     description:
-      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado and Wyoming.",
+      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado.",
     url: "/services",
   },
   alternates: { canonical: "/services" },
@@ -28,9 +28,8 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation booth",
     ],
-    // PHOTO: Bobby to verify — airport services card (brighter DIA photo)
-    image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
-    alt: "Denver International Airport terminal with bright natural light through white tent roof",
+    image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal interior with white tent roof",
   },
   {
     label: "Meet & Greet",
@@ -127,7 +126,7 @@ export default function ServicesPage() {
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               With a combined experience of over 60 years, we have the personnel and
               equipment to provide a wide range of professional transportation services
-              throughout Colorado and Wyoming.
+              throughout the state of Colorado.
             </p>
           </div>
         </section>
@@ -193,7 +192,7 @@ export default function ServicesPage() {
               {[
                 { number: "24hr", label: "Dispatch" },
                 { number: "37+", label: "Years of Service" },
-                { number: "A+", label: "Rated" },
+                { number: "A+", label: "BBB Rating" },
                 { number: "0", label: "Hidden Fees" },
               ].map((stat) => (
                 <div key={stat.label}>

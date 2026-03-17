@@ -14,8 +14,8 @@ export function Footer() {
               Luxury Transportation Since 1988
             </div>
             <p className="text-cream-muted text-sm leading-relaxed">
-              Serving Colorado &amp; Wyoming with premier luxury transportation since 1988.
-              A+ rated. National Limousine Association member.
+              Denver &amp; Boulder&apos;s premier luxury transportation provider since 1988.
+              A+ BBB rated. National Limousine Association member.
             </p>
           </div>
 
