@@ -3,7 +3,7 @@
 **Date collected:** 2026-03-17
 **Source:** Bobby (via project chat with Claude)
 **Branch:** `claude/repo-assessment-lzcl6`
-**Status:** ✅ All 16 changes implemented on dev branch. Main reverted (PR #4). Awaiting client review via Vercel preview URL.
+**Status:** ✅ All 16 changes + vehicle dropdown fix implemented on dev branch. Main reverted (PR #4). Awaiting client review via Vercel preview URL.
 
 ---
 
@@ -63,3 +63,7 @@
 
 15. **Update DIA Pickup Instructions sidebar** — Match airport page text from #8
 16. **Remove Special Requests from form** — Remove entire textarea section
+
+### Post-Round Fix
+
+17. **Update InquiryForm vehicle dropdown** — Old options ("Stretch Limousine", "SUV", "Passenger Van (up to 14)", "Luxury Executive Van (up to 9)") didn't match updated fleet. New options: Luxury Sedan, Luxury SUV, Luxury Executive Van (up to 14), Motor Coach (26–55 via affiliate), Not sure — help me decide.

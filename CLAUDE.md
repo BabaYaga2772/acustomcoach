@@ -55,7 +55,7 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
-| Client feedback round 1 | ✅ ON DEV BRANCH | 16 changes across 7 pages. Branch `claude/repo-assessment-lzcl6` (preview). Main reverted via PR #4. See `_context/client-feedback-round-1.md` |
+| Client feedback round 1 | ✅ ON DEV BRANCH | 16 changes + InquiryForm vehicle dropdown fix across 7 pages. Branch `claude/repo-assessment-lzcl6` (preview). Main reverted via PR #4. See `_context/client-feedback-round-1.md` |
 
 ---
 
