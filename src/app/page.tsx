@@ -20,9 +20,10 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
+          {/* PHOTO: Bobby to verify — DIA tent roof hero image */}
           <Image
-            src="https://images.unsplash.com/photo-1618456724458-ddf08ea5d2a7?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver skyline at night with city lights"
+            src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver International Airport iconic white tent roof exterior"
             fill
             priority
             className="object-cover"
