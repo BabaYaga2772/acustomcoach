@@ -293,3 +293,54 @@ All tracked in detail in `_context/client-answers.md`. Summary:
 - **Don't pad timelines.** Bobby moves fast. Three full-stack apps in three days fast.
 - **Git discipline.** Feature branches, meaningful commit messages.
 - **Update this file** when major milestones complete.
+
+---
+
+## Change Management Workflow
+
+### Snapshot
+- `v1.0-site-complete` tag = Phase 1 site before any client revisions (commit `b420d96`)
+- To view: `git checkout v1.0-site-complete`
+- To fully reset: `git reset --hard v1.0-site-complete`
+
+### How to Handle Client Change Requests
+
+1. **Collect changes first — don't implement immediately.** When the user has changes to implement, they should provide the full list in **plan mode** (or paste output from a project chat). Claude organizes them into the correct order before any code is touched.
+
+2. **Organize changes: global first, then page-specific.**
+   - Global changes (CSS tokens, fonts, header, footer, layout, shared components) affect every page and must be done first.
+   - Page-specific changes come after, building on the stable global foundation.
+   - This prevents page work from breaking when global styles change later.
+
+3. **One branch per feedback round.** Example: `fix/client-feedback-round-1`
+   - Branch off `main` (the live site).
+   - All changes for that round go on this one branch.
+
+4. **One commit per change. No bundling.**
+   - Each logical change gets its own commit with a detailed message explaining what changed and why.
+   - This allows surgical rollback of any individual change without affecting others.
+   - Bad: "update homepage and fix fonts and change footer" (one commit)
+   - Good: three separate commits, each doing one thing.
+
+5. **Push after each commit.** The Vercel preview URL auto-updates.
+   - Live site (`main`): `acustomcoach.vercel.app` — always stable, never touched during changes.
+   - Preview (branch): auto-generated Vercel URL — shows the latest state of all changes.
+   - Client compares live vs preview side by side.
+
+6. **Rolling back a specific change:**
+   - `git revert <commit-hash>` — undoes just that one commit, keeps everything else.
+   - Preview URL updates automatically after the revert is pushed.
+
+7. **When client approves all changes:**
+   - Merge the branch to `main` (preferably via GitHub pull request for a clean record).
+   - Vercel auto-deploys the updated live site within ~60 seconds.
+
+8. **If client rejects everything:** Delete the branch. `main` was never touched.
+
+### Rollback Reference
+
+| Want to... | Do this |
+|------------|---------|
+| Undo one specific change | `git revert <commit>` on the branch |
+| Reject all changes in a round | Delete the branch. `main` untouched. |
+| Reset live site to Phase 1 snapshot | `git reset --hard v1.0-site-complete` (destructive) or `git revert` the merge commit (safer) |
