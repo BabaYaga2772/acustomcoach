@@ -205,19 +205,17 @@ export default function AirportPage() {
         </section>
 
         {/* Rate Table Placeholder */}
-        {/* TODO: Get actual rates from John — remove placeholder when real rates arrive */}
+        {/* Common Distances */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-5xl mx-auto px-6">
             <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
-              Pricing
+              Distances
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
-              Transparent Rates, No Surprises.
+              Common Routes from DIA.
             </h2>
             <p className="text-cream-muted text-[15px] leading-relaxed mb-10 max-w-2xl">
-              All prices are disclosed in advance and in writing before your
-              reservation is confirmed. Rates vary by vehicle type, distance, and
-              time of day.
+              Distances are approximate. Call for a personalized quote.
             </p>
             <div className="bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
               <table className="w-full text-left">
@@ -226,41 +224,43 @@ export default function AirportPage() {
                     <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
                       Route
                     </th>
-                    <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
-                      Vehicle
-                    </th>
                     <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4 text-right">
-                      Starting At
+                      Approximate Distance
                     </th>
                   </tr>
                 </thead>
                 <tbody className="text-cream-muted text-sm">
                   {[
-                    { route: "DIA → Downtown Denver", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Boulder", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Denver Tech Center", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Vail / Beaver Creek", vehicle: "SUV", price: "Call for quote" },
-                    { route: "DIA → Colorado Springs", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "Custom Route", vehicle: "Any vehicle", price: "Call for quote" },
+                    { route: "DIA → Downtown Denver", distance: "~35 miles" },
+                    { route: "DIA → Boulder", distance: "~50 miles" },
+                    { route: "DIA → Denver Tech Center", distance: "~30 miles" },
+                    { route: "DIA → Vail", distance: "~120 miles" },
+                    { route: "DIA → Colorado Springs", distance: "~115 miles" },
                   ].map((row) => (
                     <tr
                       key={row.route}
                       className="border-b border-border-subtle last:border-b-0 hover:bg-elevated/50 transition-colors"
                     >
                       <td className="px-6 py-4 text-cream">{row.route}</td>
-                      <td className="px-6 py-4">{row.vehicle}</td>
                       <td className="px-6 py-4 text-right text-gold font-medium">
-                        {row.price}
+                        {row.distance}
                       </td>
                     </tr>
                   ))}
+                  <tr className="hover:bg-elevated/50 transition-colors">
+                    <td className="px-6 py-4 text-cream">Custom Route</td>
+                    <td className="px-6 py-4 text-right">
+                      <a
+                        href="tel:3037591376"
+                        className="text-gold font-medium hover:text-gold-light transition-colors"
+                      >
+                        Call (303) 759-1376
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
-            <p className="text-cream-muted text-xs mt-4">
-              Gratuity not included. Rates subject to change. Contact us for a
-              firm quote based on your specific itinerary.
-            </p>
           </div>
         </section>
 
