@@ -208,9 +208,8 @@ export default function MountainsPage() {
                 <ul className="flex flex-col gap-3 mb-8">
                   {[
                     { vehicle: "Luxury Sedans", capacity: "Up to 3 passengers" },
-                    { vehicle: "SUVs", capacity: "Up to 6 passengers" },
-                    { vehicle: "Passenger Vans", capacity: "Up to 14 passengers" },
-                    { vehicle: "Executive Vans", capacity: "Up to 9 passengers" },
+                    { vehicle: "Luxury SUVs", capacity: "6–7 passengers" },
+                    { vehicle: "Luxury Executive Vans", capacity: "Up to 14 passengers" },
                     { vehicle: "Motor Coaches", capacity: "26–55 via affiliates" },
                   ].map((item) => (
                     <li
