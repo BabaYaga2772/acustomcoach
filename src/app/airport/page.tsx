@@ -156,44 +156,17 @@ export default function AirportPage() {
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
                   DIA Pickup Instructions
                 </h2>
-                <ol className="text-cream-muted text-[15px] leading-relaxed space-y-6 list-none">
-                  <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
-                      1.
-                    </span>
-                    <span>
-                      After collecting your luggage, proceed to the{" "}
-                      <span className="text-cream font-medium">
-                        Ground Transportation Booth
-                      </span>{" "}
-                      on Level 5 of the terminal.
-                    </span>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
-                      2.
-                    </span>
-                    <span>
-                      Inform the attendant that your transportation company is{" "}
-                      <span className="text-cream font-medium">
-                        &ldquo;A Custom Coach.&rdquo;
-                      </span>
-                    </span>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
-                      3.
-                    </span>
-                    <span>
-                      Within minutes, your chauffeur will arrive at the booth
-                      and assist you with your luggage.
-                    </span>
-                  </li>
-                </ol>
-                <p className="text-cream-muted text-sm mt-8 leading-relaxed bg-surface border border-border-subtle rounded-lg p-4">
+                <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                  Your chauffeur will either text or call you. Head to{" "}
+                  <span className="text-cream font-medium">Ground Transportation on Level 5</span>{" "}
+                  — the same level as baggage claim. Go to the door number on the
+                  East side or West side as directed, and meet your chauffeur on
+                  the 2nd island.
+                </p>
+                <p className="text-cream-muted text-sm mt-4 leading-relaxed bg-surface border border-border-subtle rounded-lg p-4">
                   <span className="text-gold font-medium">Flight delayed?</span>{" "}
-                  No need to call. Our dispatch monitors all arrivals in real
-                  time and adjusts your pickup automatically.
+                  No need to call. Our chauffeurs monitor all arrivals in real
+                  time and will adjust your pickup automatically.
                 </p>
               </div>
 
