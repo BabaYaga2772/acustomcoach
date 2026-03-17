@@ -179,18 +179,16 @@ export default function AirportPage() {
                   Meet &amp; Greet Service
                 </h3>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
-                  For VIPs, executives, or first-time visitors — our greeter
-                  meets you at your gate or baggage claim with a custom name
-                  sign, assists with luggage, and escorts you directly to your
-                  waiting vehicle.
+                  Our greeter will meet you at the top of the escalators after
+                  exiting the train with a name sign, assist you to baggage
+                  claim if needed, and escort you to the vehicle.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Personalized name signage",
-                    "Gate or baggage claim meeting",
-                    "Luggage assistance to vehicle",
+                    "Personalized name sign at escalators",
+                    "Baggage claim assistance",
+                    "Escort directly to vehicle",
                     "Group coordination for large parties",
-                    "Custom signage available",
                   ].map((feature) => (
                     <li
                       key={feature}
