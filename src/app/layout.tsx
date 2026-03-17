@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | A Custom Coach",
   },
   description:
-    "Premier limousine and transportation services in Denver and Boulder, Colorado. Airport transfers, corporate travel, mountain destinations, and special events. A+ rated. 24/7 live dispatch. Established 1988.",
+    "Premier limousine and transportation services in Denver and Boulder, Colorado and Wyoming. Airport transfers, corporate travel, mountain destinations, and special events. A+ rated. 24/7 live dispatch. Established 1988.",
   keywords: [
     "Denver limousine service",
     "Boulder transportation",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
     siteName: "A Custom Coach",
     title: "A Custom Coach | Denver & Boulder Luxury Transportation Since 1988",
     description:
-      "Premier limousine and chauffeur services in Denver and Boulder, Colorado. Airport transfers, corporate travel, mountain destinations, and special events. Established 1988.",
+      "Premier limousine and chauffeur services in Denver and Boulder, Colorado and Wyoming. Airport transfers, corporate travel, mountain destinations, and special events. Established 1988.",
     url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
     title: "A Custom Coach | Denver & Boulder Luxury Transportation",
     description:
-      "37+ years of premier limousine and transportation services in Colorado. A+ rated. 24/7 live dispatch.",
+      "37+ years of premier limousine and transportation services in Colorado and Wyoming. A+ rated. 24/7 live dispatch.",
   },
   alternates: {
     canonical: SITE_URL,
@@ -104,6 +104,7 @@ const localBusinessSchema = {
   areaServed: [
     { "@type": "City", name: "Denver", containedInPlace: { "@type": "State", name: "Colorado" } },
     { "@type": "City", name: "Boulder", containedInPlace: { "@type": "State", name: "Colorado" } },
+    { "@type": "State", name: "Wyoming" },
   ],
   serviceType: [
     "Airport Transfer",

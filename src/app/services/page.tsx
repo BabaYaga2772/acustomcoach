@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado.",
+    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado and Wyoming.",
   openGraph: {
     title: "Denver Limousine & Transportation Services — A Custom Coach",
     description:
-      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado.",
+      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado and Wyoming.",
     url: "/services",
   },
   alternates: { canonical: "/services" },
@@ -126,7 +126,7 @@ export default function ServicesPage() {
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               With a combined experience of over 60 years, we have the personnel and
               equipment to provide a wide range of professional transportation services
-              throughout the state of Colorado.
+              throughout Colorado and Wyoming.
             </p>
           </div>
         </section>
