@@ -79,6 +79,19 @@ export function ReservationForm({
         placeholder="e.g. The Brown Palace Hotel, Vail Resort"
       />
 
+      {/* Flight Information */}
+      <div>
+        <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3 mt-2">
+          Flight Information
+        </p>
+        <InputField
+          label="Origin City"
+          name="originCity"
+          type="text"
+          placeholder="e.g. Los Angeles, New York, Chicago"
+        />
+      </div>
+
       {/* Vehicle Type */}
       <div>
         <label
