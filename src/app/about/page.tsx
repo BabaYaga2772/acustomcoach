@@ -71,9 +71,18 @@ const industryPositions = [
 ];
 
 const affiliations = [
-  "National Limousine Association",
-  "Colorado Limousine Association",
-  "Denver Metro Convention & Visitors Bureau",
+  {
+    name: "National Limousine Association",
+    logo: "https://www.limo.org/images/NLA-Logo.png",
+  },
+  {
+    name: "Colorado Limousine Association",
+    logo: "https://www.coloradolimousine.org/wp-content/uploads/2020/01/CLA-Logo.png",
+  },
+  {
+    name: "Denver Metro Convention & Visitors Bureau",
+    logo: "https://www.denver.org/imager/files_resource_image/Denver-The-Mile-High-City-logo-white_b1a3a27a-2caa-4872-b506-39a06f2d0e2a_f5f24bc0-1c3c-459c-a2d1-c6f0a1d6c3bf.png",
+  },
 ];
 
 export default function AboutPage() {
@@ -269,13 +278,20 @@ export default function AboutPage() {
               Proud Members of
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {affiliations.map((name) => (
+              {affiliations.map((aff) => (
                 <div
-                  key={name}
-                  className="bg-surface border border-border-subtle rounded-xl p-6 flex items-center justify-center text-center min-h-[100px] shadow-[var(--shadow-card)]"
+                  key={aff.name}
+                  className="bg-surface border border-border-subtle rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[120px] gap-3 shadow-[var(--shadow-card)]"
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={aff.logo}
+                    alt={`${aff.name} logo`}
+                    className="h-10 w-auto object-contain brightness-0 invert opacity-70"
+                    loading="lazy"
+                  />
                   <p className="text-cream text-sm font-medium tracking-wide">
-                    {name}
+                    {aff.name}
                   </p>
                 </div>
               ))}
