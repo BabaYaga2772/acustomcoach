@@ -26,7 +26,7 @@ const services = [
       "Denver International Airport (DIA)",
       "Private jet & FBO terminals",
       "Flight tracking & delay monitoring",
-      "Meet at Ground Transportation booth",
+      "Meet at Ground Transportation",
     ],
     // PHOTO: Bobby to verify — airport services card (brighter DIA photo)
     image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
