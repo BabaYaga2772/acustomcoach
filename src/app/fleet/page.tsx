@@ -33,9 +33,9 @@ const vehicles = [
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    // PHOTO: Bobby to verify — black 2024-2026 Ford Expedition
-    image: "https://images.pexels.com/photos/34561429/pexels-photo-34561429.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black luxury SUV in urban setting",
+    // PHOTO: 2024-2026 Ford Expedition
+    image: "https://images.unsplash.com/photo-1606611013016-969c19ba27bb?auto=format&fit=crop&w=800&q=80",
+    alt: "Black 2024 Ford Expedition SUV on road",
   },
   {
     name: "Luxury Executive Vans",
