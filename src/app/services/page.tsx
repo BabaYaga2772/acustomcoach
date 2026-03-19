@@ -76,17 +76,17 @@ const services = [
   },
   {
     label: "Weddings",
-    title: "Your Day, Your Way There",
+    title: "Mountain Weddings, Elevated",
     description:
-      "From the bridal party's arrival to the grand exit, we handle every transportation detail so you can focus on the celebration. Stretch limousines, luxury sedans, and passenger vans for the full wedding party.",
+      "Colorado's mountain venues are breathtaking — getting there shouldn't be stressful. We handle every transportation detail for your wedding party, from Denver to the ceremony and everywhere in between.",
     features: [
       "Bridal party transportation",
       "Ceremony-to-reception transfers",
       "Guest shuttle service",
-      "Stretch limousine availability",
+      "Mountain venue specialists",
     ],
-    image: "https://images.unsplash.com/photo-1731515672817-0491d19c9f19?auto=format&fit=crop&w=800&q=80",
-    alt: "Outdoor wedding ceremony with guests and mountain backdrop",
+    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+    alt: "Mountain wedding venue with ceremony arch and Colorado Rockies backdrop",
   },
   {
     label: "Special Events",
