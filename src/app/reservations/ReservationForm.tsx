@@ -92,6 +92,26 @@ export function ReservationForm({
         />
       </div>
 
+      {/* Luggage Count */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <InputField
+          label="Carry-on Bags"
+          name="carryOnBags"
+          type="number"
+          min={0}
+          max={20}
+          placeholder="0"
+        />
+        <InputField
+          label="Checked Bags"
+          name="checkedBags"
+          type="number"
+          min={0}
+          max={20}
+          placeholder="0"
+        />
+      </div>
+
       {/* Vehicle Type */}
       <div>
         <label
