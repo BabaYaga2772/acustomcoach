@@ -67,8 +67,8 @@ export default function FleetPage() {
         {/* Hero */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Mercedes-Benz vehicles parked in a row"
+            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1920&q=80"
+            alt="Dark luxury Ford SUV fleet vehicles on road"
             fill
             priority
             className="object-cover"
