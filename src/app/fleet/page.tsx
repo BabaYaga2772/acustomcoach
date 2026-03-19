@@ -43,9 +43,9 @@ const vehicles = [
     description:
       "Our high-top executive vans offer walk-in convenience and spacious seating for larger groups. Perfect for shuttles, group transfers, corporate events, and airport transportation.",
     features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
-    // PHOTO: Bobby to verify — black Ford Transit high-top van
-    image: "https://images.pexels.com/photos/1187677/pexels-photo-1187677.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black Ford Transit high-top executive van",
+    // PHOTO: Ford Transit High Top van (grey/black)
+    image: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80",
+    alt: "Dark Ford Transit High Top executive van",
   },
   {
     name: "Affiliate Vehicles",
