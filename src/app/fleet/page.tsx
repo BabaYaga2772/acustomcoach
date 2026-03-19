@@ -23,9 +23,9 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    // PHOTO: Bobby to verify — black luxury sedan (2024-2026 Ford Explorer or similar)
-    image: "https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=800",
-    alt: "Black luxury sedan on road",
+    // PHOTO: 2024-2026 Ford Explorer sedan
+    image: "https://images.unsplash.com/photo-1609521263047-f8f205293f24?auto=format&fit=crop&w=800&q=80",
+    alt: "Black 2024 Ford Explorer sedan in urban setting",
   },
   {
     name: "Luxury SUVs",
