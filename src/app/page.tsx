@@ -131,7 +131,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                    <div className={`absolute inset-0 bg-gradient-to-t from-surface ${service.label === "Airport Transfers" ? "via-surface/10" : "via-surface/30"} to-transparent`} />
                   </div>
                   <div className="p-8 pt-4">
                     <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
