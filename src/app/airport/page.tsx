@@ -138,7 +138,7 @@ export default function AirportPage() {
                 <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">03</div>
                 <h3 className="font-display text-xl font-medium text-white mb-3">Meet Your Chauffeur</h3>
                 <p className="text-cream-muted text-[15px] leading-relaxed">
-                  Head to Ground Transportation on Level 5. Your chauffeur will meet you at the curb at the directed door number.
+                  Head to Ground Transportation on Level 5. Your chauffeur will direct you to which door number and to the 2nd island.
                 </p>
               </div>
             </div>
