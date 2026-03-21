@@ -75,7 +75,7 @@ export default function FleetPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Our Fleet
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -115,7 +115,7 @@ export default function FleetPage() {
                     <h2 className="font-display text-2xl font-medium text-white mb-2">
                       {vehicle.name}
                     </h2>
-                    <p className="text-gold text-xs tracking-[0.15em] uppercase mb-4">
+                    <p className="text-pink text-xs tracking-[0.15em] uppercase mb-4">
                       {vehicle.passengers}
                     </p>
 
@@ -146,7 +146,7 @@ export default function FleetPage() {
         {/* Pricing Note */}
         <section className="border-t border-border-subtle py-16">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Transparent Pricing
             </p>
             <p className="text-cream-muted text-lg leading-relaxed mb-2">
@@ -169,7 +169,7 @@ export default function FleetPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>

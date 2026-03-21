@@ -20,17 +20,16 @@ export default function Home() {
       <main>
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
-          {/* PHOTO: Bobby to verify — DIA tent roof hero image */}
           <Image
-            src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver International Airport iconic white tent roof exterior"
+            src="https://images.unsplash.com/photo-1618456724458-ddf08ea5d2a7?auto=format&fit=crop&w=1920&q=80"
+            alt="Denver skyline at night with city lights"
             fill
             priority
             className="object-cover"
           />
           <div className="absolute inset-0 bg-foundation/60" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
+            <p className="text-pink text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988<br className="sm:hidden" />{" "}
               <span className="hidden sm:inline">· </span>Serving Colorado &amp; Wyoming
             </p>
@@ -46,7 +45,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
@@ -70,7 +69,7 @@ export default function Home() {
               { number: "3", label: "Companies Acquired" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-4xl font-semibold text-gold leading-none mb-2">
+                <div className="font-display text-4xl font-semibold text-pink leading-none mb-2">
                   {stat.number}
                 </div>
                 <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -84,7 +83,7 @@ export default function Home() {
         {/* Services Preview */}
         <section className="bg-foundation py-24">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Services</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12 inline-block">
               Whatever the Destination,<br /><span className="block text-right">We&apos;ll Get You There.</span>
             </h2>
@@ -134,7 +133,7 @@ export default function Home() {
                     <div className={`absolute inset-0 bg-gradient-to-t from-surface ${service.label === "Airport Transfers" ? "via-surface/10" : "via-surface/30"} to-transparent`} />
                   </div>
                   <div className="p-8 pt-4">
-                    <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
+                    <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
                       {service.label}
                     </p>
                     <h3 className="font-display text-2xl font-medium text-white mb-4">
@@ -174,7 +173,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Fleet</p>
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Fleet</p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
                   The Right Vehicle for Every Occasion.
                 </h2>
@@ -193,7 +192,7 @@ export default function Home() {
                 </ul>
                 <a
                   href="/fleet"
-                  className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                  className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
                 >
                   View Our Fleet
                 </a>

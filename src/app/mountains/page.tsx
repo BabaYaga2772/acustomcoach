@@ -19,7 +19,8 @@ export const metadata: Metadata = {
 const resorts = [
   {
     name: "Vail",
-    distanceFromDenver: "~100 miles",
+    driveFromDenver: "~1 hr 45 min",
+    driveFromDIA: "~2 hr 15 min",
     elevation: "8,150 ft base",
     description:
       "Colorado's flagship ski resort and year-round mountain destination. World-class skiing, Vail Village shopping, and summer hiking draw visitors from around the globe.",
@@ -27,7 +28,8 @@ const resorts = [
   },
   {
     name: "Breckenridge",
-    distanceFromDenver: "~80 miles",
+    driveFromDenver: "~1 hr 30 min",
+    driveFromDIA: "~2 hr",
     elevation: "9,600 ft base",
     description:
       "A historic mining town turned world-class resort. Five peaks of skiing in winter, a vibrant Main Street year-round, and some of the best high-altitude terrain in North America.",
@@ -35,7 +37,8 @@ const resorts = [
   },
   {
     name: "Aspen",
-    distanceFromDenver: "~200 miles",
+    driveFromDenver: "~3 hr 30 min",
+    driveFromDIA: "~4 hr",
     elevation: "7,945 ft base",
     description:
       "The iconic Colorado mountain town — synonymous with luxury, culture, and world-class skiing across four mountains. A destination that needs no introduction.",
@@ -43,7 +46,8 @@ const resorts = [
   },
   {
     name: "Beaver Creek",
-    distanceFromDenver: "~110 miles",
+    driveFromDenver: "~2 hr",
+    driveFromDIA: "~2 hr 30 min",
     elevation: "8,100 ft base",
     description:
       "Vail's exclusive neighbor — known for impeccable grooming, luxury lodging, and a more intimate resort experience. Famous for fresh-baked cookies at the base.",
@@ -51,7 +55,8 @@ const resorts = [
   },
   {
     name: "Keystone",
-    distanceFromDenver: "~75 miles",
+    driveFromDenver: "~1 hr 30 min",
+    driveFromDIA: "~2 hr",
     elevation: "9,280 ft base",
     description:
       "A family-friendly resort with night skiing, three mountains of terrain, and a charming lakeside village. One of the closest major resorts to Denver.",
@@ -75,7 +80,7 @@ export default function MountainsPage() {
           />
           <div className="absolute inset-0 bg-foundation/75" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Mountain Transportation
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -99,7 +104,7 @@ export default function MountainsPage() {
               { number: "55", label: "Max Group Size" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-4xl font-semibold text-gold leading-none mb-2">
+                <div className="font-display text-4xl font-semibold text-pink leading-none mb-2">
                   {stat.number}
                 </div>
                 <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -113,7 +118,7 @@ export default function MountainsPage() {
         {/* Resort Cards */}
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Destinations
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
@@ -134,11 +139,16 @@ export default function MountainsPage() {
                     </span>
                   </div>
 
-                  {/* Distance */}
-                  <div className="mb-4">
+                  {/* Drive Times */}
+                  <div className="flex gap-4 mb-4">
                     <span className="text-cream-muted text-xs">
                       From Denver:{" "}
-                      <span className="text-cream">{resort.distanceFromDenver}</span>
+                      <span className="text-cream">{resort.driveFromDenver}</span>
+                    </span>
+                    <span className="text-border-gold">|</span>
+                    <span className="text-cream-muted text-xs">
+                      From DIA:{" "}
+                      <span className="text-cream">{resort.driveFromDIA}</span>
                     </span>
                   </div>
 
@@ -184,7 +194,7 @@ export default function MountainsPage() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Group Travel
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -198,8 +208,9 @@ export default function MountainsPage() {
                 <ul className="flex flex-col gap-3 mb-8">
                   {[
                     { vehicle: "Luxury Sedans", capacity: "Up to 3 passengers" },
-                    { vehicle: "Luxury SUVs", capacity: "6–7 passengers" },
-                    { vehicle: "Luxury Executive Vans", capacity: "Up to 14 passengers" },
+                    { vehicle: "SUVs", capacity: "Up to 6 passengers" },
+                    { vehicle: "Passenger Vans", capacity: "Up to 14 passengers" },
+                    { vehicle: "Executive Vans", capacity: "Up to 9 passengers" },
                     { vehicle: "Motor Coaches", capacity: "26–55 via affiliates" },
                   ].map((item) => (
                     <li
@@ -223,7 +234,7 @@ export default function MountainsPage() {
 
               {/* Seasonal Callout */}
               <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-3">
                   Year-Round Service
                 </p>
                 <h3 className="font-display text-2xl font-medium text-white mb-4">
@@ -270,7 +281,7 @@ export default function MountainsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>

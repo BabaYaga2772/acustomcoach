@@ -98,13 +98,17 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | foundation | `#0F0F0F` | `bg-foundation` | Page background |
 | surface | `#1A1917` | `bg-surface` | Card/section backgrounds |
 | elevated | `#242220` | `bg-elevated` | Elevated surfaces, hover states |
-| gold | `#D4AF37` | `text-gold`, `bg-gold` | Primary accent, CTAs, labels |
+| gold | `#D4AF37` | `text-gold`, `bg-gold` | Warmth accent: borders, nav hovers, decorative elements |
 | gold-light | `#E8C95A` | `text-gold-light` | Hover states, highlights |
 | gold-muted | `rgba(212,175,55,0.22)` | `bg-gold-muted` | Subtle backgrounds |
+| pink | `#FF1493` | `text-pink`, `bg-pink` | Action accent: CTAs, labels, trust numbers |
+| pink-light | `#FF69B4` | `text-pink-light` | Hover variant for pink elements |
+| pink-muted | `rgba(255,20,147,0.22)` | `bg-pink-muted` | Subtle pink backgrounds (badges) |
 | cream | `#F5F0E8` | `text-cream` | Primary text |
 | cream-muted | `#CCC5B9` | `text-cream-muted` | Secondary text |
 | white | `#FAFAF8` | `text-white` | Headlines, emphasis |
 | border-gold | `rgba(212,175,55,0.35)` | `border-border-gold` | Accent borders |
+| border-pink | `rgba(255,20,147,0.35)` | `border-border-pink` | Pink accent borders (badges, mobile CTA) |
 | border-subtle | `rgba(255,255,255,0.08)` | `border-border-subtle` | Structural dividers |
 
 ### Typography
@@ -130,12 +134,20 @@ Loaded via Google Fonts `<link>` tags in `layout.tsx` (not `next/font` — build
 
 ### Component Patterns
 
-- **Primary button:** Gold gradient (`from-gold to-[#B8962E]`), dark text, uppercase, 0.08em tracking, 6px radius
-- **Secondary button:** Transparent, gold border, cream text, uppercase
-- **Text link button:** Gold text, underline on hover
+- **Primary button:** Pink gradient (`from-pink to-[#CC1076]`), dark text, uppercase, 0.08em tracking, 6px radius, pink glow hover
+- **Secondary button:** Transparent, gold border, cream text, uppercase (stays gold)
+- **Text link button:** Gold text, underline on hover (stays gold)
 - **Cards:** `surface` or `elevated` bg, `border-subtle` or `border-gold` border, 10-12px radius
-- **Section labels:** 10px gold, uppercase, 0.2em letter-spacing, above headings
-- **Trust indicators:** Large Playfair numbers in gold, small uppercase DM Sans labels
+- **Section labels:** 10px pink, uppercase, 0.2em letter-spacing, above headings
+- **Trust indicators:** Large Playfair numbers in pink, small uppercase DM Sans labels
+- **Form labels:** Pink uppercase text, pink-light required asterisks
+
+### Accent Strategy: Gold vs. Pink
+
+John chose bright neon pink business card stock in the 1980s so his cards would stand out in a stack of white ones. The same instinct applies here:
+
+- **Pink = action/attention** — CTA buttons, section labels, trust numbers, form labels, mobile CTA bar, badges. The things you want eyes on.
+- **Gold = warmth/luxury** — borders, nav hovers, dividers, decorative bullets, timeline lines, phone links, structural elements. The foundation that says "premium."
 
 ### Design Principles
 

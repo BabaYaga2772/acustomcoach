@@ -28,9 +28,8 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation",
     ],
-    // PHOTO: Bobby to verify — airport services card (brighter DIA photo)
-    image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
-    alt: "Denver International Airport terminal with bright natural light through white tent roof",
+    image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal interior with white tent roof",
   },
   {
     label: "Meet & Greet",
@@ -121,14 +120,14 @@ export default function ServicesPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Services</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Services</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Every Ride, Handled with Care.
             </h1>
             <p className="text-cream-muted text-lg leading-relaxed max-w-2xl">
               With a combined experience of over 60 years, we have the personnel and
               equipment to provide a wide range of professional transportation services
-              throughout Colorado and Wyoming.
+              throughout the state of Colorado.
             </p>
           </div>
         </section>
@@ -152,7 +151,7 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
                 </div>
                 <div className="p-8 pt-4">
-                  <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
+                  <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
                     {service.label}
                   </p>
                   <h2 className="font-display text-2xl font-medium text-white mb-4">
@@ -181,7 +180,7 @@ export default function ServicesPage() {
         {/* Chauffeur Standards */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Standard</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Standard</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
               Professional to the Last Detail.
             </h2>
@@ -198,7 +197,7 @@ export default function ServicesPage() {
                 { number: "0", label: "Hidden Fees" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="font-display text-3xl font-semibold text-gold leading-none mb-2">
+                  <div className="font-display text-3xl font-semibold text-pink leading-none mb-2">
                     {stat.number}
                   </div>
                   <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -222,7 +221,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>

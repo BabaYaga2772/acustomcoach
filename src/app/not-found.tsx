@@ -9,7 +9,7 @@ export default function NotFound() {
       <main className="bg-foundation">
         <section className="min-h-[60vh] flex items-center justify-center py-24">
           <div className="max-w-xl mx-auto px-6 text-center">
-            <div className="font-display text-8xl font-semibold text-gold leading-none mb-6">
+            <div className="font-display text-8xl font-semibold text-pink leading-none mb-6">
               404
             </div>
             <h1 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
@@ -22,7 +22,7 @@ export default function NotFound() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Back to Home
               </Link>

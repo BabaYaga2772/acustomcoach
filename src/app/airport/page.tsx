@@ -71,7 +71,7 @@ export default function AirportPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Airport Transfers
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -95,7 +95,7 @@ export default function AirportPage() {
               { number: "$0", label: "Hidden Fees" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-4xl font-semibold text-gold leading-none mb-2">
+                <div className="font-display text-4xl font-semibold text-pink leading-none mb-2">
                   {stat.number}
                 </div>
                 <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -109,38 +109,48 @@ export default function AirportPage() {
         {/* How It Works */}
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               How It Works
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
               Simple, Professional, On Time.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
-                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">01</div>
-                <h3 className="font-display text-xl font-medium text-white mb-3">Book Your Transfer</h3>
-                <p className="text-cream-muted text-[15px] leading-relaxed">
-                  Call us at{" "}
-                  <a href="tel:3037591376" className="text-gold hover:text-gold-light transition-colors">
-                    (303) 759-1376
-                  </a>{" "}
-                  or submit a reservation online. We&apos;ll confirm your vehicle, pricing, and pickup details in writing — no surprises.
-                </p>
-              </div>
-              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
-                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">02</div>
-                <h3 className="font-display text-xl font-medium text-white mb-3">We Track Your Flight</h3>
-                <p className="text-cream-muted text-[15px] leading-relaxed">
-                  Our dispatch and chauffeur monitor your flight in real time.
-                </p>
-              </div>
-              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
-                <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">03</div>
-                <h3 className="font-display text-xl font-medium text-white mb-3">Meet Your Chauffeur</h3>
-                <p className="text-cream-muted text-[15px] leading-relaxed">
-                  Head to Ground Transportation on Level 5. Your chauffeur will direct you to which door number and to the 2nd island.
-                </p>
-              </div>
+              {[
+                {
+                  step: "01",
+                  title: "Book Your Transfer",
+                  description:
+                    "Call us at (303) 759-1376 or submit a reservation online. We\u2019ll confirm your vehicle, pricing, and pickup details in writing \u2014 no surprises.",
+                },
+                {
+                  step: "02",
+                  title: "We Track Your Flight",
+                  description:
+                    "Our dispatch and chauffeur monitor your flight in real time. If your arrival changes, we adjust automatically.",
+                },
+                {
+                  step: "03",
+                  title: "Meet Your Chauffeur",
+                  description:
+                    "Head to Ground Transportation on Level 5. Your chauffeur will direct you to which door number and to the 2nd island.",
+                },
+              ].map((item) => (
+                <div
+                  key={item.step}
+                  className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]"
+                >
+                  <div className="font-display text-5xl font-semibold text-pink/20 leading-none mb-4">
+                    {item.step}
+                  </div>
+                  <h3 className="font-display text-xl font-medium text-white mb-3">
+                    {item.title}
+                  </h3>
+                  <p className="text-cream-muted text-[15px] leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -150,45 +160,74 @@ export default function AirportPage() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Denver International Airport
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
                   DIA Pickup Instructions
                 </h2>
-                <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
-                  Your chauffeur will either text or call you. Head to{" "}
-                  <span className="text-cream font-medium">Ground Transportation on Level 5</span>{" "}
-                  — the same level as baggage claim. Go to the door number on the
-                  East side or West side as directed, and meet your chauffeur on
-                  the 2nd island.
-                </p>
-                <p className="text-cream-muted text-sm mt-4 leading-relaxed bg-surface border border-border-subtle rounded-lg p-4">
+                <ol className="text-cream-muted text-[15px] leading-relaxed space-y-6 list-none">
+                  <li className="flex gap-4">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
+                      1.
+                    </span>
+                    <span>
+                      After collecting your luggage, proceed to the{" "}
+                      <span className="text-cream font-medium">
+                        Ground Transportation
+                      </span>{" "}
+                      on Level 5 of the terminal.
+                    </span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
+                      2.
+                    </span>
+                    <span>
+                      Inform the attendant that your transportation company is{" "}
+                      <span className="text-cream font-medium">
+                        &ldquo;A Custom Coach.&rdquo;
+                      </span>
+                    </span>
+                  </li>
+                  <li className="flex gap-4">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
+                      3.
+                    </span>
+                    <span>
+                      Your chauffeur will direct you to which door number
+                      and to the 2nd island, and assist you with your luggage.
+                    </span>
+                  </li>
+                </ol>
+                <p className="text-cream-muted text-sm mt-8 leading-relaxed bg-surface border border-border-subtle rounded-lg p-4">
                   <span className="text-gold font-medium">Flight delayed?</span>{" "}
-                  No need to call. Our chauffeurs monitor all arrivals in real
-                  time and will adjust your pickup automatically.
+                  No need to call. Our dispatch monitors all arrivals in real
+                  time and adjusts your pickup automatically.
                 </p>
               </div>
 
               {/* Meet & Greet */}
               <div className="bg-surface border border-border-gold rounded-xl p-8 shadow-[var(--shadow-card-hover)]">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-3">
                   Premium Option
                 </p>
                 <h3 className="font-display text-2xl font-medium text-white mb-4">
                   Meet &amp; Greet Service
                 </h3>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
-                  Our greeter will meet you at the top of the escalators after
-                  exiting the train with a name sign, assist you to baggage
-                  claim if needed, and escort you to the vehicle.
+                  For VIPs, executives, or first-time visitors — our greeter
+                  meets you at your gate or baggage claim with a custom name
+                  sign, assists with luggage, and escorts you directly to your
+                  waiting vehicle.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "Personalized name sign at escalators",
-                    "Baggage claim assistance",
-                    "Escort directly to vehicle",
+                    "Personalized name signage",
+                    "Gate or baggage claim meeting",
+                    "Luggage assistance to vehicle",
                     "Group coordination for large parties",
+                    "Custom signage available",
                   ].map((feature) => (
                     <li
                       key={feature}
@@ -281,17 +320,19 @@ export default function AirportPage() {
         </section>
 
         {/* Rate Table Placeholder */}
-        {/* Common Distances */}
+        {/* TODO: Get actual rates from John — remove placeholder when real rates arrive */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
-              Distances
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
+              Pricing
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
-              Common Routes from DIA.
+              Transparent Rates, No Surprises.
             </h2>
             <p className="text-cream-muted text-[15px] leading-relaxed mb-10 max-w-2xl">
-              Distances are approximate. Call for a personalized quote.
+              All prices are disclosed in advance and in writing before your
+              reservation is confirmed. Rates vary by vehicle type, distance, and
+              time of day.
             </p>
             <div className="bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
               <table className="w-full text-left">
@@ -300,50 +341,48 @@ export default function AirportPage() {
                     <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
                       Route
                     </th>
+                    <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
+                      Vehicle
+                    </th>
                     <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4 text-right">
-                      Approximate Distance
+                      Starting At
                     </th>
                   </tr>
                 </thead>
                 <tbody className="text-cream-muted text-sm">
                   {[
-                    { route: "DIA → Downtown Denver", distance: "~35 miles" },
-                    { route: "DIA → Boulder", distance: "~50 miles" },
-                    { route: "DIA → Denver Tech Center", distance: "~30 miles" },
-                    { route: "DIA → Vail", distance: "~120 miles" },
-                    { route: "DIA → Colorado Springs", distance: "~115 miles" },
+                    { route: "DIA → Downtown Denver", vehicle: "Sedan", price: "Call for quote" },
+                    { route: "DIA → Boulder", vehicle: "Sedan", price: "Call for quote" },
+                    { route: "DIA → Denver Tech Center", vehicle: "Sedan", price: "Call for quote" },
+                    { route: "DIA → Vail / Beaver Creek", vehicle: "SUV", price: "Call for quote" },
+                    { route: "DIA → Colorado Springs", vehicle: "Sedan", price: "Call for quote" },
+                    { route: "Custom Route", vehicle: "Any vehicle", price: "Call for quote" },
                   ].map((row) => (
                     <tr
                       key={row.route}
                       className="border-b border-border-subtle last:border-b-0 hover:bg-elevated/50 transition-colors"
                     >
                       <td className="px-6 py-4 text-cream">{row.route}</td>
+                      <td className="px-6 py-4">{row.vehicle}</td>
                       <td className="px-6 py-4 text-right text-gold font-medium">
-                        {row.distance}
+                        {row.price}
                       </td>
                     </tr>
                   ))}
-                  <tr className="hover:bg-elevated/50 transition-colors">
-                    <td className="px-6 py-4 text-cream">Custom Route</td>
-                    <td className="px-6 py-4 text-right">
-                      <a
-                        href="tel:3037591376"
-                        className="text-gold font-medium hover:text-gold-light transition-colors"
-                      >
-                        Call (303) 759-1376
-                      </a>
-                    </td>
-                  </tr>
                 </tbody>
               </table>
             </div>
+            <p className="text-cream-muted text-xs mt-4">
+              Gratuity not included. Rates subject to change. Contact us for a
+              firm quote based on your specific itinerary.
+            </p>
           </div>
         </section>
 
         {/* Colorado Airports */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Airports We Serve
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
@@ -380,7 +419,7 @@ export default function AirportPage() {
         {/* 24/7 Availability Callout */}
         <section className="py-16 border-t border-border-subtle">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Always Available
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -408,7 +447,7 @@ export default function AirportPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>
