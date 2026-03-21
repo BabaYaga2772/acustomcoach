@@ -83,7 +83,7 @@ export function ReservationForm({
       <div>
         <label
           htmlFor="vehicle"
-          className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+          className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
         >
           Vehicle Preference
         </label>
@@ -108,7 +108,7 @@ export function ReservationForm({
       <div>
         <label
           htmlFor="requests"
-          className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+          className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
         >
           Special Requests
         </label>
@@ -159,10 +159,10 @@ function InputField({
     <div>
       <label
         htmlFor={name}
-        className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+        className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
       >
         {label}
-        {required && <span className="text-gold-light ml-1">*</span>}
+        {required && <span className="text-pink-light ml-1">*</span>}
       </label>
       <input
         id={name}

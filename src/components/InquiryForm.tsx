@@ -63,7 +63,7 @@ export function InquiryForm() {
 
       {/* Vehicle Preference */}
       <div>
-        <label htmlFor="vehicle" className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+        <label htmlFor="vehicle" className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
           Vehicle Preference
         </label>
         <select
@@ -85,7 +85,7 @@ export function InquiryForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+        <label htmlFor="message" className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
           Message
         </label>
         <textarea
@@ -130,9 +130,9 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={name} className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+      <label htmlFor={name} className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
         {label}
-        {required && <span className="text-gold-light ml-1">*</span>}
+        {required && <span className="text-pink-light ml-1">*</span>}
       </label>
       <input
         id={name}
