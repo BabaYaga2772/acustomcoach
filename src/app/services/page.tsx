@@ -85,17 +85,18 @@ const services = [
       "Guest shuttle service",
       "Mountain venue specialists",
     ],
-    image: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
-    alt: "Mountain wedding venue with ceremony arch and Colorado Rockies backdrop",
+    // PHOTO: Bobby to verify — wedding card photo (swapped per round 2 call, needs Denver-area elegant shot)
+    image: "https://images.unsplash.com/photo-1549417229-7686ac5595fd?auto=format&fit=crop&w=800&q=80",
+    alt: "Elegant evening event with luxury vehicle and string lights",
   },
   {
     label: "Special Events",
     title: "Any Occasion, Any Size",
     description:
-      "Concerts, galas, family reunions, sporting events, nights out — whatever the occasion, we provide safe, comfortable, and punctual transportation. Through national affiliates, we accommodate groups from 2 to 55 passengers.",
+      "Concerts, galas, weddings, family reunions, sporting events, nights out — whatever the occasion, we provide safe, comfortable, and punctual transportation. Through national affiliates, we accommodate groups from 2 to 55 passengers.",
     features: [
       "Concerts & sporting events",
-      "Galas & formal events",
+      "Galas, weddings & formal events",
       "Family reunions",
       "Groups up to 55 via affiliates",
     ],
