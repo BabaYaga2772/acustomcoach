@@ -85,9 +85,9 @@ const services = [
       "Guest shuttle service",
       "Mountain venue specialists",
     ],
-    // PHOTO: Bobby to verify — wedding card photo (swapped per round 2 call, needs Denver-area elegant shot)
-    image: "https://images.unsplash.com/photo-1549417229-7686ac5595fd?auto=format&fit=crop&w=800&q=80",
-    alt: "Elegant evening event with luxury vehicle and string lights",
+    // PHOTO: Wedding/formal events card — elegant ballroom venue with gold accents
+    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
+    alt: "Elegant ballroom venue with crystal chandeliers and gold chiavari chairs",
   },
   {
     label: "Special Events",
