@@ -100,7 +100,7 @@ export function InquiryForm() {
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
+        className="w-full bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300 cursor-pointer"
       >
         Submit Inquiry
       </button>
