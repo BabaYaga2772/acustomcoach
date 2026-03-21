@@ -85,9 +85,8 @@ const services = [
       "Guest shuttle service",
       "Mountain venue specialists",
     ],
-    // PHOTO: Wedding/formal events card — elegant ballroom venue with gold accents
-    image: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80",
-    alt: "Elegant ballroom venue with crystal chandeliers and gold chiavari chairs",
+    image: "/images/replacement-assets/07_colorado_mountain_wedding.jpg",
+    alt: "Couple at an alpine lake with Rocky Mountain peaks in golden hour light",
   },
   {
     label: "Special Events",

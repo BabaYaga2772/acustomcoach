@@ -23,9 +23,8 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    // PHOTO: 2025 Ford Explorer ST — Agate Black Metallic (CarbBuzz press photo)
-    image: "https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2025/03/2025-ford-explorer-st-25.jpg?q=80&fit=crop&w=800&dpr=1.5",
-    alt: "2025 Ford Explorer ST in Agate Black Metallic, front three-quarter view",
+    image: "/images/replacement-assets/02_ford_explorer_dark.jpg",
+    alt: "2026 Ford Explorer in black, three-quarter front angle",
   },
   {
     name: "Luxury SUVs",
@@ -33,9 +32,8 @@ const vehicles = [
     description:
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
-    // PHOTO: 2025 Ford Expedition Stealth Performance — dusk front view (CarbBuzz press photo). Replace with Agate Black when available.
-    image: "https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2024/10/all-new-2025-ford-expedition_stealth-performance_07.jpg?q=80&fit=crop&w=800&dpr=1.5",
-    alt: "2025 Ford Expedition Stealth Performance, front view at dusk with LED light bar",
+    image: "/images/replacement-assets/05_ford_expedition_fleet.jpg",
+    alt: "2025 Ford Expedition Platinum in black, three-quarter front angle",
   },
   {
     name: "Luxury Executive Vans",
@@ -43,9 +41,8 @@ const vehicles = [
     description:
       "Our high-top executive vans offer walk-in convenience and spacious seating for larger groups. Perfect for shuttles, group transfers, corporate events, and airport transportation.",
     features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
-    // PHOTO: Ford Transit High Roof Passenger Van — black (CarbBuzz press photo)
-    image: "https://static0.carbuzzimages.com/wordpress/wp-content/uploads/2024/03/838135-23.jpg?q=80&fit=crop&w=800&dpr=1.5",
-    alt: "Black Ford Transit High Roof Passenger Van, front three-quarter view",
+    image: "/images/replacement-assets/04_ford_transit_black.jpg",
+    alt: "Black Ford Transit High Roof executive passenger van",
   },
   {
     name: "Affiliate Vehicles",
@@ -67,8 +64,8 @@ export default function FleetPage() {
         {/* Hero */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=1920&q=80"
-            alt="Dark luxury Ford SUV fleet vehicles on road"
+            src="/images/replacement-assets/06_fleet_overview.jpg"
+            alt="Professional lineup of black luxury vehicles on tarmac at golden hour"
             fill
             priority
             className="object-cover"
