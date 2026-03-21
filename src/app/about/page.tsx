@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About A Custom Coach — 37+ Years of Colorado Luxury Transportation",
     description:
-      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ BBB rated. NLA and CLA member.",
+      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ rated. NLA and CLA member.",
     url: "/about",
   },
   alternates: { canonical: "/about" },
@@ -47,7 +47,7 @@ const milestones = [
     year: "",
     title: "Acquired Diamond Limousine",
     description:
-      "Strengthening the luxury fleet with stretch limousine inventory for weddings, proms, and special events across Colorado.",
+      "Strengthening the luxury fleet with additional vehicles for weddings, proms, and special events across Colorado.",
     label: "Acquisition",
   },
 ];
@@ -71,9 +71,18 @@ const industryPositions = [
 ];
 
 const affiliations = [
-  "National Limousine Association",
-  "Colorado Limousine Association",
-  "Denver Metro Convention & Visitors Bureau",
+  {
+    name: "National Limousine Association",
+    logo: "/images/logos/nla-logo.jpg",
+  },
+  {
+    name: "Colorado Limousine Association",
+    logo: "/images/logos/cla-logo.png",
+  },
+  {
+    name: "Denver Metro Convention & Visitors Bureau",
+    logo: "/images/logos/visit-denver-logo.svg",
+  },
 ];
 
 export default function AboutPage() {
@@ -127,11 +136,21 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-start">
               {/* Photo placeholder */}
-              <div className="bg-surface border border-border-subtle rounded-xl aspect-[3/4] flex items-center justify-center shadow-[var(--shadow-card)]">
+              <div className="bg-surface border-2 border-border-gold rounded-xl aspect-[3/4] flex items-center justify-center shadow-[var(--shadow-card)] relative overflow-hidden">
+                {/* Decorative corner accents */}
+                <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-gold/40 rounded-tl-sm" />
+                <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-gold/40 rounded-tr-sm" />
+                <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-gold/40 rounded-bl-sm" />
+                <div className="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-gold/40 rounded-br-sm" />
                 <div className="text-center px-6">
-                  <div className="font-display text-5xl text-pink mb-3">JH</div>
-                  <p className="text-cream-muted text-xs tracking-[0.1em] uppercase">
+                  <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4">&#9830; Est. 1988 &#9830;</div>
+                  <div className="font-display text-8xl md:text-9xl text-pink font-semibold leading-none tracking-tight mb-4" style={{ textShadow: '0 0 40px rgba(255,20,147,0.15)' }}>JH</div>
+                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent mx-auto mb-4" />
+                  <p className="text-gold text-xs tracking-[0.2em] uppercase font-medium">
                     Owner &amp; CEO
+                  </p>
+                  <p className="text-cream-muted text-[10px] tracking-[0.15em] uppercase mt-1">
+                    A Custom Coach
                   </p>
                 </div>
               </div>
@@ -269,13 +288,20 @@ export default function AboutPage() {
               Proud Members of
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {affiliations.map((name) => (
+              {affiliations.map((aff) => (
                 <div
-                  key={name}
-                  className="bg-surface border border-border-subtle rounded-xl p-6 flex items-center justify-center text-center min-h-[100px] shadow-[var(--shadow-card)]"
+                  key={aff.name}
+                  className="bg-surface border border-border-subtle rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[120px] gap-3 shadow-[var(--shadow-card)]"
                 >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={aff.logo}
+                    alt={`${aff.name} logo`}
+                    className="h-10 w-auto object-contain brightness-0 invert opacity-70"
+                    loading="lazy"
+                  />
                   <p className="text-cream text-sm font-medium tracking-wide">
-                    {name}
+                    {aff.name}
                   </p>
                 </div>
               ))}

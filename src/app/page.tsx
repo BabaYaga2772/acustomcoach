@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A Custom Coach | Denver & Boulder Luxury Transportation Since 1988",
     description:
-      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. A+ BBB rated. Established 1988.",
+      "Professional limousine and chauffeur services for airport transfers, corporate travel, mountain destinations, and special events. Serving Colorado and Wyoming. A+ rated. Established 1988.",
     url: "/",
   },
   alternates: { canonical: "/" },
@@ -21,22 +21,22 @@ export default function Home() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-center justify-center bg-foundation overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1618456724458-ddf08ea5d2a7?auto=format&fit=crop&w=1920&q=80"
+            src="/images/replacement-assets/01_denver_airport_hero.jpg"
             alt="Denver skyline at night with city lights"
             fill
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/75" />
+          <div className="absolute inset-0 bg-foundation/60" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <p className="text-pink text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988<br className="sm:hidden" />{" "}
-              <span className="hidden sm:inline">· </span>Denver &amp; Boulder, Colorado
+              <span className="hidden sm:inline">· </span>Serving Colorado &amp; Wyoming
             </p>
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
-              Denver&apos;s Premier
+              A Custom Coach
               <br />
-              <span className="text-gold">Transportation</span>
+              <span className="text-gold">Denver&apos;s Premier Transportation</span>
             </h1>
             <p className="text-cream-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
               Professional limousine and chauffeur services for airport transfers,
@@ -64,7 +64,7 @@ export default function Home() {
           <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "37+", label: "Years in Service" },
-              { number: "A+", label: "BBB Rating" },
+              { number: "A+", label: "Rated" },
               { number: "24/7", label: "Live Dispatch" },
               { number: "3", label: "Companies Acquired" },
             ].map((stat) => (
@@ -95,7 +95,7 @@ export default function Home() {
                   description:
                     "Pickup and drop-off at any airport in Colorado — from DIA to private jet terminals. Flight tracking, on-time arrivals, and a professional chauffeur waiting when you land.",
                   features: ["Denver International Airport (DIA)", "Private jet & FBO terminals", "Flight tracking & delay monitoring"],
-                  image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+                  image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
                   alt: "Denver International Airport terminal interior with white tent roof",
                 },
                 {
@@ -130,7 +130,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                    <div className={`absolute inset-0 bg-gradient-to-t from-surface/80 ${service.label === "Airport Transfers" ? "via-transparent" : "via-surface/30"} to-transparent`} />
                   </div>
                   <div className="p-8 pt-4">
                     <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
@@ -178,12 +178,12 @@ export default function Home() {
                   The Right Vehicle for Every Occasion.
                 </h2>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-4">
-                  From luxury sedans to stretch limousines and executive vans, our
+                  From luxury sedans and SUVs to high-top executive vans, our
                   diverse fleet is maintained to the highest standards. Through national
                   affiliates, we accommodate groups from 2 to 55 passengers.
                 </p>
                 <ul className="flex flex-col gap-2 mb-8">
-                  {["Luxury Sedans & SUVs", "Stretch Limousines", "Passenger & Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
+                  {["Luxury Sedans & SUVs", "Luxury Executive Vans", "Motor Coaches via Affiliates"].map((item) => (
                     <li key={item} className="text-cream-muted text-sm flex items-center gap-2">
                       <span className="w-1 h-1 rounded-full bg-gold shrink-0" />
                       {item}
@@ -199,8 +199,8 @@ export default function Home() {
               </div>
               <div className="relative h-80 md:h-96 rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
                 <Image
-                  src="https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&w=800"
-                  alt="Black luxury sedan on road"
+                  src="/images/replacement-assets/06_fleet_overview.jpg"
+                  alt="Professional lineup of black luxury vehicles on tarmac at golden hour"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"

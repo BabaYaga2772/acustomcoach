@@ -38,6 +38,16 @@ export function ReservationForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Online booking disclaimer */}
+      <div className="bg-surface border border-border-subtle rounded-lg p-4 mb-2">
+        <p className="text-cream-muted text-sm leading-relaxed">
+          For immediate reservations, call{" "}
+          <a href="tel:3037591376" className="text-gold hover:text-gold-light transition-colors font-medium">
+            (303) 759-1376
+          </a>{" "}
+          — a live voice answers every call, 24/7.
+        </p>
+      </div>
       {/* Name + Email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <InputField label="Full Name" name="name" type="text" required />
@@ -78,6 +88,39 @@ export function ReservationForm({
         required
         placeholder="e.g. The Brown Palace Hotel, Vail Resort"
       />
+
+      {/* Flight Information */}
+      <div>
+        <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3 mt-2">
+          Flight Information
+        </p>
+        <InputField
+          label="Origin City"
+          name="originCity"
+          type="text"
+          placeholder="e.g. Los Angeles, New York, Chicago"
+        />
+      </div>
+
+      {/* Luggage Count */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <InputField
+          label="Carry-on Bags"
+          name="carryOnBags"
+          type="number"
+          min={0}
+          max={20}
+          placeholder="0"
+        />
+        <InputField
+          label="Checked Bags"
+          name="checkedBags"
+          type="number"
+          min={0}
+          max={20}
+          placeholder="0"
+        />
+      </div>
 
       {/* Vehicle Type */}
       <div>

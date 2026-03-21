@@ -33,28 +33,29 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 8 routes build clean |
-| Homepage | ✅ COMPLETE | Hero image, trust indicators, 3-card services preview, fleet highlight, CTA band |
-| About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions, industry positions, affiliations, CTA band |
-| Services page | ✅ COMPLETE | Hero, 6 service cards with photos, chauffeur standards, CTA band |
-| Airport page | ✅ COMPLETE | DIA hero, trust bar, how-it-works steps, DIA pickup instructions, meet & greet, rate table (TODO: rates from John), 6 Colorado airports grid, 24/7 callout, CTA band |
-| Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar, 5 resort cards (Vail/Breck/Aspen/Beaver Creek/Keystone) with drive times, "and more" card, group transport with fleet link, seasonal availability, CTA band |
-| Fleet page | ✅ COMPLETE | Hero, 6 vehicle cards with Pexels photos (Lincoln Continental, SUVs, Stretch Limos, Passenger Vans, Executive Vans, Affiliates), pricing note, CTA band |
-| Reservations page | ✅ COMPLETE | Booking form, FASTTRAK callout (URL TBD), DIA pickup instructions, sidebar cards |
+| Homepage | ✅ COMPLETE | DIA tent roof hero, trust indicators, 3-card services preview, fleet highlight, CTA band |
+| About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions (genericized timeframes — "over 30 years"), industry positions, affiliations, CTA band |
+| Services page | ✅ COMPLETE | Hero, 6 service cards with photos (airport card brightened), chauffeur standards, CTA band |
+| Airport page | ✅ COMPLETE | DIA hero, trust bar, how-it-works steps (updated: phone in Book step, curb pickup), rewritten DIA pickup instructions (Level 5, East/West door, 2nd island), rewritten meet & greet (escalator greeting, name sign), distances table (not rates), 6 Colorado airports grid, 24/7 callout, CTA band |
+| Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar, 5 resort cards with distances in miles (not drive times), "and more" card, group transport (updated: SUVs 6-7 pax, Executive Vans up to 14 pax), seasonal availability, CTA band |
+| Fleet page | ✅ COMPLETE | Hero, 4 vehicle cards: Luxury Sedans (3 pax), Luxury SUVs (6-7 pax), Luxury Executive Vans (up to 14 pax), Affiliate Vehicles (26-55 pax). Stretch Limos and old van cards removed. Pricing note, CTA band |
+| Reservations page | ✅ COMPLETE | Booking form (Special Requests field removed), FASTTRAK callout (URL TBD), updated DIA pickup instructions (matches airport page), sidebar cards |
 | Contact page | ✅ COMPLETE | Hero image, contact info column + 9-field inquiry form (frontend only, backend TODO) |
 | Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow. Nav: Services / Airport / Mountains / Fleet / About / Contact |
-| Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations, top shadow |
+| Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations, top shadow. "Serving Colorado & Wyoming" |
 | Contact/inquiry form | 🟡 FRONTEND DONE | InquiryForm + ReservationForm components built, needs backend (Formspree/Resend/FASTTRAK) |
 | FASTTRAK integration | ❌ NOT STARTED | Need portal URL from client |
 | Domain transfer | ❌ BLOCKED | Waiting on client — Mom questionnaire sent |
 | Vercel deployment | ✅ LIVE | https://acustomcoach.vercel.app — domain transfer pending for acustomcoach.com |
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
-| SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD, OG tags all pages, sitemap.xml, robots.txt, canonical URLs |
+| SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD (includes Wyoming), OG tags all pages, sitemap.xml (all 8 routes), robots.txt, canonical URLs. BBB references removed sitewide, A+ rating kept standalone. |
 | Image assets | ✅ PLACEHOLDER | Fleet page uses Pexels photos, other pages use Unsplash. Replace with real fleet/team photos when available |
 | Mobile CTA bar | ✅ COMPLETE | Sticky bottom bar on mobile (<md), Call + Book Now buttons, in layout.tsx |
 | Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity, design feedback pass (warmer gold, brighter text, title case, overlay fix) |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
+| Client feedback round 1 | ✅ ON DEV BRANCH | 16 changes + InquiryForm vehicle dropdown fix across 7 pages. Branch `claude/repo-assessment-lzcl6` (preview). Main reverted via PR #4. See `_context/client-feedback-round-1.md` |
 
 ---
 
@@ -240,6 +241,20 @@ src/
 - ✅ Dedicated Mountains page (5 resort cards with drive times, group transport, seasonal availability)
 - ✅ Deployed to Vercel (https://acustomcoach.vercel.app) — custom domain pending transfer
 
+### Phase 1.5 — Client Feedback Round 1 ← ON DEV BRANCH
+- ✅ 16 changes implemented across 7 pages (see `_context/client-feedback-round-1.md`)
+- ✅ BBB references removed sitewide (A+ rating kept standalone)
+- ✅ Wyoming added to service area (JSON-LD, metadata, hero, footer)
+- ✅ /airport and /mountains added to sitemap
+- ✅ Homepage hero swapped to DIA tent roof
+- ✅ Fleet restructured: 4 vehicles (Sedans, SUVs, Executive Vans, Affiliates) — removed Stretch Limos
+- ✅ Airport page: rewritten pickup instructions, meet & greet, distances table replaces rate table
+- ✅ Mountains page: distances in miles replace drive times, group capacities updated
+- ✅ About page: timeframes genericized ("over 30 years")
+- ✅ Reservations: updated DIA instructions, Special Requests field removed
+- ⚠️ Branch: `claude/repo-assessment-lzcl6` — NOT merged to main (reverted via PR #4)
+- ⚠️ Main was prematurely merged (PR #3) then reverted (PR #4). Dev branch has all changes for preview.
+
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
 - ⬜ Set up Google Workspace ($7/user/mo)
 - ⬜ Migrate existing email
@@ -314,6 +329,12 @@ All tracked in detail in `_context/client-answers.md`. Summary:
 - `v1.0-site-complete` tag = Phase 1 site before any client revisions (commit `b420d96`)
 - To view: `git checkout v1.0-site-complete`
 - To fully reset: `git reset --hard v1.0-site-complete`
+
+### Round 1 History
+- PR #3 merged `claude/repo-assessment-lzcl6` → `main` (premature — should have stayed on dev branch)
+- PR #4 reverted PR #3 on `main` — live site restored to pre-feedback state
+- Dev branch `claude/repo-assessment-lzcl6` still has all 16 round 1 changes intact
+- **Important for future merges:** Because main has a revert commit, re-merging this branch requires `git revert <revert-commit>` on main first, or cherry-picking the individual commits. A straight merge will no-op because git sees the changes as already applied and reverted.
 
 ### How to Handle Client Change Requests
 

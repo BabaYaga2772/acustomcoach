@@ -18,10 +18,8 @@ export const metadata: Metadata = {
 
 const vehicleOptions = [
   "Luxury Sedan",
-  "SUV",
-  "Stretch Limousine",
-  "Passenger Van (up to 14)",
-  "Luxury Executive Van (up to 9)",
+  "Luxury SUV",
+  "Luxury Executive Van (up to 14)",
   "Motor Coach (26–55 via affiliate)",
   "Not sure — help me decide",
 ];
@@ -61,30 +59,28 @@ export default function ReservationsPage() {
           </div>
         </section>
 
-        {/* FASTTRAK Online Booking Callout */}
+        {/* Online Booking — Coming Soon */}
         <section className="py-16 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <div className="bg-gold-muted border border-border-gold rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 shadow-[var(--shadow-card-hover)]">
+            <div className="bg-gold-muted border-2 border-border-gold rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 shadow-[var(--shadow-card-hover)]">
               <div className="flex-1">
-                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-2">
-                  Online Booking
+                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                  Online Booking Coming Soon
                 </p>
-                <h2 className="font-display text-xl md:text-2xl font-medium text-white mb-2">
-                  Book Instantly Through Our Portal
+                <h2 className="font-display text-2xl md:text-3xl font-medium text-gold mb-3">
+                  For Now, a Live Voice Is Even Better.
                 </h2>
-                <p className="text-cream-muted text-sm leading-relaxed">
-                  Use our FASTTRAK online booking system for real-time
-                  availability, instant confirmation, and secure payment
-                  processing.
+                <p className="text-cream text-[15px] leading-relaxed">
+                  Our online booking portal is on the way. In the meantime,
+                  submit a reservation request below or call us directly —
+                  a real person answers every call, 24/7.
                 </p>
               </div>
-              {/* TODO: Replace # with FASTTRAK portal URL once client provides it */}
               <a
-                href="#"
-                aria-disabled="true"
+                href="tel:3037591376"
                 className="shrink-0 bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
-                Book Online
+                Call Now
               </a>
             </div>
           </div>
@@ -137,7 +133,7 @@ export default function ReservationsPage() {
                     <li>
                       After collecting your luggage, proceed to the{" "}
                       <span className="text-cream">
-                        Ground Transportation Booth
+                        Ground Transportation
                       </span>{" "}
                       on Level 5 of the terminal.
                     </li>

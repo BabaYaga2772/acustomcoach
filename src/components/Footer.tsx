@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-cream-muted text-sm leading-relaxed">
               Denver &amp; Boulder&apos;s premier luxury transportation provider since 1988.
-              A+ BBB rated. National Limousine Association member.
+              A+ rated. National Limousine Association member.
             </p>
           </div>
 

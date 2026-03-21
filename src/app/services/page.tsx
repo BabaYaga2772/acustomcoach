@@ -6,11 +6,11 @@ import { Footer } from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado.",
+    "Airport transfers, meet and greet, corporate travel, mountain destinations, weddings, and special events. Professional chauffeur service throughout Colorado and Wyoming.",
   openGraph: {
     title: "Denver Limousine & Transportation Services — A Custom Coach",
     description:
-      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado.",
+      "Airport transfers, meet & greet, mountain destinations, corporate travel, weddings, and special events. 24-hour dispatch. Professional chauffeurs throughout Colorado and Wyoming.",
     url: "/services",
   },
   alternates: { canonical: "/services" },
@@ -26,9 +26,10 @@ const services = [
       "Denver International Airport (DIA)",
       "Private jet & FBO terminals",
       "Flight tracking & delay monitoring",
-      "Meet at Ground Transportation booth",
+      "Meet at Ground Transportation",
     ],
-    image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+    // PHOTO: Brighter DIA terminal interior
+    image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
     alt: "Denver International Airport terminal interior with white tent roof",
   },
   {
@@ -75,26 +76,26 @@ const services = [
   },
   {
     label: "Weddings",
-    title: "Your Day, Your Way There",
+    title: "Mountain Weddings, Elevated",
     description:
-      "From the bridal party's arrival to the grand exit, we handle every transportation detail so you can focus on the celebration. Stretch limousines, luxury sedans, and passenger vans for the full wedding party.",
+      "Colorado's mountain venues are breathtaking — getting there shouldn't be stressful. We handle every transportation detail for your wedding party, from Denver to the ceremony and everywhere in between.",
     features: [
       "Bridal party transportation",
       "Ceremony-to-reception transfers",
       "Guest shuttle service",
-      "Stretch limousine availability",
+      "Mountain venue specialists",
     ],
-    image: "https://images.unsplash.com/photo-1731515672817-0491d19c9f19?auto=format&fit=crop&w=800&q=80",
-    alt: "Outdoor wedding ceremony with guests and mountain backdrop",
+    image: "/images/replacement-assets/07_colorado_mountain_wedding.jpg",
+    alt: "Couple at an alpine lake with Rocky Mountain peaks in golden hour light",
   },
   {
     label: "Special Events",
     title: "Any Occasion, Any Size",
     description:
-      "Concerts, galas, family reunions, sporting events, nights out — whatever the occasion, we provide safe, comfortable, and punctual transportation. Through national affiliates, we accommodate groups from 2 to 55 passengers.",
+      "Concerts, galas, weddings, family reunions, sporting events, nights out — whatever the occasion, we provide safe, comfortable, and punctual transportation. Through national affiliates, we accommodate groups from 2 to 55 passengers.",
     features: [
       "Concerts & sporting events",
-      "Galas & formal events",
+      "Galas, weddings & formal events",
       "Family reunions",
       "Groups up to 55 via affiliates",
     ],
@@ -145,9 +146,9 @@ export default function ServicesPage() {
                     alt={service.alt}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`object-cover group-hover:scale-105 transition-transform duration-500 ${service.label === "Airport Transfers" ? "object-bottom" : service.label === "Weddings" ? "object-[85%]" : ""}`}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
+                  <div className={`absolute inset-0 bg-gradient-to-t from-surface/80 ${service.label === "Airport Transfers" ? "via-transparent" : "via-surface/20"} to-transparent`} />
                 </div>
                 <div className="p-8 pt-4">
                   <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
@@ -192,7 +193,7 @@ export default function ServicesPage() {
               {[
                 { number: "24hr", label: "Dispatch" },
                 { number: "37+", label: "Years of Service" },
-                { number: "A+", label: "BBB Rating" },
+                { number: "A+", label: "Rated" },
                 { number: "0", label: "Hidden Fees" },
               ].map((stat) => (
                 <div key={stat.label}>

@@ -21,7 +21,7 @@ const airports = [
     name: "Denver International Airport (DIA)",
     code: "DEN",
     description:
-      "Colorado's primary commercial airport and our most requested route. Full curbside and Ground Transportation booth pickup.",
+      "Colorado's primary commercial airport and our most requested route. Full curbside and Ground Transportation pickup.",
   },
   {
     name: "Rocky Mountain Metropolitan Airport",
@@ -91,7 +91,7 @@ export default function AirportPage() {
             {[
               { number: "24/7", label: "Live Dispatch" },
               { number: "100%", label: "Flight Tracked" },
-              { number: "A+", label: "BBB Rating" },
+              { number: "A+", label: "Rated" },
               { number: "$0", label: "Hidden Fees" },
             ].map((stat) => (
               <div key={stat.label}>
@@ -121,19 +121,19 @@ export default function AirportPage() {
                   step: "01",
                   title: "Book Your Transfer",
                   description:
-                    "Call us or submit a reservation online. We'll confirm your vehicle, pricing, and pickup details in writing — no surprises.",
+                    "Call us at (303) 759-1376 or submit a reservation online. We\u2019ll confirm your vehicle, pricing, and pickup details in writing \u2014 no surprises.",
                 },
                 {
                   step: "02",
                   title: "We Track Your Flight",
                   description:
-                    "Our 24-hour dispatch monitors your flight in real time. If your arrival changes, we adjust automatically — no need to call.",
+                    "Our dispatch and chauffeur monitor your flight in real time. If your arrival changes, we adjust automatically.",
                 },
                 {
                   step: "03",
                   title: "Meet Your Chauffeur",
                   description:
-                    "At DIA, head to the Ground Transportation booth on Level 5. Tell the attendant \"A Custom Coach\" — your chauffeur arrives within minutes.",
+                    "Head to Ground Transportation on Level 5. Your chauffeur will direct you to which door number and to the 2nd island.",
                 },
               ].map((item) => (
                 <div
@@ -174,7 +174,7 @@ export default function AirportPage() {
                     <span>
                       After collecting your luggage, proceed to the{" "}
                       <span className="text-cream font-medium">
-                        Ground Transportation Booth
+                        Ground Transportation
                       </span>{" "}
                       on Level 5 of the terminal.
                     </span>
@@ -195,8 +195,8 @@ export default function AirportPage() {
                       3.
                     </span>
                     <span>
-                      Within minutes, your chauffeur will arrive at the booth
-                      and assist you with your luggage.
+                      Your chauffeur will direct you to which door number
+                      and to the 2nd island, and assist you with your luggage.
                     </span>
                   </li>
                 </ol>
@@ -238,6 +238,82 @@ export default function AirportPage() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Group Transportation */}
+        <section className="py-24 border-t border-border-subtle">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+              <div>
+                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                  Group Travel
+                </p>
+                <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
+                  Any Size Group, One Call.
+                </h2>
+                <p className="text-cream-muted text-[15px] leading-relaxed mb-4">
+                  Whether it&apos;s a single executive or an entire conference
+                  delegation, we have the vehicle and coordination to get your
+                  group to and from the airport safely and on time.
+                </p>
+                <ul className="flex flex-col gap-3 mb-8">
+                  {[
+                    { vehicle: "Luxury SUVs", capacity: "6–7 passengers" },
+                    { vehicle: "Luxury Executive Van", capacity: "Up to 14 passengers" },
+                    { vehicle: "Motor Coaches", capacity: "26–55 via affiliates" },
+                  ].map((item) => (
+                    <li
+                      key={item.vehicle}
+                      className="flex items-center justify-between text-sm border-b border-border-subtle pb-2"
+                    >
+                      <span className="text-cream">{item.vehicle}</span>
+                      <span className="text-cream-muted text-xs">
+                        {item.capacity}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+                <a
+                  href="/fleet"
+                  className="inline-block border border-border-gold text-cream px-8 py-4 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold hover:shadow-[0_0_16px_rgba(212,175,55,0.12)] transition-all duration-300"
+                >
+                  View Our Fleet
+                </a>
+              </div>
+
+              {/* Callout Card */}
+              <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
+                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                  Corporate & Events
+                </p>
+                <h3 className="font-display text-2xl font-medium text-white mb-4">
+                  Multi-Vehicle Coordination.
+                </h3>
+                <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                  Conventions, retreats, VIP delegations — we coordinate
+                  multiple vehicles across multiple flights so everyone
+                  arrives together. One point of contact, one invoice.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  {[
+                    { label: "Flight Tracking", detail: "Every arrival monitored" },
+                    { label: "Group Greeters", detail: "Signage & coordination" },
+                    { label: "Flexible Fleet", detail: "Sedans to motor coaches" },
+                    { label: "Corporate Billing", detail: "Single invoice option" },
+                  ].map((item) => (
+                    <div key={item.label}>
+                      <div className="font-display text-lg font-medium text-gold mb-1">
+                        {item.label}
+                      </div>
+                      <div className="text-cream-muted text-xs">
+                        {item.detail}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
