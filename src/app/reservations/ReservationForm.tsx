@@ -38,6 +38,17 @@ export function ReservationForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Online booking disclaimer */}
+      <div className="bg-surface border border-border-gold rounded-lg p-4 mb-2">
+        <p className="text-cream-muted text-sm leading-relaxed">
+          <span className="text-pink font-medium">Online booking coming soon.</span>{" "}
+          For immediate reservations, call{" "}
+          <a href="tel:3037591376" className="text-gold hover:text-gold-light transition-colors font-medium">
+            (303) 759-1376
+          </a>{" "}
+          — a live voice answers every call, 24/7.
+        </p>
+      </div>
       {/* Name + Email */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <InputField label="Full Name" name="name" type="text" required />
