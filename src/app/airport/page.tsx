@@ -71,7 +71,7 @@ export default function AirportPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Airport Transfers
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -109,7 +109,7 @@ export default function AirportPage() {
         {/* How It Works */}
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               How It Works
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
@@ -160,7 +160,7 @@ export default function AirportPage() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Denver International Airport
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -209,7 +209,7 @@ export default function AirportPage() {
 
               {/* Meet & Greet */}
               <div className="bg-surface border border-border-gold rounded-xl p-8 shadow-[var(--shadow-card-hover)]">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-3">
                   Premium Option
                 </p>
                 <h3 className="font-display text-2xl font-medium text-white mb-4">
@@ -247,7 +247,7 @@ export default function AirportPage() {
         {/* TODO: Get actual rates from John — remove placeholder when real rates arrive */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Pricing
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -306,7 +306,7 @@ export default function AirportPage() {
         {/* Colorado Airports */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Airports We Serve
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
@@ -343,7 +343,7 @@ export default function AirportPage() {
         {/* 24/7 Availability Callout */}
         <section className="py-16 border-t border-border-subtle">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Always Available
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">

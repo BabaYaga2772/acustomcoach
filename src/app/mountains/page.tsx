@@ -80,7 +80,7 @@ export default function MountainsPage() {
           />
           <div className="absolute inset-0 bg-foundation/75" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Mountain Transportation
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -118,7 +118,7 @@ export default function MountainsPage() {
         {/* Resort Cards */}
         <section className="py-24">
           <div className="max-w-5xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Destinations
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
@@ -194,7 +194,7 @@ export default function MountainsPage() {
           <div className="max-w-5xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Group Travel
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -234,7 +234,7 @@ export default function MountainsPage() {
 
               {/* Seasonal Callout */}
               <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-3">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-3">
                   Year-Round Service
                 </p>
                 <h3 className="font-display text-2xl font-medium text-white mb-4">

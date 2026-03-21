@@ -34,7 +34,7 @@ export default function ReservationsPage() {
         {/* Hero */}
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Reservations
             </p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
@@ -66,7 +66,7 @@ export default function ReservationsPage() {
           <div className="max-w-4xl mx-auto px-6">
             <div className="bg-gold-muted border border-border-gold rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-10 shadow-[var(--shadow-card-hover)]">
               <div className="flex-1">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-2">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-2">
                   Online Booking
                 </p>
                 <h2 className="font-display text-xl md:text-2xl font-medium text-white mb-2">
@@ -96,7 +96,7 @@ export default function ReservationsPage() {
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
               {/* Form — takes 3 of 5 columns */}
               <div className="lg:col-span-3">
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Request a Reservation
                 </p>
                 <h2 className="font-display text-2xl md:text-3xl font-medium text-white mb-3">
@@ -127,7 +127,7 @@ export default function ReservationsPage() {
 
                 {/* DIA Pickup Instructions */}
                 <div className="bg-surface border border-border-gold rounded-xl p-6 shadow-[var(--shadow-card-hover)]">
-                  <p className="text-gold text-xs tracking-[0.15em] uppercase mb-3">
+                  <p className="text-pink text-xs tracking-[0.15em] uppercase mb-3">
                     Denver International Airport
                   </p>
                   <h3 className="font-display text-lg font-medium text-white mb-3">

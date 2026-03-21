@@ -92,7 +92,7 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">About Us</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">About Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               A Legacy Built on Service.
             </h1>
@@ -109,7 +109,7 @@ export default function AboutPage() {
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
             <div className="max-w-3xl">
-              <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Vision</p>
+              <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Vision</p>
               <blockquote className="font-display text-2xl md:text-3xl font-medium text-white leading-snug mb-6">
                 Present a Solution to Every Customer, No Matter the Circumstances.
               </blockquote>
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
               {/* Bio */}
               <div>
-                <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
                   Owner &amp; CEO
                 </p>
                 <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
@@ -174,7 +174,7 @@ export default function AboutPage() {
         {/* Timeline */}
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Journey</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Journey</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">
               From One Car to an Industry Leader.
             </h2>
@@ -238,7 +238,7 @@ export default function AboutPage() {
         {/* Industry Leadership */}
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">
               Industry Leadership
             </p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-12">
@@ -264,7 +264,7 @@ export default function AboutPage() {
         {/* Affiliations */}
         <section className="py-24 border-b border-border-subtle">
           <div className="max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Affiliations</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Affiliations</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-8">
               Proud Members of
             </h2>

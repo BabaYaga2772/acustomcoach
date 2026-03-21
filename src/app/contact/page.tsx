@@ -32,7 +32,7 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-foundation/70" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Let&apos;s Talk.
             </h1>
