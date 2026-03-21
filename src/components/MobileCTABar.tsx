@@ -6,7 +6,7 @@ export function MobileCTABar() {
       <div className="flex gap-3 px-4 py-3">
         <a
           href="tel:3037591376"
-          className="flex-1 text-center border border-border-gold text-cream py-3 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
+          className="flex-1 text-center border border-border-pink text-cream py-3 rounded-md text-sm font-semibold tracking-[0.08em] uppercase hover:border-pink hover:text-pink transition-all duration-300"
         >
           Call
         </a>
