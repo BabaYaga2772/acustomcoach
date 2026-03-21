@@ -32,7 +32,7 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-foundation/70" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Let&apos;s Talk.
             </h1>
@@ -54,7 +54,7 @@ export default function ContactPage() {
                 <div>
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-xs text-gold tracking-[0.15em] uppercase">Phone</span>
-                    <span className="text-[10px] tracking-[0.1em] uppercase text-gold border border-border-gold rounded-full px-2.5 py-0.5 bg-gold-muted">
+                    <span className="text-[10px] tracking-[0.1em] uppercase text-pink border border-border-pink rounded-full px-2.5 py-0.5 bg-pink-muted">
                       Live Voice — Every Call
                     </span>
                   </div>

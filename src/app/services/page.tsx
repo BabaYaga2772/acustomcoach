@@ -119,7 +119,7 @@ export default function ServicesPage() {
           />
           <div className="absolute inset-0 bg-foundation/80" />
           <div className="relative max-w-4xl mx-auto px-6">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Services</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Services</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
               Every Ride, Handled with Care.
             </h1>
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent" />
                 </div>
                 <div className="p-8 pt-4">
-                  <p className="text-gold text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
+                  <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
                     {service.label}
                   </p>
                   <h2 className="font-display text-2xl font-medium text-white mb-4">
@@ -179,7 +179,7 @@ export default function ServicesPage() {
         {/* Chauffeur Standards */}
         <section className="py-24 border-t border-border-subtle">
           <div className="max-w-3xl mx-auto px-6 text-center">
-            <p className="text-gold text-xs tracking-[0.2em] uppercase mb-4">Our Standard</p>
+            <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Our Standard</p>
             <h2 className="font-display text-3xl md:text-4xl font-medium text-white mb-6">
               Professional to the Last Detail.
             </h2>
@@ -196,7 +196,7 @@ export default function ServicesPage() {
                 { number: "0", label: "Hidden Fees" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="font-display text-3xl font-semibold text-gold leading-none mb-2">
+                  <div className="font-display text-3xl font-semibold text-pink leading-none mb-2">
                     {stat.number}
                   </div>
                   <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -220,7 +220,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/reservations"
-                className="inline-block bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300"
+                className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
               >
                 Book Now
               </a>

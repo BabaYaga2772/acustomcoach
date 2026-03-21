@@ -83,7 +83,7 @@ export function ReservationForm({
       <div>
         <label
           htmlFor="vehicle"
-          className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+          className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
         >
           Vehicle Preference
         </label>
@@ -108,7 +108,7 @@ export function ReservationForm({
       <div>
         <label
           htmlFor="requests"
-          className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+          className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
         >
           Special Requests
         </label>
@@ -124,7 +124,7 @@ export function ReservationForm({
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
+        className="w-full bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300 cursor-pointer"
       >
         Request Reservation
       </button>
@@ -159,10 +159,10 @@ function InputField({
     <div>
       <label
         htmlFor={name}
-        className="block text-xs text-gold tracking-[0.15em] uppercase mb-2"
+        className="block text-xs text-pink tracking-[0.15em] uppercase mb-2"
       >
         {label}
-        {required && <span className="text-gold-light ml-1">*</span>}
+        {required && <span className="text-pink-light ml-1">*</span>}
       </label>
       <input
         id={name}

@@ -63,7 +63,7 @@ export function InquiryForm() {
 
       {/* Vehicle Preference */}
       <div>
-        <label htmlFor="vehicle" className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+        <label htmlFor="vehicle" className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
           Vehicle Preference
         </label>
         <select
@@ -85,7 +85,7 @@ export function InquiryForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+        <label htmlFor="message" className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
           Message
         </label>
         <textarea
@@ -100,7 +100,7 @@ export function InquiryForm() {
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-gold to-[#B8962E] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-gold-glow-lg)] transition-all duration-300 cursor-pointer"
+        className="w-full bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300 cursor-pointer"
       >
         Submit Inquiry
       </button>
@@ -130,9 +130,9 @@ function Field({
 }) {
   return (
     <div>
-      <label htmlFor={name} className="block text-xs text-gold tracking-[0.15em] uppercase mb-2">
+      <label htmlFor={name} className="block text-xs text-pink tracking-[0.15em] uppercase mb-2">
         {label}
-        {required && <span className="text-gold-light ml-1">*</span>}
+        {required && <span className="text-pink-light ml-1">*</span>}
       </label>
       <input
         id={name}
