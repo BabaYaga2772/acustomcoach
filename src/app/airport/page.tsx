@@ -21,7 +21,7 @@ const airports = [
     name: "Denver International Airport (DIA)",
     code: "DEN",
     description:
-      "Colorado's primary commercial airport and our most requested route. Full curbside and Ground Transportation booth pickup.",
+      "Colorado's primary commercial airport and our most requested route. Full curbside and Ground Transportation pickup.",
   },
   {
     name: "Rocky Mountain Metropolitan Airport",
