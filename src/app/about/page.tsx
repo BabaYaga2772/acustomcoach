@@ -297,7 +297,7 @@ export default function AboutPage() {
                   <img
                     src={aff.logo}
                     alt={`${aff.name} logo`}
-                    className="h-10 w-auto object-contain brightness-0 invert opacity-70"
+                    className="h-10 w-auto object-contain"
                     loading="lazy"
                   />
                   <p className="text-cream text-sm font-medium tracking-wide">
