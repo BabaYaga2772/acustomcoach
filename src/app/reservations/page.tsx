@@ -164,7 +164,7 @@ export default function ReservationsPage() {
                     <h3 className="font-display text-lg font-medium text-white">
                       Prefer to Call?
                     </h3>
-                    <span className="text-[10px] tracking-[0.1em] uppercase text-gold border border-border-gold rounded-full px-2.5 py-0.5 bg-gold-muted">
+                    <span className="text-[10px] tracking-[0.1em] uppercase text-pink border border-border-pink rounded-full px-2.5 py-0.5 bg-pink-muted">
                       Live Voice
                     </span>
                   </div>

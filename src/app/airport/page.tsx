@@ -95,7 +95,7 @@ export default function AirportPage() {
               { number: "$0", label: "Hidden Fees" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-4xl font-semibold text-gold leading-none mb-2">
+                <div className="font-display text-4xl font-semibold text-pink leading-none mb-2">
                   {stat.number}
                 </div>
                 <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">
@@ -140,7 +140,7 @@ export default function AirportPage() {
                   key={item.step}
                   className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]"
                 >
-                  <div className="font-display text-5xl font-semibold text-gold/20 leading-none mb-4">
+                  <div className="font-display text-5xl font-semibold text-pink/20 leading-none mb-4">
                     {item.step}
                   </div>
                   <h3 className="font-display text-xl font-medium text-white mb-3">
@@ -168,7 +168,7 @@ export default function AirportPage() {
                 </h2>
                 <ol className="text-cream-muted text-[15px] leading-relaxed space-y-6 list-none">
                   <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
                       1.
                     </span>
                     <span>
@@ -180,7 +180,7 @@ export default function AirportPage() {
                     </span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
                       2.
                     </span>
                     <span>
@@ -191,7 +191,7 @@ export default function AirportPage() {
                     </span>
                   </li>
                   <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-gold leading-none shrink-0 w-8">
+                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
                       3.
                     </span>
                     <span>

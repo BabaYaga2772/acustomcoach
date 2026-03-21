@@ -9,7 +9,7 @@ export default function NotFound() {
       <main className="bg-foundation">
         <section className="min-h-[60vh] flex items-center justify-center py-24">
           <div className="max-w-xl mx-auto px-6 text-center">
-            <div className="font-display text-8xl font-semibold text-gold leading-none mb-6">
+            <div className="font-display text-8xl font-semibold text-pink leading-none mb-6">
               404
             </div>
             <h1 className="font-display text-3xl md:text-4xl font-medium text-white mb-4">

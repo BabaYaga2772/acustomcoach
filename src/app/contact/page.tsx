@@ -54,7 +54,7 @@ export default function ContactPage() {
                 <div>
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-xs text-gold tracking-[0.15em] uppercase">Phone</span>
-                    <span className="text-[10px] tracking-[0.1em] uppercase text-gold border border-border-gold rounded-full px-2.5 py-0.5 bg-gold-muted">
+                    <span className="text-[10px] tracking-[0.1em] uppercase text-pink border border-border-pink rounded-full px-2.5 py-0.5 bg-pink-muted">
                       Live Voice — Every Call
                     </span>
                   </div>

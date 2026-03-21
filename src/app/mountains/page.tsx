@@ -104,7 +104,7 @@ export default function MountainsPage() {
               { number: "55", label: "Max Group Size" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="font-display text-4xl font-semibold text-gold leading-none mb-2">
+                <div className="font-display text-4xl font-semibold text-pink leading-none mb-2">
                   {stat.number}
                 </div>
                 <div className="text-cream-muted text-xs tracking-[0.1em] uppercase">

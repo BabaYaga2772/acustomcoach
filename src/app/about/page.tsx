@@ -129,7 +129,7 @@ export default function AboutPage() {
               {/* Photo placeholder */}
               <div className="bg-surface border border-border-subtle rounded-xl aspect-[3/4] flex items-center justify-center shadow-[var(--shadow-card)]">
                 <div className="text-center px-6">
-                  <div className="font-display text-5xl text-gold mb-3">JH</div>
+                  <div className="font-display text-5xl text-pink mb-3">JH</div>
                   <p className="text-cream-muted text-xs tracking-[0.1em] uppercase">
                     Owner &amp; CEO
                   </p>
@@ -209,7 +209,7 @@ export default function AboutPage() {
                       i % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"
                     }`}>
                       {milestone.year && (
-                        <span className="font-display text-3xl md:text-4xl font-semibold text-gold leading-none">
+                        <span className="font-display text-3xl md:text-4xl font-semibold text-pink leading-none">
                           {milestone.year}
                         </span>
                       )}
