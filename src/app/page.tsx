@@ -28,16 +28,16 @@ export default function Home() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/75" />
+          <div className="absolute inset-0 bg-foundation/60" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <p className="text-gold text-xs tracking-[0.25em] uppercase mb-6 font-body">
               Established 1988<br className="sm:hidden" />{" "}
               <span className="hidden sm:inline">· </span>Serving Colorado &amp; Wyoming
             </p>
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
-              Denver&apos;s Premier
+              A Custom Coach
               <br />
-              <span className="text-gold">Transportation</span>
+              <span className="text-gold">Denver&apos;s Premier Transportation</span>
             </h1>
             <p className="text-cream-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
               Professional limousine and chauffeur services for airport transfers,
