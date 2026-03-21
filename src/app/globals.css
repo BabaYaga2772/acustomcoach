@@ -14,11 +14,19 @@
   --color-border-gold: rgba(212, 175, 55, 0.35);
   --color-border-subtle: rgba(255, 255, 255, 0.08);
 
+  /* ── Pink Accent (John's neon pink business card heritage) ── */
+  --color-pink: #FF1493;
+  --color-pink-light: #FF69B4;
+  --color-pink-muted: rgba(255, 20, 147, 0.22);
+  --color-border-pink: rgba(255, 20, 147, 0.35);
+
   /* ── Shadows ── */
   --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.03);
   --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.15);
   --shadow-gold-glow: 0 4px 24px rgba(212, 175, 55, 0.25);
   --shadow-gold-glow-lg: 0 8px 32px rgba(212, 175, 55, 0.35);
+  --shadow-pink-glow: 0 4px 24px rgba(255, 20, 147, 0.25);
+  --shadow-pink-glow-lg: 0 8px 32px rgba(255, 20, 147, 0.35);
   --shadow-cta-band: 0 -1px 20px rgba(212, 175, 55, 0.08), 0 1px 20px rgba(212, 175, 55, 0.08);
 
   /* ── Typography ── */
