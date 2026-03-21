@@ -95,7 +95,7 @@ export default function Home() {
                   description:
                     "Pickup and drop-off at any airport in Colorado — from DIA to private jet terminals. Flight tracking, on-time arrivals, and a professional chauffeur waiting when you land.",
                   features: ["Denver International Airport (DIA)", "Private jet & FBO terminals", "Flight tracking & delay monitoring"],
-                  image: "https://images.unsplash.com/photo-1662593614056-f3514348b0d5?auto=format&fit=crop&w=800&q=80",
+                  image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
                   alt: "Denver International Airport terminal interior with white tent roof",
                 },
                 {
@@ -130,7 +130,7 @@ export default function Home() {
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className={`absolute inset-0 bg-gradient-to-t from-surface ${service.label === "Airport Transfers" ? "via-transparent" : "via-surface/30"} to-transparent`} />
+                    <div className={`absolute inset-0 bg-gradient-to-t from-surface/80 ${service.label === "Airport Transfers" ? "via-transparent" : "via-surface/30"} to-transparent`} />
                   </div>
                   <div className="p-8 pt-4">
                     <p className="text-pink text-[10px] tracking-[0.2em] uppercase font-medium mb-3">
