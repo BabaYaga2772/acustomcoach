@@ -73,15 +73,15 @@ const industryPositions = [
 const affiliations = [
   {
     name: "National Limousine Association",
-    logo: "https://www.limo.org/images/NLA-Logo.png",
+    logo: "/images/logos/nla-logo.jpg",
   },
   {
     name: "Colorado Limousine Association",
-    logo: "https://www.coloradolimousine.org/wp-content/uploads/2020/01/CLA-Logo.png",
+    logo: "/images/logos/cla-logo.png",
   },
   {
     name: "Denver Metro Convention & Visitors Bureau",
-    logo: "https://www.denver.org/imager/files_resource_image/Denver-The-Mile-High-City-logo-white_b1a3a27a-2caa-4872-b506-39a06f2d0e2a_f5f24bc0-1c3c-459c-a2d1-c6f0a1d6c3bf.png",
+    logo: "/images/logos/visit-denver-logo.svg",
   },
 ];
 
@@ -136,11 +136,21 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12 items-start">
               {/* Photo placeholder */}
-              <div className="bg-surface border border-border-subtle rounded-xl aspect-[3/4] flex items-center justify-center shadow-[var(--shadow-card)]">
+              <div className="bg-surface border-2 border-border-gold rounded-xl aspect-[3/4] flex items-center justify-center shadow-[var(--shadow-card)] relative overflow-hidden">
+                {/* Decorative corner accents */}
+                <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-gold/40 rounded-tl-sm" />
+                <div className="absolute top-3 right-3 w-8 h-8 border-t-2 border-r-2 border-gold/40 rounded-tr-sm" />
+                <div className="absolute bottom-3 left-3 w-8 h-8 border-b-2 border-l-2 border-gold/40 rounded-bl-sm" />
+                <div className="absolute bottom-3 right-3 w-8 h-8 border-b-2 border-r-2 border-gold/40 rounded-br-sm" />
                 <div className="text-center px-6">
-                  <div className="font-display text-5xl text-pink mb-3">JH</div>
-                  <p className="text-cream-muted text-xs tracking-[0.1em] uppercase">
+                  <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4">&#9830; Est. 1988 &#9830;</div>
+                  <div className="font-display text-8xl md:text-9xl text-pink font-semibold leading-none tracking-tight mb-4" style={{ textShadow: '0 0 40px rgba(255,20,147,0.15)' }}>JH</div>
+                  <div className="w-16 h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent mx-auto mb-4" />
+                  <p className="text-gold text-xs tracking-[0.2em] uppercase font-medium">
                     Owner &amp; CEO
+                  </p>
+                  <p className="text-cream-muted text-[10px] tracking-[0.15em] uppercase mt-1">
+                    A Custom Coach
                   </p>
                 </div>
               </div>
