@@ -33,7 +33,7 @@ const vehicles = [
       "Spacious SUVs for those who need extra room — whether for luggage, larger groups, or mountain destinations. The perfect balance of luxury and utility.",
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
     image: "/images/replacement-assets/05_ford_expedition_fleet.jpg",
-    alt: "2025 Ford Expedition Platinum in black, three-quarter front angle",
+    alt: "Black Ford Expedition in motion on urban street at dusk",
   },
   {
     name: "Luxury Executive Vans",
