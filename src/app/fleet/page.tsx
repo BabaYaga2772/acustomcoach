@@ -23,7 +23,7 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    image: "/images/replacement-assets/08b_lincoln_continental_alt.png",
+    image: "/images/replacement-assets/09_lincoln_continental_black.jpg",
     alt: "Lincoln Continental Black Label — Luxury Sedan",
   },
   {
