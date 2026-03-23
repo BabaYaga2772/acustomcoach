@@ -24,7 +24,7 @@ const vehicles = [
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
     image: "/images/replacement-assets/08_luxury_sedan.jpg",
-    alt: "Black Lincoln Continental luxury sedan, three-quarter front angle",
+    alt: "2025 Cadillac XT6 — Luxury SUV",
     imageScale: "scale-90",
   },
   {

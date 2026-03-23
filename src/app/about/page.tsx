@@ -73,15 +73,18 @@ const industryPositions = [
 const affiliations = [
   {
     name: "National Limousine Association",
-    logo: "/images/logos/nla-logo.jpg",
+    logo: "/images/replacement-assets/logo_nla.jpg",
+    href: "https://www.limo.org/",
   },
   {
     name: "Colorado Limousine Association",
-    logo: "/images/logos/cla-logo.png",
+    logo: "/images/replacement-assets/logo_cla.png",
+    href: "https://cololimo.org/",
   },
   {
-    name: "Denver Metro Convention & Visitors Bureau",
-    logo: "/images/logos/visit-denver-logo.svg",
+    name: "Visit Denver / Convention & Visitors Bureau",
+    logo: "/images/replacement-assets/logo_visit_denver.jpg",
+    href: "https://visitdenver.com/",
   },
 ];
 
@@ -289,21 +292,21 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {affiliations.map((aff) => (
-                <div
+                <a
                   key={aff.name}
-                  className="bg-surface border border-border-subtle rounded-xl p-6 flex flex-col items-center justify-center text-center min-h-[120px] gap-3 shadow-[var(--shadow-card)]"
+                  href={aff.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-surface border border-border-subtle rounded-xl p-6 min-h-[100px] shadow-[var(--shadow-card)] flex items-center justify-center hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
+                  <Image
                     src={aff.logo}
                     alt={`${aff.name} logo`}
-                    className="h-10 w-auto object-contain"
-                    loading="lazy"
+                    width={200}
+                    height={64}
+                    className="h-12 w-auto object-contain"
                   />
-                  <p className="text-cream text-sm font-medium tracking-wide">
-                    {aff.name}
-                  </p>
-                </div>
+                </a>
               ))}
             </div>
           </div>

@@ -49,13 +49,13 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Vercel deployment | ✅ LIVE | https://acustomcoach.vercel.app — domain transfer pending for acustomcoach.com |
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
 | SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD (includes Wyoming), OG tags all pages, sitemap.xml (all 8 routes), robots.txt, canonical URLs. BBB references removed sitewide, A+ rating kept standalone. |
-| Image assets | ✅ PLACEHOLDER | Fleet page uses Pexels photos, other pages use Unsplash. Replace with real fleet/team photos when available |
+| Image assets | ✅ MOSTLY SELF-HOSTED | Fleet and service cards use self-hosted replacement assets. Some pages still use Unsplash heroes. Replace with real fleet/team photos when available |
 | Mobile CTA bar | ✅ COMPLETE | Sticky bottom bar on mobile (<md), Call + Book Now buttons, in layout.tsx |
 | Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity, design feedback pass (warmer gold, brighter text, title case, overlay fix) |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
-| Client feedback round 1 | ✅ ON DEV BRANCH | 16 changes + InquiryForm vehicle dropdown fix across 7 pages. Branch `claude/repo-assessment-lzcl6` (preview). Main reverted via PR #4. See `_context/client-feedback-round-1.md` |
+| Client feedback round 1 | ✅ MERGED TO MAIN | 16 changes + vehicle dropdown fix + pink accents + photo swaps. Merged via `efbc056`. See `_context/client-feedback-round-1.md` |
 
 ---
 
@@ -241,7 +241,7 @@ src/
 - ✅ Dedicated Mountains page (5 resort cards with drive times, group transport, seasonal availability)
 - ✅ Deployed to Vercel (https://acustomcoach.vercel.app) — custom domain pending transfer
 
-### Phase 1.5 — Client Feedback Round 1 ← ON DEV BRANCH
+### Phase 1.5 — Client Feedback Round 1 ← MERGED TO MAIN
 - ✅ 16 changes implemented across 7 pages (see `_context/client-feedback-round-1.md`)
 - ✅ BBB references removed sitewide (A+ rating kept standalone)
 - ✅ Wyoming added to service area (JSON-LD, metadata, hero, footer)
@@ -252,8 +252,9 @@ src/
 - ✅ Mountains page: distances in miles replace drive times, group capacities updated
 - ✅ About page: timeframes genericized ("over 30 years")
 - ✅ Reservations: updated DIA instructions, Special Requests field removed
-- ⚠️ Branch: `claude/repo-assessment-lzcl6` — NOT merged to main (reverted via PR #4)
-- ⚠️ Main was prematurely merged (PR #3) then reverted (PR #4). Dev branch has all changes for preview.
+- ✅ Pink accent system added (CTAs, labels, trust numbers, form labels, mobile CTA bar)
+- ✅ All photos swapped to self-hosted replacement assets
+- ✅ Merged to main via commit `efbc056` — all changes are live
 
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
 - ⬜ Set up Google Workspace ($7/user/mo)
@@ -331,10 +332,11 @@ All tracked in detail in `_context/client-answers.md`. Summary:
 - To fully reset: `git reset --hard v1.0-site-complete`
 
 ### Round 1 History
-- PR #3 merged `claude/repo-assessment-lzcl6` → `main` (premature — should have stayed on dev branch)
-- PR #4 reverted PR #3 on `main` — live site restored to pre-feedback state
-- Dev branch `claude/repo-assessment-lzcl6` still has all 16 round 1 changes intact
-- **Important for future merges:** Because main has a revert commit, re-merging this branch requires `git revert <revert-commit>` on main first, or cherry-picking the individual commits. A straight merge will no-op because git sees the changes as already applied and reverted.
+- PR #3 merged `claude/repo-assessment-lzcl6` → `main` (premature)
+- PR #4 reverted PR #3 on `main` (temporary rollback)
+- Dev branch continued receiving changes (pink accents, photo swaps, additional fixes)
+- Final merge to main via commit `efbc056` — all Round 1 changes + subsequent work now live
+- Branch `claude/repo-assessment-lzcl6` is now fully merged and can be cleaned up
 
 ### How to Handle Client Change Requests
 
