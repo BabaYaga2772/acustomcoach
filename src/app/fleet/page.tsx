@@ -41,7 +41,7 @@ const vehicles = [
     description:
       "Our high-top executive vans offer walk-in convenience and spacious seating for larger groups. Perfect for shuttles, group transfers, corporate events, and airport transportation.",
     features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
-    image: "/images/replacement-assets/03_ford_transit_grey.jpg",
+    image: "/images/replacement-assets/04_ford_transit_pro.jpg",
     alt: "Black Ford Transit High Roof executive passenger van",
   },
   {
