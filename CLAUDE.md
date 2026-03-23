@@ -33,12 +33,12 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 8 routes build clean |
-| Homepage | ✅ COMPLETE | DIA tent roof hero, trust indicators, 3-card services preview, fleet highlight, CTA band |
-| About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions (genericized timeframes — "over 30 years"), industry positions, affiliations, CTA band |
+| Homepage | ✅ COMPLETE | DIA tent roof hero (text shifted up, gold subtitle on own line, 65% overlay), trust indicators, 3-card services preview, fleet highlight, CTA band |
+| About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions (genericized timeframes — "over 30 years"), industry positions, clickable affiliation logo cards (NLA, CLA, Visit Denver) with cream backgrounds, CTA band |
 | Services page | ✅ COMPLETE | Hero, 6 service cards with photos (airport card brightened), chauffeur standards, CTA band |
-| Airport page | ✅ COMPLETE | DIA hero, trust bar, how-it-works steps (updated: phone in Book step, curb pickup), rewritten DIA pickup instructions (Level 5, East/West door, 2nd island), rewritten meet & greet (escalator greeting, name sign), distances table (not rates), 6 Colorado airports grid, 24/7 callout, CTA band |
+| Airport page | ✅ COMPLETE | DIA hero, trust bar, 2-step pickup instructions (simplified from 3), "Your chauffeur monitors" flight delay box, meet & greet, call-for-quote CTA card (replaced table), group transport, 6 Colorado airports grid, 24/7 callout, CTA band |
 | Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar, 5 resort cards with distances in miles (not drive times), "and more" card, group transport (updated: SUVs 6-7 pax, Executive Vans up to 14 pax), seasonal availability, CTA band |
-| Fleet page | ✅ COMPLETE | Hero, 4 vehicle cards: Luxury Sedans (3 pax), Luxury SUVs (6-7 pax), Luxury Executive Vans (up to 14 pax), Affiliate Vehicles (26-55 pax). Stretch Limos and old van cards removed. Pricing note, CTA band |
+| Fleet page | ✅ COMPLETE | Hero, 4 vehicle cards: Lincoln Continental sedan, Ford Expedition SUV, Ford Transit executive van (processed bg), Affiliate motor coach. Simple object-cover, uniform hover zoom. Pricing note, CTA band |
 | Reservations page | ✅ COMPLETE | Booking form (Special Requests field removed), FASTTRAK callout (URL TBD), updated DIA pickup instructions (matches airport page), sidebar cards |
 | Contact page | ✅ COMPLETE | Hero image, contact info column + 9-field inquiry form (frontend only, backend TODO) |
 | Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow. Nav: Services / Airport / Mountains / Fleet / About / Contact |
@@ -56,6 +56,7 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
 | Client feedback round 1 | ✅ MERGED TO MAIN | 16 changes + vehicle dropdown fix + pink accents + photo swaps. Merged via `efbc056`. See `_context/client-feedback-round-1.md` |
+| Client feedback round 2 | ✅ ON MAIN | About: clickable affiliation logos. Airport: 2-step pickup, chauffeur monitors, CTA replaces rate table. Mountains: distances replace drive times. Fleet: Lincoln Continental sedan photo, processed van bg, uniform cards. Homepage: hero text repositioned, gold subtitle on own line |
 
 ---
 
