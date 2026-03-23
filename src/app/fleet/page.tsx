@@ -23,8 +23,8 @@ const vehicles = [
     description:
       "Our luxury sedans provide refined comfort for airport transfers, corporate travel, and executive transportation. Ideal for individuals or small groups who demand a first-class experience.",
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
-    image: "/images/replacement-assets/02_ford_explorer_dark.jpg",
-    alt: "Black luxury SUV, side profile view",
+    image: "/images/replacement-assets/08_luxury_sedan.jpg",
+    alt: "Black luxury sedan, side profile view",
   },
   {
     name: "Luxury SUVs",
