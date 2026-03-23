@@ -25,7 +25,8 @@ const vehicles = [
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
     image: "/images/replacement-assets/09_lincoln_continental_black.jpg",
     alt: "Lincoln Continental Black Label — Luxury Sedan",
-    imageScale: "scale-[0.85]",
+    imageScale: "scale-[0.80]",
+    tallImage: true,
   },
   {
     name: "Luxury SUVs",
@@ -98,14 +99,16 @@ export default function FleetPage() {
                   className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
                   {/* Photo */}
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src={vehicle.image}
-                      alt={vehicle.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className={`object-cover group-hover:scale-105 transition-transform duration-500 ${vehicle.imageScale ?? ""}`}
-                    />
+                  <div className={`relative ${vehicle.tallImage ? "h-56" : "h-48"} overflow-hidden`}>
+                    <div className={`absolute inset-0 ${vehicle.imageScale ?? ""} transition-transform duration-500`}>
+                      <Image
+                        src={vehicle.image}
+                        alt={vehicle.alt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
                   </div>
 
