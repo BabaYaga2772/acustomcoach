@@ -80,6 +80,7 @@ const affiliations = [
     name: "Colorado Limousine Association",
     logo: "/images/replacement-assets/logo_cla.png",
     href: "https://cololimo.org/",
+    darkLogo: true,
   },
   {
     name: "Visit Denver / Convention & Visitors Bureau",
@@ -304,7 +305,7 @@ export default function AboutPage() {
                     alt={`${aff.name} logo`}
                     width={200}
                     height={64}
-                    className="h-12 w-auto object-contain"
+                    className={`h-12 w-auto object-contain ${aff.darkLogo ? "bg-white/90 rounded-lg px-3 py-2" : ""}`}
                   />
                 </a>
               ))}
