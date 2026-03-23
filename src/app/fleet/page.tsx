@@ -25,7 +25,8 @@ const vehicles = [
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
     image: "/images/replacement-assets/09_lincoln_continental_black.jpg",
     alt: "Lincoln Continental Black Label — Luxury Sedan",
-    imagePosition: "object-[center_60%]",
+    imagePosition: "object-[center_55%]",
+    imageScale: "scale-110",
   },
   {
     name: "Luxury SUVs",
@@ -35,6 +36,7 @@ const vehicles = [
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
     image: "/images/replacement-assets/05_ford_expedition_fleet.jpg",
     alt: "Black Ford Expedition in motion on urban street at dusk",
+    imageScale: "scale-150",
   },
   {
     name: "Luxury Executive Vans",
@@ -103,7 +105,7 @@ export default function FleetPage() {
                       alt={vehicle.alt}
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className={`object-cover group-hover:scale-105 transition-transform duration-500 ${vehicle.imagePosition ?? ""}`}
+                      className={`object-cover group-hover:scale-[1.08] transition-transform duration-500 ${vehicle.imageScale ?? ""} ${vehicle.imagePosition ?? ""}`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
                   </div>
