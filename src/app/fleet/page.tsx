@@ -25,6 +25,7 @@ const vehicles = [
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
     image: "/images/replacement-assets/09_lincoln_continental_black.jpg",
     alt: "Lincoln Continental Black Label — Luxury Sedan",
+    imageScale: "scale-[0.85]",
   },
   {
     name: "Luxury SUVs",
@@ -34,7 +35,7 @@ const vehicles = [
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
     image: "/images/replacement-assets/05_ford_expedition_fleet.jpg",
     alt: "Black Ford Expedition in motion on urban street at dusk",
-    imageScale: "scale-110",
+    imageScale: "scale-125",
   },
   {
     name: "Luxury Executive Vans",
