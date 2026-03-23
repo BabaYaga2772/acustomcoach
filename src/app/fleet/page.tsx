@@ -25,8 +25,6 @@ const vehicles = [
     features: ["Professional chauffeur", "Climate controlled", "Leather interior", "Complimentary water"],
     image: "/images/replacement-assets/09_lincoln_continental_black.jpg",
     alt: "Lincoln Continental Black Label — Luxury Sedan",
-    imagePosition: "object-[center_55%]",
-    imageScale: "scale-110",
   },
   {
     name: "Luxury SUVs",
@@ -36,7 +34,6 @@ const vehicles = [
     features: ["Ample luggage space", "All-weather capable", "Premium seating", "Tinted privacy glass"],
     image: "/images/replacement-assets/05_ford_expedition_fleet.jpg",
     alt: "Black Ford Expedition in motion on urban street at dusk",
-    imageScale: "scale-150",
   },
   {
     name: "Luxury Executive Vans",
@@ -44,9 +41,8 @@ const vehicles = [
     description:
       "Our high-top executive vans offer walk-in convenience and spacious seating for larger groups. Perfect for shuttles, group transfers, corporate events, and airport transportation.",
     features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
-    image: "/images/replacement-assets/04_ford_transit_black.jpg",
+    image: "/images/replacement-assets/03_ford_transit_grey.jpg",
     alt: "Black Ford Transit High Roof executive passenger van",
-    darkBg: true,
   },
   {
     name: "Affiliate Vehicles",
@@ -100,21 +96,15 @@ export default function FleetPage() {
                   className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
                   {/* Photo */}
-                  <div className={`relative h-48 overflow-hidden ${vehicle.darkBg ? "bg-[#1a1a1a]" : ""}`}>
-                    <div className={`absolute inset-[-20%] ${vehicle.imageScale ?? ""}`}>
-                      <Image
-                        src={vehicle.image}
-                        alt={vehicle.alt}
-                        fill
-                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className={`object-cover group-hover:scale-110 transition-transform duration-500 ${vehicle.imagePosition ?? ""}`}
-                      />
-                    </div>
-                    {vehicle.darkBg ? (
-                      <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-elevated/60 pointer-events-none" />
-                    ) : (
-                      <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent pointer-events-none" />
-                    )}
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={vehicle.image}
+                      alt={vehicle.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
                   </div>
 
                   <div className="p-8 pt-4">
