@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative min-h-[85vh] flex items-start justify-center pt-[18vh] md:pt-[20vh] bg-foundation overflow-hidden">
+        <section className="relative min-h-[85vh] flex items-start justify-center pt-[10vh] md:pt-[12vh] bg-foundation overflow-hidden">
           <Image
             src="/images/replacement-assets/01_denver_airport_hero.jpg"
             alt="Denver skyline at night with city lights"
