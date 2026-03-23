@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 const resorts = [
   {
     name: "Vail",
-    driveFromDenver: "~1 hr 45 min",
-    driveFromDIA: "~2 hr 15 min",
+    distFromDenver: "97 mi",
+    distFromDIA: "120 mi",
     elevation: "8,150 ft base",
     description:
       "Colorado's flagship ski resort and year-round mountain destination. World-class skiing, Vail Village shopping, and summer hiking draw visitors from around the globe.",
@@ -28,8 +28,8 @@ const resorts = [
   },
   {
     name: "Breckenridge",
-    driveFromDenver: "~1 hr 30 min",
-    driveFromDIA: "~2 hr",
+    distFromDenver: "80 mi",
+    distFromDIA: "104 mi",
     elevation: "9,600 ft base",
     description:
       "A historic mining town turned world-class resort. Five peaks of skiing in winter, a vibrant Main Street year-round, and some of the best high-altitude terrain in North America.",
@@ -37,8 +37,8 @@ const resorts = [
   },
   {
     name: "Aspen",
-    driveFromDenver: "~3 hr 30 min",
-    driveFromDIA: "~4 hr",
+    distFromDenver: "199 mi",
+    distFromDIA: "221 mi",
     elevation: "7,945 ft base",
     description:
       "The iconic Colorado mountain town — synonymous with luxury, culture, and world-class skiing across four mountains. A destination that needs no introduction.",
@@ -46,8 +46,8 @@ const resorts = [
   },
   {
     name: "Beaver Creek",
-    driveFromDenver: "~2 hr",
-    driveFromDIA: "~2 hr 30 min",
+    distFromDenver: "107 mi",
+    distFromDIA: "130 mi",
     elevation: "8,100 ft base",
     description:
       "Vail's exclusive neighbor — known for impeccable grooming, luxury lodging, and a more intimate resort experience. Famous for fresh-baked cookies at the base.",
@@ -55,8 +55,8 @@ const resorts = [
   },
   {
     name: "Keystone",
-    driveFromDenver: "~1 hr 30 min",
-    driveFromDIA: "~2 hr",
+    distFromDenver: "75 mi",
+    distFromDIA: "99 mi",
     elevation: "9,280 ft base",
     description:
       "A family-friendly resort with night skiing, three mountains of terrain, and a charming lakeside village. One of the closest major resorts to Denver.",
@@ -139,16 +139,16 @@ export default function MountainsPage() {
                     </span>
                   </div>
 
-                  {/* Drive Times */}
+                  {/* Distances */}
                   <div className="flex gap-4 mb-4">
                     <span className="text-cream-muted text-xs">
                       From Denver:{" "}
-                      <span className="text-cream">{resort.driveFromDenver}</span>
+                      <span className="text-cream">{resort.distFromDenver}</span>
                     </span>
                     <span className="text-border-gold">|</span>
                     <span className="text-cream-muted text-xs">
                       From DIA:{" "}
-                      <span className="text-cream">{resort.driveFromDIA}</span>
+                      <span className="text-cream">{resort.distFromDIA}</span>
                     </span>
                   </div>
 

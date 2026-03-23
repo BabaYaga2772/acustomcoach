@@ -29,15 +29,15 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-foundation/60" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
-            <p className="text-pink text-xs tracking-[0.25em] uppercase mb-6 font-body">
-              Established 1988<br className="sm:hidden" />{" "}
-              <span className="hidden sm:inline">· </span>Serving Colorado &amp; Wyoming
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-6">
+            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-4">
               A Custom Coach
-              <br />
-              <span className="text-gold">Denver&apos;s Premier Transportation</span>
             </h1>
+            <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-4 font-body">
+              Established 1988 · Serving Colorado &amp; Wyoming
+            </p>
+            <p className="font-display text-3xl md:text-5xl font-medium text-gold leading-[1.1] tracking-tight mb-6">
+              Denver&apos;s Premier Transportation
+            </p>
             <p className="text-cream-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
               Professional limousine and chauffeur services for airport transfers,
               corporate travel, mountain destinations, and special events.

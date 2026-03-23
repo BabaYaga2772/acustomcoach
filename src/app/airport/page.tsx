@@ -172,7 +172,7 @@ export default function AirportPage() {
                       1.
                     </span>
                     <span>
-                      After collecting your luggage, proceed to the{" "}
+                      After collecting your luggage, proceed to{" "}
                       <span className="text-cream font-medium">
                         Ground Transportation
                       </span>{" "}
@@ -184,17 +184,6 @@ export default function AirportPage() {
                       2.
                     </span>
                     <span>
-                      Inform the attendant that your transportation company is{" "}
-                      <span className="text-cream font-medium">
-                        &ldquo;A Custom Coach.&rdquo;
-                      </span>
-                    </span>
-                  </li>
-                  <li className="flex gap-4">
-                    <span className="font-display text-2xl font-semibold text-pink leading-none shrink-0 w-8">
-                      3.
-                    </span>
-                    <span>
                       Your chauffeur will direct you to which door number
                       and to the 2nd island, and assist you with your luggage.
                     </span>
@@ -202,7 +191,7 @@ export default function AirportPage() {
                 </ol>
                 <p className="text-cream-muted text-sm mt-8 leading-relaxed bg-surface border border-border-subtle rounded-lg p-4">
                   <span className="text-gold font-medium">Flight delayed?</span>{" "}
-                  No need to call. Our dispatch monitors all arrivals in real
+                  No need to call. Your chauffeur monitors all arrivals in real
                   time and adjusts your pickup automatically.
                 </p>
               </div>
@@ -334,48 +323,30 @@ export default function AirportPage() {
               reservation is confirmed. Rates vary by vehicle type, distance, and
               time of day.
             </p>
-            <div className="bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)]">
-              <table className="w-full text-left">
-                <thead>
-                  <tr className="border-b border-border-subtle">
-                    <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
-                      Route
-                    </th>
-                    <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4">
-                      Vehicle
-                    </th>
-                    <th className="text-gold text-xs tracking-[0.15em] uppercase font-medium px-6 py-4 text-right">
-                      Starting At
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="text-cream-muted text-sm">
-                  {[
-                    { route: "DIA → Downtown Denver", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Boulder", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Denver Tech Center", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "DIA → Vail / Beaver Creek", vehicle: "SUV", price: "Call for quote" },
-                    { route: "DIA → Colorado Springs", vehicle: "Sedan", price: "Call for quote" },
-                    { route: "Custom Route", vehicle: "Any vehicle", price: "Call for quote" },
-                  ].map((row) => (
-                    <tr
-                      key={row.route}
-                      className="border-b border-border-subtle last:border-b-0 hover:bg-elevated/50 transition-colors"
-                    >
-                      <td className="px-6 py-4 text-cream">{row.route}</td>
-                      <td className="px-6 py-4">{row.vehicle}</td>
-                      <td className="px-6 py-4 text-right text-gold font-medium">
-                        {row.price}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+            <div className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)] max-w-xl">
+              <p className="text-cream text-lg font-medium mb-3">
+                Call for a Personalized Quote
+              </p>
+              <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
+                Every trip is different. Tell us your pickup, destination, and
+                group size — we&apos;ll provide a firm quote in writing within
+                minutes.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="tel:3037591376"
+                  className="inline-block bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-6 py-3 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300"
+                >
+                  303-759-1376
+                </a>
+                <a
+                  href="/reservations"
+                  className="inline-block border border-border-gold text-cream px-6 py-3 rounded-md text-sm font-medium tracking-[0.08em] uppercase hover:border-gold hover:text-gold transition-all duration-300"
+                >
+                  Request Online
+                </a>
+              </div>
             </div>
-            <p className="text-cream-muted text-xs mt-4">
-              Gratuity not included. Rates subject to change. Contact us for a
-              firm quote based on your specific itinerary.
-            </p>
           </div>
         </section>
 
