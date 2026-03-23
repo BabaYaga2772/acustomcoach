@@ -27,13 +27,14 @@ export default function Home() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/60" />
+          <div className="absolute inset-0 bg-foundation/65" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
-            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-4">
+            <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-2">
               A Custom Coach
-              <br />
-              <span className="text-gold">Denver&apos;s Premier Transportation</span>
             </h1>
+            <p className="font-display text-2xl md:text-4xl font-medium text-gold tracking-tight mb-4">
+              Denver&apos;s Premier Transportation
+            </p>
             <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body">
               Established 1988 · Serving Colorado &amp; Wyoming
             </p>
