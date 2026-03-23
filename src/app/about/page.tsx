@@ -297,14 +297,14 @@ export default function AboutPage() {
                   href={aff.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-surface border border-border-subtle rounded-xl p-6 min-h-[100px] shadow-[var(--shadow-card)] flex items-center justify-center hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
+                  className="bg-[#F5F0E8] border border-border-subtle rounded-xl shadow-[var(--shadow-card)] flex items-center justify-center hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300 h-28 p-5"
                 >
                   <Image
                     src={aff.logo}
                     alt={`${aff.name} logo`}
                     width={200}
-                    height={64}
-                    className="h-12 w-auto object-contain bg-white/90 rounded-lg px-4 py-3"
+                    height={80}
+                    className="max-h-16 w-auto object-contain"
                   />
                 </a>
               ))}
