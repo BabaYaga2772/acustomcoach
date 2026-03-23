@@ -46,6 +46,7 @@ const vehicles = [
     features: ["Walk-in high-top ceiling", "High capacity seating", "Luggage accommodation", "Group-friendly layout"],
     image: "/images/replacement-assets/04_ford_transit_black.jpg",
     alt: "Black Ford Transit High Roof executive passenger van",
+    darkBg: true,
   },
   {
     name: "Affiliate Vehicles",
@@ -99,15 +100,21 @@ export default function FleetPage() {
                   className="group bg-surface border border-border-subtle rounded-xl overflow-hidden shadow-[var(--shadow-card)] hover:border-border-gold hover:shadow-[var(--shadow-card-hover)] transition-all duration-300"
                 >
                   {/* Photo */}
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src={vehicle.image}
-                      alt={vehicle.alt}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className={`object-cover group-hover:scale-[1.08] transition-transform duration-500 ${vehicle.imageScale ?? ""} ${vehicle.imagePosition ?? ""}`}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent" />
+                  <div className={`relative h-48 overflow-hidden ${vehicle.darkBg ? "bg-[#1a1a1a]" : ""}`}>
+                    <div className={`absolute inset-[-20%] ${vehicle.imageScale ?? ""}`}>
+                      <Image
+                        src={vehicle.image}
+                        alt={vehicle.alt}
+                        fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className={`object-cover group-hover:scale-110 transition-transform duration-500 ${vehicle.imagePosition ?? ""}`}
+                      />
+                    </div>
+                    {vehicle.darkBg ? (
+                      <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-elevated/60 pointer-events-none" />
+                    ) : (
+                      <div className="absolute inset-0 bg-gradient-to-t from-surface via-surface/20 to-transparent pointer-events-none" />
+                    )}
                   </div>
 
                   <div className="p-8 pt-4">
