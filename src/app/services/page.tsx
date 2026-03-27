@@ -43,8 +43,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
-    image: "https://images.unsplash.com/photo-1730800328198-f9efbf9db53f?auto=format&fit=crop&w=800&q=80",
-    alt: "Chauffeur assisting passenger at luxury vehicle outside hotel entrance",
+    image: "/images/replacement-assets/11_meet_greet_chauffeur.jpg",
+    alt: "Professional chauffeur opening door of black luxury sedan for arriving client",
   },
   {
     label: "Mountain Attractions",

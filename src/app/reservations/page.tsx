@@ -138,12 +138,6 @@ export default function ReservationsPage() {
                       on Level 5 of the terminal.
                     </li>
                     <li>
-                      Inform the attendant that your transportation company is{" "}
-                      <span className="text-cream">
-                        &ldquo;A Custom Coach.&rdquo;
-                      </span>
-                    </li>
-                    <li>
                       Within minutes, your chauffeur will arrive and assist you
                       with your luggage.
                     </li>

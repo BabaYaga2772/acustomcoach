@@ -99,7 +99,7 @@ export default function MountainsPage() {
           <div className="max-w-5xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               { number: "37+", label: "Years on These Roads" },
-              { number: "AWD", label: "Winter-Ready Fleet" },
+              { number: "AWD/4WD", label: "Winter-Ready Fleet" },
               { number: "24/7", label: "Live Dispatch" },
               { number: "55", label: "Max Group Size" },
             ].map((stat) => (
