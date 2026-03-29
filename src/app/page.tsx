@@ -21,13 +21,13 @@ export default function Home() {
         {/* Hero */}
         <section className="relative min-h-[85vh] flex items-start justify-center pt-[10vh] md:pt-[12vh] bg-foundation overflow-hidden">
           <Image
-            src="/images/replacement-assets/01_denver_airport_hero.jpg"
-            alt="Denver skyline at night with city lights"
+            src="/images/replacement-assets/09_homepage_hero_dia_mountains.jpg"
+            alt="Denver International Airport iconic white tent roof with Rocky Mountains backdrop"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-foundation/65" />
+          <div className="absolute inset-0 bg-foundation/70" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-2">
               A Custom Coach
@@ -35,7 +35,7 @@ export default function Home() {
             <p className="font-display text-2xl md:text-4xl font-medium text-gold tracking-tight mb-4">
               Denver&apos;s Premier Transportation
             </p>
-            <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body">
+            <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body" style={{textShadow: '0 1px 4px rgba(0,0,0,0.95), 0 2px 12px rgba(0,0,0,0.85), 0 0 20px rgba(0,0,0,0.6)'}}>
               Established 1988 · Serving Colorado &amp; Wyoming
             </p>
             <p className="text-cream-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">

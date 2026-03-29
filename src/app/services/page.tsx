@@ -43,8 +43,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
-    image: "https://images.unsplash.com/photo-1730800328198-f9efbf9db53f?auto=format&fit=crop&w=800&q=80",
-    alt: "Chauffeur assisting passenger at luxury vehicle outside hotel entrance",
+    image: "/images/replacement-assets/12_services_hero.webp",
+    alt: "Professional chauffeur standing by black luxury sedan with city skyline at night",
   },
   {
     label: "Mountain Attractions",
@@ -112,8 +112,8 @@ export default function ServicesPage() {
         {/* Page Header */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1739841400344-91355156610f?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver International Airport exterior"
+            src="/images/replacement-assets/16_services_hero_v3.jpg"
+            alt="Black luxury van and SUV at private jet terminal with snow-capped mountains"
             fill
             priority
             className="object-cover"
