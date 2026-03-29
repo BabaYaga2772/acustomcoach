@@ -112,8 +112,8 @@ export default function ServicesPage() {
         {/* Page Header */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="/images/replacement-assets/15_services_hero_v2.webp"
-            alt="Professional chauffeur standing by black luxury sedan with city skyline at night"
+            src="/images/replacement-assets/16_services_hero_v3.jpg"
+            alt="Black luxury van and SUV at private jet terminal with snow-capped mountains"
             fill
             priority
             className="object-cover"
