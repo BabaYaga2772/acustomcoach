@@ -27,7 +27,7 @@ export default function Home() {
             priority
             className="object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-foundation/60" />
+          <div className="absolute inset-0 bg-foundation/70" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-2">
               A Custom Coach
