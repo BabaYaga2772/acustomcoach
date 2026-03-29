@@ -33,14 +33,14 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Content recovery | ✅ COMPLETE | All 6 pages + business listings scraped |
 | Design direction | ✅ APPROVED | Style tile reviewed, "Old Money Meets Modern Convenience" |
 | Repo scaffold | ✅ COMPLETE | Next.js 16 + TS + Tailwind v4, all 8 routes build clean |
-| Homepage | ✅ COMPLETE | DIA tent roof hero (text shifted up, gold subtitle on own line, 65% overlay), trust indicators, 3-card services preview, fleet highlight, CTA band |
+| Homepage | ✅ COMPLETE | DIA tent roof + Rocky Mountains hero (`09_homepage_hero_dia_mountains.jpg`, object-bottom, 70% overlay), pink ESTABLISHED line has textShadow for legibility, trust indicators, 3-card services preview, fleet highlight, CTA band |
 | About page | ✅ COMPLETE | Hero image, company history, vision, John Hafer bio, acquisitions (genericized timeframes — "over 30 years"), industry positions, clickable affiliation logo cards (NLA, CLA, Visit Denver) with cream backgrounds, CTA band |
-| Services page | ✅ COMPLETE | Hero, 6 service cards with photos (airport card brightened), chauffeur standards, CTA band |
-| Airport page | ✅ COMPLETE | DIA hero, trust bar, 2-step pickup instructions (simplified from 3), "Your chauffeur monitors" flight delay box, meet & greet, call-for-quote CTA card (replaced table), group transport, 6 Colorado airports grid, 24/7 callout, CTA band |
-| Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar, 5 resort cards with distances in miles (not drive times), "and more" card, group transport (updated: SUVs 6-7 pax, Executive Vans up to 14 pax), seasonal availability, CTA band |
+| Services page | ✅ COMPLETE | Hero (`16_services_hero_v3.jpg` — private jet terminal/mountain van), 6 service cards (Meet & Greet card: `12_services_hero.webp` chauffeur/city skyline, Airport Transfers card: Unsplash), chauffeur standards, CTA band |
+| Airport page | ✅ COMPLETE | DIA night hero (`14_airport_transfers_night.jpg`, no people), trust bar, 2-step pickup instructions (simplified from 3), "Your chauffeur monitors" flight delay box, meet & greet, call-for-quote CTA card (replaced table), group transport, 6 Colorado airports grid, 24/7 callout, CTA band |
+| Mountains page | ✅ COMPLETE | Mountain highway hero, trust bar (AWD/4WD), 5 resort cards with distances in miles (not drive times), "and more" card, group transport (updated: SUVs 6-7 pax, Executive Vans up to 14 pax), seasonal availability, CTA band |
 | Fleet page | ✅ COMPLETE | Hero, 4 vehicle cards: Lincoln Continental sedan, Ford Expedition SUV, Ford Transit executive van (processed bg), Affiliate motor coach. Simple object-cover, uniform hover zoom. Pricing note, CTA band |
-| Reservations page | ✅ COMPLETE | Booking form (Special Requests field removed), FASTTRAK callout (URL TBD), updated DIA pickup instructions (matches airport page), sidebar cards |
-| Contact page | ✅ COMPLETE | Hero image, contact info column + 9-field inquiry form (frontend only, backend TODO) |
+| Reservations page | ✅ COMPLETE | Booking form (Special Requests field removed), FASTTRAK callout (URL TBD), 2-step DIA pickup instructions (step 2 updated: chauffeur directs to door number + 2nd island), sidebar cards |
+| Contact page | ✅ COMPLETE | Hero image (overlay lightened to 35%), contact info column + 9-field inquiry form (frontend only, backend TODO) |
 | Header component | ✅ COMPLETE | Responsive, sticky, mobile hamburger, Book Now CTA, drop shadow. Nav: Services / Airport / Mountains / Fleet / About / Contact |
 | Footer component | ✅ COMPLETE | 3-column layout, contact info, affiliations, top shadow. "Serving Colorado & Wyoming" |
 | Contact/inquiry form | 🟡 FRONTEND DONE | InquiryForm + ReservationForm components built, needs backend (Formspree/Resend/FASTTRAK) |
@@ -49,14 +49,15 @@ This project also serves as the proof-of-concept for Speed of Now Productions' S
 | Vercel deployment | ✅ LIVE | https://acustomcoach.vercel.app — domain transfer pending for acustomcoach.com |
 | Email migration | ❌ NOT STARTED | Google Workspace planned, waiting on email situation clarity |
 | SEO / schema markup | ✅ COMPLETE | LocalBusiness JSON-LD (includes Wyoming), OG tags all pages, sitemap.xml (all 8 routes), robots.txt, canonical URLs. BBB references removed sitewide, A+ rating kept standalone. |
-| Image assets | ✅ MOSTLY SELF-HOSTED | Fleet and service cards use self-hosted replacement assets. Some pages still use Unsplash heroes. Replace with real fleet/team photos when available |
+| Image assets | ✅ MOSTLY SELF-HOSTED | Fleet, service cards, homepage hero, airport hero, services hero, Meet & Greet card, affiliation logos all self-hosted. Airport Transfers service card still Unsplash. Replace with real fleet/team photos when available |
 | Mobile CTA bar | ✅ COMPLETE | Sticky bottom bar on mobile (<md), Call + Book Now buttons, in layout.tsx |
 | Design polish | ✅ COMPLETE | Card shadows, gold glow hovers, CTA band lift, form focus rings, bumped border/accent opacity, design feedback pass (warmer gold, brighter text, title case, overlay fix) |
 | Mom questionnaire | ✅ SENT | `deliverables/What_Bobby_Needs_From_John.docx` |
 | Service scope & pricing | ✅ COMPLETE | `_context/service-scope-pricing.md` |
 | Roadmap | ✅ COMPLETE | 5 phases, 34 tasks (see Roadmap section below) |
 | Client feedback round 1 | ✅ MERGED TO MAIN | 16 changes + vehicle dropdown fix + pink accents + photo swaps. Merged via `efbc056`. See `_context/client-feedback-round-1.md` |
-| Client feedback round 2 | ✅ ON MAIN | About: clickable affiliation logos. Airport: 2-step pickup, chauffeur monitors, CTA replaces rate table. Mountains: distances replace drive times. Fleet: Lincoln Continental sedan photo, processed van bg, uniform cards. Homepage: hero text repositioned, gold subtitle on own line |
+| Client feedback round 2 | ✅ ON MAIN | About: clickable affiliation logos. Airport: DIA sunset hero, 2-step pickup, chauffeur monitors, CTA replaces rate table. Mountains: distances replace drive times, AWD/4WD. Fleet: Lincoln Continental sedan photo, processed van bg, uniform cards. Homepage: DIA+Mountains hero (45% overlay), gold subtitle on own line. Services: Meet & Greet chauffeur photo. Reservations: 2-step pickup (step 2 removed). Applied by Manus via 5 direct commits (`19d9501`) |
+| Client feedback round 3 | ✅ ON MAIN | Applied by Manus via direct commits (`e155315`). Homepage: 70% overlay, object-bottom, textShadow on ESTABLISHED line. Services: new hero (`16_services_hero_v3.jpg`), Meet & Greet card (`12_services_hero.webp`), Airport Transfers card reverted to Unsplash. Airport: night hero (`14_airport_transfers_night.jpg`). Contact: overlay lightened to 35%. Reservations: step 2 rewritten (door number + 2nd island). New assets: 5 images added to replacement-assets/ |
 
 ---
 
@@ -256,6 +257,11 @@ src/
 - ✅ Pink accent system added (CTAs, labels, trust numbers, form labels, mobile CTA bar)
 - ✅ All photos swapped to self-hosted replacement assets
 - ✅ Merged to main via commit `efbc056` — all changes are live
+
+### Phase 1.6 — Client Feedback Rounds 2 & 3 ← ON MAIN
+- ✅ Round 2: About affiliation logos, Airport DIA hero, 2-step pickup, Mountains AWD/4WD, Fleet Lincoln Continental, Homepage 45% overlay, Services Meet & Greet photo, Reservations step 2 removed — applied by Manus (`19d9501`)
+- ✅ Round 3: Homepage 70% overlay + object-bottom + ESTABLISHED textShadow, Services new hero + Meet & Greet card, Airport night hero, Contact overlay 35%, Reservations step 2 rewritten — applied by Manus (`e155315`)
+- ✅ 5 new self-hosted images added to `public/images/replacement-assets/`
 
 ### Phase 2 — Fix Infrastructure (Weeks 3–4)
 - ⬜ Set up Google Workspace ($7/user/mo)
