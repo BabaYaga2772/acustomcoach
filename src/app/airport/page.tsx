@@ -63,8 +63,8 @@ export default function AirportPage() {
         {/* Hero */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="/images/replacement-assets/10_airport_page_hero.jpg"
-            alt="Denver International Airport tent roof at sunset, orange and purple sky"
+            src="/images/replacement-assets/14_airport_transfers_night.jpg"
+            alt="Denver International Airport tent roofs illuminated at night, wide telephoto shot"
             fill
             priority
             className="object-cover"

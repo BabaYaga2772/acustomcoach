@@ -28,8 +28,9 @@ const services = [
       "Flight tracking & delay monitoring",
       "Meet at Ground Transportation",
     ],
-    image: "/images/replacement-assets/14_airport_transfers_night.jpg",
-    alt: "Denver International Airport tent roofs illuminated at night, wide telephoto shot",
+    // PHOTO: Brighter DIA terminal interior
+    image: "https://images.unsplash.com/photo-1556388158-158ea5ccacbd?auto=format&fit=crop&w=800&q=80",
+    alt: "Denver International Airport terminal interior with white tent roof",
   },
   {
     label: "Meet & Greet",
@@ -42,8 +43,8 @@ const services = [
       "Group coordination for large parties",
       "Custom signage available",
     ],
-    image: "/images/replacement-assets/13_meet_greet_sign.jpg",
-    alt: "Professional chauffeur in dark suit holding name sign in front of black luxury vehicles",
+    image: "/images/replacement-assets/12_services_hero.webp",
+    alt: "Professional chauffeur standing by black luxury sedan with city skyline at night",
   },
   {
     label: "Mountain Attractions",
@@ -111,7 +112,7 @@ export default function ServicesPage() {
         {/* Page Header */}
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="/images/replacement-assets/12_services_hero.webp"
+            src="/images/replacement-assets/15_services_hero_v2.webp"
             alt="Professional chauffeur standing by black luxury sedan with city skyline at night"
             fill
             priority

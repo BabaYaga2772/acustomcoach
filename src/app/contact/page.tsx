@@ -30,7 +30,7 @@ export default function ContactPage() {
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/50" />
+          <div className="absolute inset-0 bg-foundation/35" />
           <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
