@@ -27,7 +27,7 @@ export default function Home() {
             priority
             className="object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-foundation/55" />
+          <div className="absolute inset-0 bg-foundation/60" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-2">
               A Custom Coach
@@ -35,7 +35,7 @@ export default function Home() {
             <p className="font-display text-2xl md:text-4xl font-medium text-gold tracking-tight mb-4">
               Denver&apos;s Premier Transportation
             </p>
-            <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body">
+            <p className="text-pink text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body" style={{textShadow: '0 1px 6px rgba(0,0,0,0.7), 0 0 12px rgba(0,0,0,0.4)'}}>
               Established 1988 · Serving Colorado &amp; Wyoming
             </p>
             <p className="text-cream-muted text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 font-light">
