@@ -25,9 +25,9 @@ export default function Home() {
             alt="Denver International Airport iconic white tent roof with Rocky Mountains backdrop"
             fill
             priority
-            className="object-cover"
+            className="object-cover object-top"
           />
-          <div className="absolute inset-0 bg-foundation/45" />
+          <div className="absolute inset-0 bg-foundation/55" />
           <div className="relative max-w-5xl mx-auto px-6 text-center">
             <h1 className="font-display text-5xl md:text-7xl font-medium text-white leading-[1.05] tracking-tight mb-2">
               A Custom Coach

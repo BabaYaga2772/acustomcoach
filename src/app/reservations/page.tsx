@@ -138,8 +138,8 @@ export default function ReservationsPage() {
                       on Level 5 of the terminal.
                     </li>
                     <li>
-                      Within minutes, your chauffeur will arrive and assist you
-                      with your luggage.
+                      Your chauffeur will direct you to which door number
+                      and to the 2nd island, and assist you with your luggage.
                     </li>
                   </ol>
                   <p className="text-cream-muted text-xs mt-4 leading-relaxed">
