@@ -24,13 +24,13 @@ export default function ContactPage() {
       <main className="bg-foundation">
         <section className="relative py-24 border-b border-border-subtle overflow-hidden">
           <Image
-            src="https://images.unsplash.com/photo-1744871867083-82667ed80856?auto=format&fit=crop&w=1920&q=80"
-            alt="Denver skyline at golden hour"
+            src="/images/replacement-assets/17_contact_hero.jpg"
+            alt="Denver skyline at golden hour with Rocky Mountains"
             fill
             priority
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-foundation/35" />
+          <div className="absolute inset-0 bg-foundation/25" />
           <div className="relative max-w-4xl mx-auto px-6">
             <p className="text-pink text-xs tracking-[0.2em] uppercase mb-4">Contact Us</p>
             <h1 className="font-display text-4xl md:text-5xl font-medium text-white mb-6">
