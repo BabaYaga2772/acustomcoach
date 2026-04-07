@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact A Custom Coach — Denver & Boulder Transportation",
     description:
-      "Call (303) 759-1376 or or text (303) 669-5144. We answer live, 24 hours a day. No auto-attendant. Denver, Colorado.",
+      "Call (303) 759-1376 or text (303) 669-5144. We answer live, 24 hours a day. No auto-attendant. Denver, Colorado.",
     url: "/contact",
   },
   alternates: { canonical: "/contact" },
