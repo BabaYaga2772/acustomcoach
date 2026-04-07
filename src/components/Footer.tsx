@@ -52,8 +52,8 @@ export function Footer() {
               <a href="tel:3037591376" className="text-cream hover:text-gold transition-colors">
                 Local: (303) 759-1376
               </a>
-              <a href="tel:18006715466" className="text-cream hover:text-gold transition-colors">
-                Toll Free: 1-800-671-5466
+              <a href="sms:3036695144" className="text-cream hover:text-gold transition-colors">
+                Text: (303) 669-5144
               </a>
               <a href="mailto:info@acustomcoach.com" className="text-cream hover:text-gold transition-colors">
                 info@acustomcoach.com

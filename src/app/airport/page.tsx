@@ -140,7 +140,7 @@ export default function AirportPage() {
                   key={item.step}
                   className="bg-surface border border-border-subtle rounded-xl p-8 shadow-[var(--shadow-card)]"
                 >
-                  <div className="font-display text-5xl font-semibold text-pink/20 leading-none mb-4">
+                  <div className="font-display text-5xl font-semibold text-pink/60 leading-none mb-4">
                     {item.step}
                   </div>
                   <h3 className="font-display text-xl font-medium text-white mb-3">
@@ -206,17 +206,14 @@ export default function AirportPage() {
                 </h3>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
                   For VIPs, executives, or first-time visitors — our greeter
-                  meets you at your gate or baggage claim with a custom name
-                  sign, assists with luggage, and escorts you directly to your
-                  waiting vehicle.
+                  meets you at the top of the escalator, assists with your
+                  luggage, and escorts you directly to your waiting vehicle.
                 </p>
                 <ul className="space-y-3">
                   {[
                     "Personalized name signage",
-                    "Gate or baggage claim meeting",
                     "Luggage assistance to vehicle",
                     "Group coordination for large parties",
-                    "Custom signage available",
                   ].map((feature) => (
                     <li
                       key={feature}

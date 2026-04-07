@@ -242,16 +242,15 @@ export default function MountainsPage() {
                 </h3>
                 <p className="text-cream-muted text-[15px] leading-relaxed mb-6">
                   Colorado&apos;s mountains don&apos;t close — and neither do we.
-                  Ski season transfers, summer festival rides, fall foliage
-                  tours, spring wedding shuttles. Our drivers know these roads in
+                  Ski season transfers, spring wedding shuttles, and year-round retreats and resorts. Our drivers know these roads in
                   every condition.
                 </p>
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     { season: "Winter", detail: "Ski & snowboard transfers" },
                     { season: "Spring", detail: "Wedding & event shuttles" },
-                    { season: "Summer", detail: "Hiking & festival rides" },
-                    { season: "Fall", detail: "Foliage tours & retreats" },
+                    { season: "Summer", detail: "Hiking & resort access" },
+                    { season: "Fall", detail: "Retreats & resorts" },
                   ].map((item) => (
                     <div key={item.season}>
                       <div className="font-display text-lg font-medium text-gold mb-1">

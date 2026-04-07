@@ -44,12 +44,12 @@ export function InquiryForm() {
       {/* Email + Phone row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <Field label="Email" name="email" type="email" required />
-        <Field label="Phone" name="phone" type="tel" />
+        <Field label="Phone" name="phone" type="tel" required />
       </div>
 
       {/* Date + Passengers row */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <Field label="Date of Service" name="date" type="date" />
+        <Field label="Date of Service" name="date" type="date" required />
         <Field label="Number of Passengers" name="passengers" type="number" min={1} max={55} />
       </div>
 

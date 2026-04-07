@@ -50,11 +50,10 @@ const services = [
     label: "Mountain Attractions",
     title: "Colorado's Peaks, Without the Stress",
     description:
-      "We arrange vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats, scenic tours — sit back and let us navigate the passes.",
+      "We arrange vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats — sit back and let us navigate the passes.",
     features: [
       "Ski resort transfers",
       "Mountain retreat & resort access",
-      "Scenic tour transportation",
       "Year-round availability",
     ],
     image: "https://images.unsplash.com/photo-1653688107875-38c6dfe0e59b?auto=format&fit=crop&w=800&q=80",
@@ -75,18 +74,18 @@ const services = [
     alt: "Downtown Denver skyscrapers and business district",
   },
   {
-    label: "Weddings",
-    title: "Mountain Weddings, Elevated",
+    label: "Sporting Events",
+    title: "Game Day, Handled.",
     description:
-      "Colorado's mountain venues are breathtaking — getting there shouldn't be stressful. We handle every transportation detail for your wedding party, from Denver to the ceremony and everywhere in between.",
+      "We handle all your transportation needs for the event. A Custom Coach is a preferred transportation partner for Colorado Rockies events — and we serve every major Denver venue.",
     features: [
-      "Bridal party transportation",
-      "Ceremony-to-reception transfers",
-      "Guest shuttle service",
-      "Mountain venue specialists",
+      "Baseball & football transportation",
+      "Shuttle service to and from games",
+      "Coors Field & Empower Field specialists",
+      "Groups of any size",
     ],
-    image: "/images/replacement-assets/07_colorado_mountain_wedding.jpg",
-    alt: "Couple at an alpine lake with Rocky Mountain peaks in golden hour light",
+    image: "/images/replacement-assets/17_sporting_events.jpg",
+    alt: "Coors Field baseball game and Empower Field at Mile High stadium side by side",
   },
   {
     label: "Special Events",
