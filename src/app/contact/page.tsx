@@ -7,11 +7,11 @@ import { InquiryForm } from "@/components/InquiryForm";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact A Custom Coach for luxury transportation in Denver and Boulder. Call (303) 759-1376 or 1-800-671-5466. We answer live, 24 hours a day.",
+    "Contact A Custom Coach for luxury transportation in Denver and Boulder. Call (303) 759-1376 or (303) 669-5144. We answer live, 24 hours a day.",
   openGraph: {
     title: "Contact A Custom Coach — Denver & Boulder Transportation",
     description:
-      "Call (303) 759-1376 or toll free 1-800-671-5466. We answer live, 24 hours a day. No auto-attendant. Denver, Colorado.",
+      "Call (303) 759-1376 or or text (303) 669-5144. We answer live, 24 hours a day. No auto-attendant. Denver, Colorado.",
     url: "/contact",
   },
   alternates: { canonical: "/contact" },
@@ -61,8 +61,8 @@ export default function ContactPage() {
                   <a href="tel:3037591376" className="text-cream text-lg hover:text-gold transition-colors block">
                     (303) 759-1376
                   </a>
-                  <a href="tel:18006715466" className="text-cream-muted hover:text-gold transition-colors block mt-1">
-                    Toll Free: 1-800-671-5466
+                  <a href="tel:3036695144" className="text-cream-muted hover:text-gold transition-colors block mt-1">
+                    Text: (303) 669-5144
                   </a>
                 </div>
                 <div>

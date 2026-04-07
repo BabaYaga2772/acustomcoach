@@ -47,12 +47,12 @@ export default function ReservationsPage() {
               >
                 (303) 759-1376
               </a>{" "}
-              or toll free{" "}
+              or or text{" "}
               <a
-                href="tel:18006715466"
+                href="tel:3036695144"
                 className="text-gold hover:text-gold-light transition-colors"
               >
-                1-800-671-5466
+                (303) 669-5144
               </a>
               .
             </p>
@@ -169,10 +169,10 @@ export default function ReservationsPage() {
                       Local: (303) 759-1376
                     </a>
                     <a
-                      href="tel:18006715466"
+                      href="tel:3036695144"
                       className="block text-gold text-sm font-medium hover:text-gold-light transition-colors"
                     >
-                      Toll Free: 1-800-671-5466
+                      Text: (303) 669-5144
                     </a>
                   </div>
                 </div>

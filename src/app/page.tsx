@@ -230,10 +230,10 @@ export default function Home() {
               </a>
               <span className="hidden sm:inline text-border-gold">|</span>
               <a
-                href="tel:18006715466"
+                href="tel:3036695144"
                 className="text-gold text-lg font-medium tracking-wide hover:text-gold-light transition-colors"
               >
-                Toll Free: 1-800-671-5466
+                Text: (303) 669-5144
               </a>
             </div>
           </div>

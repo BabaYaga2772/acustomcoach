@@ -138,11 +138,11 @@ const localBusinessSchema = {
     },
     {
       "@type": "ContactPoint",
-      telephone: "+1-800-671-5466",
+      telephone: "+(303) 669-5144",
       contactType: "reservations",
       areaServed: "US",
       availableLanguage: "English",
-      contactOption: "TollFree",
+      contactOption: "Text",
     },
   ],
 };
