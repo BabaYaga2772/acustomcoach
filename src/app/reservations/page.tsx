@@ -47,7 +47,7 @@ export default function ReservationsPage() {
               >
                 (303) 759-1376
               </a>{" "}
-              or or text{" "}
+              or text{" "}
               <a
                 href="tel:3036695144"
                 className="text-gold hover:text-gold-light transition-colors"
