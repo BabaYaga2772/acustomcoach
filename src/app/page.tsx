@@ -111,7 +111,7 @@ export default function Home() {
                   label: "Mountain Attractions",
                   title: "Colorado\u2019s Peaks, Without the Stress",
                   description:
-                    "Vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats, scenic tours — sit back and let us navigate.",
+                    "Vehicle transportation to any location in the Rocky Mountains and surrounding attractions. Ski resorts, mountain retreats — sit back and let us navigate.",
                   features: ["Ski resort transfers", "Mountain retreat access", "Year-round availability"],
                   image: "https://images.unsplash.com/photo-1653688107875-38c6dfe0e59b?auto=format&fit=crop&w=800&q=80",
                   alt: "Scenic Colorado mountain highway through the Rockies",

@@ -248,7 +248,7 @@ export default function MountainsPage() {
                 <div className="grid grid-cols-2 gap-4">
                   {[
                     { season: "Winter", detail: "Ski & snowboard transfers" },
-                    { season: "Spring", detail: "Wedding & event shuttles" },
+                    { season: "Spring", detail: "Sporting events" },
                     { season: "Summer", detail: "Hiking & resort access" },
                     { season: "Fall", detail: "Retreats & resorts" },
                   ].map((item) => (

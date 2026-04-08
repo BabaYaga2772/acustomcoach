@@ -41,7 +41,6 @@ const services = [
       "Luggage assistance",
       "Client escort to vehicle",
       "Group coordination for large parties",
-      "Custom signage available",
     ],
     image: "/images/replacement-assets/12_services_hero.webp",
     alt: "Professional chauffeur standing by black luxury sedan with city skyline at night",

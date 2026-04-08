@@ -99,6 +99,7 @@ export function ReservationForm({
           name="originCity"
           type="text"
           placeholder="e.g. Los Angeles, New York, Chicago"
+          required
         />
       </div>
 
