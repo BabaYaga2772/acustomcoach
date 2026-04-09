@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="text-cream-muted text-sm leading-relaxed">
               Denver &amp; Boulder&apos;s premier luxury transportation provider since 1988.
-              A+ rated. National Limousine Association member.
+              A+ rated. Colorado Limousine Association member.
             </p>
           </div>
 
@@ -77,8 +77,6 @@ export function Footer() {
             © {new Date().getFullYear()} A Custom Coach, Inc. All rights reserved.
           </div>
           <div className="text-cream-muted text-xs flex gap-4">
-            <span>National Limousine Association</span>
-            <span>·</span>
             <span>Colorado Limousine Association</span>
           </div>
         </div>

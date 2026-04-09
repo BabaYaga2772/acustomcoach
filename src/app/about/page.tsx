@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About A Custom Coach — 37+ Years of Colorado Luxury Transportation",
     description:
-      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ rated. NLA and CLA member.",
+      "Founded in 1988 by John Hafer. From a one-car operation to Colorado's premier transportation company. A+ rated. CLA member.",
     url: "/about",
   },
   alternates: { canonical: "/about" },
@@ -71,11 +71,6 @@ const industryPositions = [
 ];
 
 const affiliations = [
-  {
-    name: "National Limousine Association",
-    logo: "/images/replacement-assets/logo_nla.jpg",
-    href: "https://www.limo.org/",
-  },
   {
     name: "Colorado Limousine Association",
     logo: "/images/replacement-assets/logo_cla.png",

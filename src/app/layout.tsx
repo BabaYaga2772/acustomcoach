@@ -124,7 +124,6 @@ const localBusinessSchema = {
   },
   award: "A+ Rating",
   memberOf: [
-    { "@type": "Organization", name: "National Limousine Association" },
     { "@type": "Organization", name: "Colorado Limousine Association" },
     { "@type": "Organization", name: "Denver Metro Convention & Visitors Bureau" },
   ],
