@@ -2,6 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqogbez";
+
 const vehicleOptions = [
   "Luxury Sedan",
   "Luxury SUV",
@@ -12,11 +14,31 @@ const vehicleOptions = [
 
 export function InquiryForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: Wire to email service (Formspree, Resend, or FASTTRAK)
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    const data = new FormData(e.currentTarget);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        const json = await res.json().catch(() => ({}));
+        setError((json as { error?: string }).error || "Something went wrong. Please call us directly.");
+      }
+    } catch {
+      setError("Network error. Please call us directly.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -95,12 +117,16 @@ export function InquiryForm() {
         />
       </div>
 
+      {/* Error message */}
+      {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300 cursor-pointer"
+        disabled={loading}
+        className="w-full bg-gradient-to-br from-pink to-[#CC1076] text-foundation px-8 py-4 rounded-md text-sm font-semibold tracking-[0.08em] uppercase shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pink-glow-lg)] transition-all duration-300 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Submit Inquiry
+        {loading ? "Sending…" : "Submit Inquiry"}
       </button>
 
       <p className="text-cream-muted text-xs text-center leading-relaxed">
