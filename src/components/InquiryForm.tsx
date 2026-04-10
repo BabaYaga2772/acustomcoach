@@ -60,6 +60,9 @@ export function InquiryForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Formspree hidden fields for clear email labeling */}
+      <input type="hidden" name="_subject" value="*** GENERAL INQUIRY *** - A Custom Coach" />
+      <input type="hidden" name="Form Type" value="GENERAL INQUIRY (Contact Page) - Customer has a question, NOT a booking request" />
       {/* Name */}
       <Field label="Full Name" name="name" type="text" required />
 

@@ -60,6 +60,9 @@ export function ReservationForm({
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {/* Formspree hidden fields for clear email labeling */}
+      <input type="hidden" name="_subject" value="*** RESERVATION REQUEST *** - A Custom Coach" />
+      <input type="hidden" name="Form Type" value="RESERVATION REQUEST (Book Now Page) - Customer wants to BOOK a ride" />
       {/* Online booking disclaimer */}
       <div className="bg-surface border border-border-subtle rounded-lg p-4 mb-2">
         <p className="text-cream-muted text-sm leading-relaxed">
